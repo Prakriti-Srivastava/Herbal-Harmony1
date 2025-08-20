@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us – Herbal Harmony</title>
+  <meta name="description" content="About Herbal Harmony – a holistic wellness platform blending herbal remedies, homeopathy, yoga, and AI-powered health roadmaps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;            /* slate-900 */
+      --surface: #111827;       /* gray-900 */
+      --surface-2: #0b1220;     /* deep tint */
+      --text: #e5e7eb;          /* gray-200 */
+      --muted: #94a3b8;         /* slate-400 */
+      --brand: #22c55e;         /* emerald-500 */
+      --brand-2: #86efac;       /* emerald-300 */
+      --ring: rgba(34, 197, 94, 0.35);
+      --card: #0b1220;          /* near bg */
+      --shadow: 0 20px 30px -12px rgba(0,0,0,.45);
+      --radius-xl: 22px;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --maxw: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; 
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(34,197,94,.15), transparent 40%),
+                  radial-gradient(1000px 600px at -10% 10%, rgba(16,185,129,.12), transparent 35%),
+                  var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--brand-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper { max-width: var(--maxw); margin: 0 auto; padding: 32px 20px 80px; }
+
+    /* Header */
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 18px; border:1px solid rgba(255,255,255,.06); background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)); backdrop-filter: blur(6px); border-radius: 999px; box-shadow: var(--shadow); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.4px; }
+    .logo {
+      height: 36px; width: 36px; border-radius: 11px; display:grid; place-items:center; color:#052e16; font-weight:800;
+      background: conic-gradient(from 210deg, #34d399, #22c55e, #16a34a, #34d399);
+      box-shadow: 0 8px 18px rgba(34,197,94,.35), inset 0 0 0 3px rgba(255,255,255,.22);
+    }
+    .top-actions { display:flex; gap:10px; }
+    .btn { padding:10px 14px; border-radius: 999px; border:1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.02); color: var(--text); font-weight: 600; }
+    .btn--primary { background: linear-gradient(180deg, #22c55e, #16a34a); border: none; color: #04110a; box-shadow: 0 10px 18px rgba(34,197,94,.35); }
+
+    /* Hero */
+    .hero { display:grid; grid-template-columns: 1.15fr .85fr; gap:34px; align-items:center; margin-top: 36px; }
+    .hero h1 { font-family: Poppins, Inter, sans-serif; font-size: clamp(28px, 4.2vw, 48px); line-height: 1.12; margin: 0 0 10px; }
+    .hero p { color: var(--muted); margin: 0 0 18px; font-size: clamp(14px, 1.4vw, 18px); }
+    .hero .cta { display:flex; gap:12px; flex-wrap: wrap; margin-top: 12px; }
+
+    .hero-card { position: relative; border-radius: var(--radius-xl); padding: 22px; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); }
+    .badges { display:flex; flex-wrap:wrap; gap:10px; margin-top: 8px; }
+    .badge { padding:8px 12px; border-radius: 999px; background: rgba(34,197,94,.12); color: #bbf7d0; border:1px solid rgba(34,197,94,.25); font-weight:600; font-size: 12px; letter-spacing:.3px; }
+
+    /* Section */
+    section { margin-top: 58px; }
+    .section-title { font-family: Poppins, Inter, sans-serif; font-size: clamp(22px, 3.2vw, 34px); margin: 0 0 16px; }
+    .kicker { color: #86efac; text-transform: uppercase; letter-spacing: .18em; font-weight:700; font-size: 12px; }
+    .sub { color: var(--muted); margin: 6px 0 0; }
+
+    /* Features */
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
+    .card { grid-column: span 4; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius-lg); padding: 18px; box-shadow: var(--shadow); transition: transform .25s ease, box-shadow .25s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 22px 32px -16px rgba(0,0,0,.55); }
+    .card h3 { margin: 12px 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .pill { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.02); font-weight:600; }
+
+    .icon { height: 42px; width: 42px; border-radius: 12px; display:grid; place-items:center; background: rgba(34,197,94,.18); border:1px solid rgba(34,197,94,.35); }
+
+    /* Mission/Vision */
+    .split { display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+    .panel { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius-lg); padding: 18px; box-shadow: var(--shadow); }
+    .panel h3 { margin: 0 0 6px; }
+    .panel p { margin: 0; color: var(--muted); }
+
+    /* Values strip */
+    .values { display:flex; gap:12px; flex-wrap:wrap; margin-top: 14px; }
+    .value { flex: 1 1 220px; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius-md); padding: 14px 16px; box-shadow: var(--shadow); font-weight:600; color:#d1fae5; }
+
+    /* CTA banner */
+    .cta-banner { margin-top: 46px; border-radius: var(--radius-xl); padding: 24px; background: radial-gradient(400px 220px at 90% 20%, rgba(34,197,94,.22), transparent 50%), linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1); display:flex; flex-direction:column; gap:8px; box-shadow: var(--shadow); }
+    .cta-actions { display:flex; gap:10px; flex-wrap:wrap; }
+
+    /* Footer */
+    footer { margin-top: 64px; color: var(--muted); font-size: 13px; text-align:center; }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid .card { grid-column: span 6; }
+      .split { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .topbar { border-radius: 16px; }
+      .grid .card { grid-column: span 12; }
+      .wrapper { padding: 22px 16px 56px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header / Breadcrumb-like top bar -->
+    <div class="topbar" role="navigation" aria-label="Secondary">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🌿</div>
+        <span>Herbal Harmony</span>
+      </div>
+      <div class="top-actions">
+        <a class="btn" href="#mission">Our Mission</a>
+        <a class="btn" href="#offerings">What We Offer</a>
+        <a class="btn btn--primary" href="#contact">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="about-title">
+      <div>
+        <p class="kicker">About Us</p>
+        <h1 id="about-title">Holistic wellness, powered by nature and guided by AI</h1>
+        <p>
+          Herbal Harmony is your trusted digital companion for natural health. We blend
+          age‑old healing wisdom with modern technology—bringing together herbal remedies, homeopathy,
+          yoga routines, and AI‑powered wellness roadmaps—to help you build a balanced, joyful life.
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="#offerings">Explore Offerings</a>
+          <a class="btn" href="#mission">Why Herbal Harmony?</a>
+        </div>
+        <div class="badges" aria-label="Highlights">
+          <span class="badge">AI Wellness Plans</span>
+          <span class="badge">Herbal & Homeopathy</span>
+          <span class="badge">Yoga for All Ages</span>
+          <span class="badge">Science‑aware & Safe</span>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Snapshot">
+        <div class="pill" style="margin-bottom:10px;">✨ Personalized • Preventive • Holistic</div>
+        <p class="sub">
+          From Tulsi and Neem to Ashwagandha, from beginner‑friendly asanas to targeted routines for
+          back pain or weight management—find practical, well‑organized guidance you can trust.
+        </p>
+      </div>
+    </section>
+
+    <!-- Offerings / Features -->
+    <section id="offerings" aria-labelledby="offerings-title">
+      <h2 class="section-title" id="offerings-title">What we offer</h2>
+      <p class="sub">Everything you need for complete well‑being—organized, reliable, and simple to follow.</p>
+
+      <div class="grid" style="margin-top:16px;">
+        <article class="card" aria-label="Herbal Remedies">
+          <div class="icon" aria-hidden="true">🌱</div>
+          <h3>Herbal Remedies</h3>
+          <p>Uses, preparation, and safe dosage for herbs like Tulsi, Neem, and Ashwagandha—plus remedies for cold, acne, digestion, and immunity.</p>
+        </article>
+        <article class="card" aria-label="Homeopathy Guidance">
+          <div class="icon" aria-hidden="true">💊</div>
+          <h3>Homeopathy Guidance</h3>
+          <p>Beginner‑friendly explanations of common medicines, symptoms, usage, and precautions for everyday conditions.</p>
+        </article>
+        <article class="card" aria-label="Yoga & Fitness">
+          <div class="icon" aria-hidden="true">🧘‍♀️</div>
+          <h3>Yoga & Fitness</h3>
+          <p>Age‑wise yoga asanas, easy daily workouts, and special routines for joint pain, back pain, and weight loss.</p>
+        </article>
+        <article class="card" aria-label="AI Health Roadmap">
+          <div class="icon" aria-hidden="true">🤖</div>
+          <h3>AI Health Roadmap</h3>
+          <p>Personalized wellness plans based on your age, goals, and habits—covering diet suggestions, natural remedies, and weekly health goals.</p>
+        </article>
+        <article class="card" aria-label="User Dashboard">
+          <div class="icon" aria-hidden="true">📊</div>
+          <h3>User Accounts & Dashboard</h3>
+          <p>Save plans, track progress, and revisit your remedy history anytime with a clean, secure dashboard.</p>
+        </article>
+        <article class="card" aria-label="Articles & Tips">
+          <div class="icon" aria-hidden="true">📝</div>
+          <h3>Blogs & Articles</h3>
+          <p>Seasonal wellness updates and educational content to support preventive, nature‑based healthcare.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mission / Vision -->
+    <section id="mission" aria-labelledby="mission-title">
+      <h2 class="section-title" id="mission-title">Mission & Vision</h2>
+      <div class="split">
+        <div class="panel" role="article">
+          <h3>Our Mission</h3>
+          <p>
+            To empower individuals to choose safe, natural, and holistic healthcare—by making traditional knowledge
+            organized, accessible, and personalized with AI.
+          </p>
+        </div>
+        <div class="panel" role="article">
+          <h3>Our Vision</h3>
+          <p>
+            A world where everyone lives in harmony with nature—embracing preventive care, evidence‑aware practices,
+            and lifelong wellness.
+          </p>
+        </div>
+      </div>
+
+      <div class="values" aria-label="Why choose us">
+        <div class="value">Ancient wisdom × Modern AI</div>
+        <div class="value">Research‑aware & trustworthy</div>
+        <div class="value">Personalized for every age</div>
+        <div class="value">Chemical‑free, preventive care</div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta-banner" aria-labelledby="cta-title">
+      <h2 class="section-title" id="cta-title" style="font-size: clamp(20px, 2.6vw, 28px); margin:0;">Ready to begin your natural wellness journey?</h2>
+      <p class="sub">Start exploring personalized plans, herbal libraries, and guided yoga today.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="#">Create Your Plan</a>
+        <a class="btn" href="#">Read Our Blog</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Herbal Harmony • Built with care at Ewing Christian College, Prayagraj
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
