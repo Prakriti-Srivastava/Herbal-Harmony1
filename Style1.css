@@ -3,9 +3,7 @@
   padding : 0;
 
 }
-body {
-    background-color: rgb(228, 246, 228);
-  }
+
  
   .header {
   background-color: #F1F1F1;
@@ -13,52 +11,84 @@ body {
   padding: 20px;
 }
   
-  h1 {
+h1 {
     color: rgb(16, 99, 37);
     text-align: center;
     background-color: blanchedalmond;
     text-shadow: #F1F1F1;
-  }
+}
 
-  h3 {
+h3 {
     color: rgb(3, 27, 15);
     text-align: center;
       background-color: blanchedalmond;
+     }
+.logo{
+     width:10%;
+     display: flex;
+      justify-content: center;
+      align-items: center;
 
   }
-  
-  p {
+  .logo img{
+    width: 55%;
+    border: 3px solid rgb(199, 194, 194);
+    position: sticky;
+    top:0;
+    cursor: pointer;
+  }
+    
+
+p {
     font-family: verdana;
     font-size: 20px;
   }
 
-  div {
+div {
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
   }
 
-  nav {
+.nav-list {
     display:flex;
-    justify-content:space-around ;
+  background-color: ;
     align-items: center;
-    height: 30px;
-    background-color: rgb(161, 241, 175);
+    height: 50px;
+    
   }
-
-  .nav ul{
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav ul li{
+.nav-list li{
     list-style: none;
-    margin: 0 55px;
-    padding: 23%;
+    
+    padding: 26px 30px;
   }
-
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(190, 192, 191);
+    
+}
   .nav-list li a:hover{
         text-decoration: none;
         color : rgb(186, 239, 11);
   }
+  
+    background-color: ;
+  .background{
+     background: rgb(0,0,0,0.7)url('herb.jpg.jpg');
+     background-size: cover;
+     background-blend-mode: darken;
+  }
+
+  .box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(115, 188, 149);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .firstHalf {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
