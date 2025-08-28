@@ -1,15 +1,17 @@
 .navbar{
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
+    overflow: hidden;
+    background-color: rgb(183, 19, 19);
+    width: 100%;
     top:0;
-    cursor: pointer;
   }
 .nav-list {
     display:flex;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
     height: 50px;
     
   }
@@ -31,6 +33,33 @@
 
 .front-img img {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     object-fit: fill;
+  }
+
+
+  .quote-box {
+  position: absolute;
+  top: 50%;
+  right: 60%;
+  transform: translateY(-50%);
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #6c9b8b;
+}
+
+
+  .main{
+    margin-top: 30px;
   }
