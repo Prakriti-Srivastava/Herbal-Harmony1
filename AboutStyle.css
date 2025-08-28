@@ -1,0 +1,42 @@
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+  }
+.nav-list {
+    display:flex;
+    align-items: right;
+    justify-content: right;
+    height: 50px;
+    
+  }
+.nav-list li{
+    list-style: none;
+    color: rgb(14, 14, 14);
+    padding: 26px 30px;
+
+  }
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+    
+}
+  .nav-list li a:hover{
+        text-decoration: none;
+        color : rgb(75, 197, 95);
+  }
+  
