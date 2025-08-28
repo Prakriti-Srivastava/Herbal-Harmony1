@@ -12,10 +12,10 @@
 }
   
 h1 {
-    color: rgb(16, 99, 37);
-    text-align: center;
-    background-color: blanchedalmond;
-    text-shadow: #F1F1F1;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size-adjust: initial;
+  
 }
 
 h3 {
@@ -51,40 +51,58 @@ div {
   padding-left: 80px;
   }
 
+  .navbar{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+  }
 .nav-list {
     display:flex;
-  background-color: ;
     align-items: center;
     height: 50px;
     
   }
 .nav-list li{
     list-style: none;
-    
+    color: azure;
     padding: 26px 30px;
+
   }
 .nav-list li a{
     text-decoration: none;
-    color: rgb(190, 192, 191);
+    color: rgb(255, 253, 253);
     
 }
   .nav-list li a:hover{
         text-decoration: none;
-        color : rgb(186, 239, 11);
+        color : rgb(75, 197, 95);
   }
   
-    background-color: ;
+    
   .background{
-     background: rgb(0,0,0,0.7)url('herb.jpg.jpg');
-     background-size: cover;
-     background-blend-mode: darken;
+     background:rgba(173, 171, 171, 0.7) url('pictures/img3.jpg');
+     background-size:cover;
+    /* position: relative; */
+     /*  width: 100%;
+      height: 100%;
+     background-position: center;
+     object-fit: cover;*/
+     /* background-repeat: no-repeat; */
+      background-blend-mode: darken; 
+  }
+  
+  .firstSection {
+    height:100vh;
   }
 
   .box-main{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(115, 188, 149);
+    color: rgb(212, 223, 212);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .firstHalf {
@@ -92,3 +110,31 @@ div {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .secondHalf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .secondHalf img {
+    width:40%;
+    height: auto;
+    border-radius: 40%;
+    border: 4px solid rgb(1, 11, 1);
+  }
+
+  .text-big{
+    font-size: 50px;
+    font-weight: bold;
+    touch-action: manipulation; 
+
+    text-align: left;
+
+  }
+
+  .text-small{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+  }
