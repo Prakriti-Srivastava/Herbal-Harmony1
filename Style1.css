@@ -58,6 +58,10 @@ div {
     position: sticky;
     top:0;
     cursor: pointer;
+     overflow: hidden;
+    background-color: rgb(3, 2, 2);
+    width: 100%;
+  
   }
 .nav-list {
     display:flex;
@@ -95,48 +99,95 @@ div {
   }
   
   .firstSection {
-    height:100vh;
+    height:80vh;
   }
 
-  .box-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(212, 223, 212);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .firstHalf {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .secondHalf {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .secondHalf img {
-    width:40%;
-    height: auto;
-    border-radius: 40%;
-    border: 4px solid rgb(1, 11, 1);
-  }
+      .box-main{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(212, 223, 212);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .firstHalf {
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-wrap: wrap;
+      }
+     .secondHalf {
+         width: 100%;
+         display: flex;
+          justify-content: center;
 
-  .text-big{
-    font-size: 50px;
-    font-weight: bold;
-    touch-action: manipulation; 
+      }
+      .secondHalf img {
+          width:40%;
+          height: auto;
+          border-radius: 40%;
+          border: 4px solid rgb(1, 11, 1);
+         cursor: pointer;
+      }
 
-    text-align: left;
+      .text-big{
+         font-size: 50px;
+         font-weight: bold;
+         touch-action: manipulation; 
 
-  }
-
-  .text-small{
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-
-  }
-
+         text-align: left;
   
+      }
+
+     .text-small{
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       /*font-weight: bold;*/
+
+      }
+     .firstHalf :hover{
+       text-decoration: none;
+       color: rgb(255, 255, 255);
+      cursor: pointer;
+      }
+.secondSection{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    height: 30vh;
+    color:azure
+}
+   .herb-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width:0;
+        word-wrap: break-word;
+        background-color: #e3aaaa;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+        width:20%;
+        height:100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   .herb-card img {
+       width: 100%;
+      /* height: 150px;*/
+        object-fit: cover;
+    }
+   .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
