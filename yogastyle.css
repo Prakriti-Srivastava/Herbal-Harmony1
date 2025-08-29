@@ -63,3 +63,77 @@
   .main{
     margin-top: 30px;
   }
+
+  .yoga-info{
+    text-align: center;
+  }
+
+
+/* -------- Cards layout -------- */
+.cards{
+  max-width: 1000px;       /* content width limit */
+  margin: 0 auto;          /* center horizontally */
+  display: flex;           /* cards ko ek line me rakhne ke liye */
+  gap: 24px;               /* cards ke beech ka space */
+  flex-wrap: wrap;         /* chhoti screen par next line me chale */
+  justify-content: center; /* center align */
+}
+
+/* -------- Single Card -------- */
+.card{
+  width: 280px;
+  background: var(--card-bg);
+  border-radius: 16px;                           /* gol corners */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);      /* halka shadow */
+  overflow: hidden;                               /* image bahar na nikle */
+}
+
+/* Image section */
+.card__img{
+  position: relative;  /* taaki heart/time ko corner me chipka sake */
+  height: 180px;
+  overflow: hidden;
+}
+
+.card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* image ko crop karke fit kare */
+  display: block;
+}
+
+
+/* Text section */
+.card__body{
+  padding: 16px 18px 20px;
+}
+
+.tag{
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.title{
+  margin: 8px 0 10px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.author{
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.author a{
+  color: var(--link);
+  text-decoration: none;
+}
+
+/* Optional: hover pe halki upar lift effect */
+.card:hover{
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
