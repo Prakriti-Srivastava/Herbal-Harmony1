@@ -21,7 +21,13 @@ h1 {
 h3 {
     color: rgb(3, 27, 15);
     text-align: center;
-      background-color: blanchedalmond;
+     /* background-color: blanchedalmond; */
+     }
+h2{
+  color: rgb(3, 27, 15);
+    text-align: center;
+     background-color: blanchedalmond;
+
      }
 .logo{
      width:10%;
@@ -45,10 +51,12 @@ p {
   }
 
 div {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+  unicode-bidi: isolate;
   }
 
   .navbar{
@@ -159,7 +167,7 @@ div {
     height: 30vh;
     color:azure
 }
-   .herb-card{
+   .card{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -168,26 +176,89 @@ div {
         background-color: #e3aaaa;
         background-clip: border-box;
         border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: .25rem;
+       /* border-radius: .25rem; */
         width:20%;
         height:100%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-family: 'Poppins', sans-serif;
+       text-align: center;   
+       border-radius: 16px;
+        overflow: hidden;                               
     }
-   .herb-card img {
+    .card img {
        width: 100%;
       /* height: 150px;*/
         object-fit: cover;
     }
-   .button {
+    .button {
         background-color: #4CAF50;
         border: none;
-        color: white;
+        color: rgb(209, 67, 67);
         padding: 12px 16px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: 10px 5px;
         cursor: pointer;
         border-radius: 12px;
+    }
+    .card:hover{
+        transform: translateY(-4px);
+        transition: 0.2s ease;
+    }
+
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background: #c9f2e0; /* Dark herbal green */
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #40916c;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p, 
+    .footer-column a {
+      font-size: 0.95rem;
+      color: #234128;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: #55ad7d;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #1c3023;
+    }
+    h4{
+      color: #0e1410;
     }
