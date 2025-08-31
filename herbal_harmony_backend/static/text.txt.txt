@@ -1,0 +1,3 @@
+this is my first static folder text file with file name text.txt
+
+(static file are those file which are not private , everyone see it ) 
