@@ -104,8 +104,18 @@ div {
      object-fit: cover;*/
      /* background-repeat: no-repeat; */
       background-blend-mode: darken; 
+       
+    }
+  /*.bgimage{                     /*image to tick on background
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: sticky;
   }
-  
+  */
   .firstSection {
     height:80vh;
   }
@@ -164,8 +174,10 @@ div {
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
-    height: 30vh;
-    color:azure
+    height: 38vh;
+    color:azure;
+    background-color: #ccddd5;
+    position: relative;                 /*to move section n stick image*/
 }
    .card{
         position: relative;
@@ -182,7 +194,9 @@ div {
        font-family: 'Poppins', sans-serif;
        text-align: center;   
        border-radius: 16px;
-        overflow: hidden;                               
+        overflow: hidden;  
+        
+                               
     }
     .card img {
        width: 100%;
@@ -197,10 +211,11 @@ div {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        margin: 10px 5px;
+        font-size: 20px;
+        margin: 40px 30px;
         cursor: pointer;
         border-radius: 12px;
+      
     }
     .card:hover{
         transform: translateY(-4px);
@@ -218,8 +233,9 @@ div {
       color: #fff;
       padding: 40px 20px;
     }
-
-    .footer-container {
+    
+    
+  .footer-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
