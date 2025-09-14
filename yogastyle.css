@@ -1,24 +1,28 @@
 .navbar{
-    overflow: hidden;
-    background-color: rgb(183, 19, 19);
-    width: 100%;
-    top:0;
+    overflow: hidden; /* Clear floats */
+    position: fixed; /* Fixed position */ 
+    background-color: rgb(183, 19, 19); /* Dark herbal green */
+    width: 100%; /* Full width */
+   /* z-index: 100; /* Sit on top */
+    top:0; /* Stay on top */
+    left:0;
   }
 .nav-list {
-    display:flex;
-    align-items: center;
-    position: fixed;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-    height: 50px;
+    display:flex;        /* Horizontal layout */
+    align-items: center;                  /* Vertically center */
+    position: fixed;                    /* Fixed position */
+    /*background-color: rgb(183, 19, 19); /* Dark herbal green */
+    justify-content: flex-end;           /* Align to right */
+    width: 100%;                       /* Full width */
+    margin: 0;                      /* No default margin */
+    padding: 0 20px;                 /* Horizontal padding */
+    height: 50px;                   /* Navbar height */
     
   }
 .nav-list li{
-    list-style: none;
-    color: rgb(14, 14, 14);
-    padding: 26px 30px;
+    list-style: none;           /* No bullets */
+    color: rgb(14, 14, 14);                /* Text color */
+    padding: 26px 30px;         /* Spacing */
 
   }
 .nav-list li a{
@@ -39,33 +43,38 @@
 
 
   .quote-box {
-  position: absolute;
-  top: 50%;
-  right: 60%;
-  transform: translateY(-50%);
-  max-width: 300px;
-  font-family: 'Poppins', sans-serif;
+  position: absolute;          /* image ke upar rakhne ke liye */
+  top: 50%;                       /* image ke beech me vertically */
+  right: 60%;                     /* image ke right side me thoda space */
+  transform: translateY(-50%);                /* vertically center karne ke liye */
+  max-width: 300px;                                 /* width limit */
+  padding: 20px;                                    /* andar ka space */
+  font-family: 'Poppins', sans-serif;                  /* font style */
+  background: rgba(255, 255, 255, 0.8);             /* halka transparent background */
+
   font-size: 1.2rem;
-  color: #4a4a4a;
+  color: #4a4a4a;                                 /* text color */
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.6;                            /* line spacing */
 }
 
 .quote-box span {
-  display: block;
+  display: block;                                   /* block element */
   margin-top: 10px;
-  font-style: italic;
+  font-style: italic;                             /* italic style */
   font-size: 1rem;
-  color: #6c9b8b;
+  color: #6c9b8b;                                 /* thoda halka color */
 }
 
 
   .main{
-    margin-top: 30px;
+    margin-top: 30px;                        /* upar se thoda space */
+    padding: 20px;                           /* andar ka space */
   }
 
   .yoga-info{
-    text-align: center;
+    text-align: center;                        /* center align */
+    margin-bottom: 40px;                       /* neeche space */
   }
 
 
@@ -74,7 +83,7 @@
   max-width: 1000px;       /* content width limit */
   margin: 0 auto;          /* center horizontally */
   display: flex;           /* cards ko ek line me rakhne ke liye */
-  gap: 24px;               /* cards ke beech ka space */
+  gap: 40px;               /* cards ke beech ka space */
   flex-wrap: wrap;         /* chhoti screen par next line me chale */
   justify-content: center; /* center align */
 }
@@ -82,7 +91,7 @@
 /* -------- Single Card -------- */
 .card{
   width: 280px;
-  background: var(--card-bg);
+  background: var(--card-bg);                        /* card ka background */
   border-radius: 16px;                           /* gol corners */
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);      /* halka shadow */
   overflow: hidden;                               /* image bahar na nikle */
@@ -105,14 +114,18 @@
 
 /* Text section */
 .card__body{
-  padding: 16px 18px 20px;
+  padding: 16px 18px 20px; /* andar ka space */
+  text-align: justify; /* text ko dono taraf se align kare */
+  /*font-family: 'Poppins', sans-serif; /* font style */
 }
 
 .tag{
-  display: inline-block;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: var(--muted);
+  display: inline-block; /* taaki padding lage */
+  font-size: 18px; /* thoda bada font */
+  font-weight: 600; /* thoda mota */
+  letter-spacing: 1px; /* letters ke beech thoda space */
+  margin-bottom: 6px; /* neeche thoda space */
+  color: var(--muted); /* muted color */
 }
 
 .title{
@@ -134,22 +147,26 @@
 
 /* Optional: hover pe halki upar lift effect */
 .card:hover{
-  transform: translateY(-4px);
+  transform: translateY(-20px); /* thoda upar uthna */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* shadow thoda gehra */ 
   transition: 0.2s ease;
+
 }
 
 footer {
-      background: #c9f2e0; /* Dark herbal green */
-      color: #fff;
-      padding: 40px 20px;
+      background: #8de7c0; /* Dark herbal green */
+      color: #040404; /* Dark text for contrast */
+      margin-top: 40px;
+      padding: 40px 20px; /* Increased padding for better spacing */
+      font-family: 'Poppins', sans-serif; /* Consistent font */ 
     }
 
     .footer-container {
-      display: grid;
+      display: grid; 
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       max-width: 1100px;
-      margin: auto;
+      margin: auto; 
     }
 
     .footer-column h3 {
