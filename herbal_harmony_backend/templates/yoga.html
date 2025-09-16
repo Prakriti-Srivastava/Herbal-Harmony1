@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="eng">
 <head>
@@ -8,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Yoga and Wellness</title>
-    <link rel="stylesheet" href="yogastyle.css">
+    <link rel="stylesheet" href="{% static 'css/yogastyle.css' %}">
     
 </head>
 <body>  
@@ -24,16 +25,26 @@
                     <li><a href="yoga.html">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
+                
+        <form method="get" action="{% url 'yoga' %}">
+            <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
+            <button type="submit">search</button> 
+
+        </form>
+
+        <div>
+          {{ content|safe }}
+        </div>
+
                 </ul>
-            <input type="text" name="search" id="search">
-                <button class="btn btn-sm">search</button> 
+    </nav>
 <!---------------------------front page section------------------------------>  
 
     <section class="background-firstSection">
 
                
                <div class="front-img">
-                <img src="pictures/yogahome.jpg" alt="yoga image">
+                <img src="{% static 'pictures/yogahome.jpg' %}" alt="yoga image">
                </div>
             </div>
 
@@ -67,7 +78,7 @@
       <!-- Image wala part (upar) -->
       <div class="card__img">              <!-----1------>
         <!-- Image: aap yaha apni image link dal sakte ho -->
-        <img src="pictures/kidspic"/>   
+        <img src="{% static 'pictures/kidspic' %}" />   
       </div>
 
       <!-- Text wala part (neeche) -->
@@ -84,7 +95,7 @@
     <!-- ===== Card 2: sitting ===== -->
     <article class="card">
       <div class="card__img">
-        <img src="pictures/teenpic.jpg" />
+        <img src="{% static 'pictures/teenpic.jpg' %}" />
       </div>
 
       <div class="card__body">
@@ -100,7 +111,7 @@
     <!-- ===== Card 3: prone ===== -->
      <article class="card">
       <div class="card__img">
-        <img src="pictures/adults.jpg" />
+        <img src="{% static 'pictures/adults.jpg' %}" />
       </div>
 
       <div class="card__body">
@@ -114,7 +125,7 @@
   <!-- ===== Card 4:  ===== -->
    <article class="card">
       <div class="card__img">
-        <img src="pictures/middleage.jpg" />
+        <img src="{% static 'pictures/middleage.jpg' %}" />
       </div>
 
       <div class="card__body">
@@ -128,7 +139,7 @@
   <!-- ===== Card 5:  ===== -->
    <article class="card">
       <div class="card__img">
-        <img src="pictures/seniorsyoga" />
+        <img src="{% static 'pictures/seniorsyoga' %}" />
       </div>
 
       <div class="card__body">
@@ -165,7 +176,16 @@
         <p>Location: Prayagraj, India</p>
       </div>
             
-  </nav>  
+  <!--</nav>-->
+
+    
+      
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>  
 
 </body>
 </html>
