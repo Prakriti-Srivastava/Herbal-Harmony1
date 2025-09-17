@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html  lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
     <title>Herbal Harmony</title>
 
 </head>
@@ -17,12 +18,12 @@
         <nav class="navbar background">
            
                 <ul class="nav-list">
-                    <div class="logo"><img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" width="30%"></div>
+                    <div class="logo"><img src="{% static 'pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png' %}" alt="logo" width="30%"></div>
 
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="{% url 'Home' %}">Home</a></li>
                     
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -41,7 +42,7 @@
                </div>
                
                <div class="secondHalf">
-                <img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" >
+                <img src="{% static 'pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png' %}" alt="logo" >
                </div>
             </div>
         </section>
@@ -58,7 +59,7 @@
            <!--  -------------------card section---------------  -->
         <section class=" secondSection">
             <div class="card">
-              <img src="pictures/img2.jpg" alt="herb" width="">
+              <img src="{% static 'pictures/img2.jpg' %}" alt="herb" width="">
                   <h2>HERBS</h2>
                  <p><h5>Herbs are natural plants that people use for healing, cooking, and health benefits.</h5></p>
                 <a href="herb.html"><button class="herb">knowledge</button></a>
@@ -66,7 +67,7 @@
             </div>
           
                 <div class="card">
-                 <img src="pictures/img2.jpg" alt="herb" width="">
+                 <img src="{% static 'pictures/img2.jpg' %}" alt="herb" width="">
                   <h2>Physical Fitness</h2>
                  <p><h5>Physical fitness is a state of health and well-being that allows individuals to perform daily activities with vigor and without fatigue.</h5></p>
                  <a href="yoga.html"><button class="PhysicalFitness">knowledge</button></a>
@@ -74,7 +75,7 @@
                  <br>
             </div>
             <div class="card">
-                 <img src="pictures/img2.jpg" alt="herb" width="">
+                 <img src="{% static 'pictures/img2.jpg' %}" alt="herb" width="">
                   <h2>Mental Health</h2>
                  <p><h5>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.</h5></p>
                  <a href="Mentalhealth.html"><button class="MentalHealth">knowledge</button></a>
