@@ -188,7 +188,7 @@ footer {
     }
 
     .footer-column a:hover {
-      color: #55ad7d;
+      color: #23392d;
     }
 
     .social-icons {
@@ -204,3 +204,24 @@ footer {
     h4{
       color: #0e1410;
     }
+
+
+/* Search bar styles */
+mark {
+  background-color: yellow; /* Highlight color */
+  padding: 0;                /* No extra padding */
+  margin: 0;                 /* No extra margin */
+}
+
+#searchForm {
+  margin: 20px 0;            /* Top and bottom margin */
+  text-align: center;        /* Center align the form */
+}
+
+#searchInput {
+  width: 60%;                /* Input field width */
+  padding: 10px;             /* Padding inside the input */
+  font-size: 1rem;           /* Font size */
+  border: 2px solid #100d0d;    /* Border style */
+  border-radius: 5px;        /* Rounded corners */
+}

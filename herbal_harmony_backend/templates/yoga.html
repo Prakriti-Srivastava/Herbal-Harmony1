@@ -26,17 +26,21 @@
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 
-        <form method="get" action="{% url 'yoga' %}">
+        <!--<form method="get" action="{% url 'yoga' %}">
             <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
-            <button type="submit">search</button> 
+            <button type="submit">search</button> -->
 
-        </form>
+          <input type="text" id="searchBox" placeholder="Search here...">
+          <button onclick="highlightText()">search</button> 
+
+
+        <!--</form>-->
 
                 </ul>
     </nav>
-    <div>
+    <!--<div>
           {{ content|safe }}
-        </div>
+        </div>-->
 <!---------------------------front page section------------------------------>  
 
     <section class="background-firstSection">
@@ -185,6 +189,62 @@
     <div class="footer-bottom">
       <p>2025 Herbal Harmony. All rights reserved.</p>
     </div>  
+
+    
+<script>
+/*document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("searchForm");
+     const input = document.getElementById("searchInput");
+
+      form.addEventListener("submit", function(e){
+          e.preventDefault(); // Form submit hone se roko
+          highlightText(); // Text highlight karo
+  });*/
+
+function highlightText() {
+  // Purane highlights hatao
+  /*document.querySelectorAll("mark").forEach(m => {
+    m.outerHTML = m.innerText;
+  });*/
+
+  let highlighted = document.querySelectorAll("mark");
+  highlighted.forEach(h => {
+    h.outerHTML = h.innerHTML;
+  });
+
+  let text = document.getElementById("searchBox").value;
+  if (text.trim() === "") return;
+
+  let body = document.body.innerHTML;
+
+  let regex = new RegExp(text, "gi");
+  document.body.innerHTML = body.replace(regex, match => `<mark>${match}</mark>`);
+
+  // Input value lo
+  /*const query = input.value.trim();
+  if (!query) return;
+
+  // Regex banao (case insensitive)
+  const regex = new RegExp(query, "gi");
+
+  // Page ke body ke andar sab text me search karo
+  searchAndHighlight(document.body, regex);
+}*/
+
+/*function searchAndHighlight(node, regex) {
+  if (node.nodeType === 3) { // text node
+    if (regex.test(node.nodeValue)) {
+      const span = document.createElement("span");
+      span.innerHTML = node.nodeValue.replace(regex, match => <mark>${match}</mark>);
+      node.replaceWith(span);
+    }
+  } else if (node.nodeType === 1 && !["SCRIPT", "STYLE", "MARK", "INPUT", "BUTTON"].includes(node.tagName)) {
+    node.childNodes.forEach(child => searchAndHighlight(child, regex));
+  }
+}*/
+}
+
+</script>
 
 </body>
 </html>
