@@ -26,17 +26,22 @@
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 
-        <form method="get" action="{% url 'yoga' %}">
+        <!--<form method="get" action="{% url 'yoga' %}">
             <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
-            <button type="submit">search</button> 
+            <button type="submit">search</button> -->
 
-        </form>
+          <input type="text" id="searchBox" placeholder="Search here...">
+           <!-- <input type="text" id="searchBox" oninput="highlightText()" placeholder="Search..."> -->
+          <button onclick="highlightText()">search</button> 
+
+
+        <!--</form>-->
 
                 </ul>
     </nav>
-    <div>
+    <!--<div>
           {{ content|safe }}
-        </div>
+        </div>-->
 <!---------------------------front page section------------------------------>  
 
     <section class="background-firstSection">
@@ -45,7 +50,7 @@
                <div class="front-img">
                 <img src="{% static 'pictures/yogahome.jpg' %}" alt="yoga image">
                </div>
-            </div>
+            
 
             <div class="quote-box">
                 <p>"Yoga is the journey of the self,<br> through the self, <br>to the self."</p>
@@ -77,7 +82,7 @@
       <!-- Image wala part (upar) -->
       <div class="card__img">              <!-----1------>
         <!-- Image: aap yaha apni image link dal sakte ho -->
-        <img src="{% static 'pictures/kidspic' %}" />   
+        <img src="{% static 'pictures/kidspic.jpg' %}" />   
       </div>
 
       <!-- Text wala part (neeche) -->
@@ -138,7 +143,7 @@
   <!-- ===== Card 5:  ===== -->
    <article class="card">
       <div class="card__img">
-        <img src="{% static 'pictures/seniorsyoga' %}" />
+        <img src="{% static 'pictures/seniorsyoga.jpg' %}" />
       </div>
 
       <div class="card__body">
@@ -185,6 +190,115 @@
     <div class="footer-bottom">
       <p>2025 Herbal Harmony. All rights reserved.</p>
     </div>  
+
+    
+<script>
+/*document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("searchForm");
+     const input = document.getElementById("searchInput");
+
+      form.addEventListener("submit", function(e){
+          e.preventDefault(); // Form submit hone se roko
+          highlightText(); // Text highlight karo
+  });*/
+
+
+// function highlightText() {
+//   // Remove old highlights
+//   document.querySelectorAll("#content mark").forEach(m => {
+//     m.outerHTML = m.innerHTML;
+//   });
+
+//   let text = document.getElementById("searchBox").value;
+//   if (text.trim() === "") return;
+
+//   let content = document.getElementById("content").innerHTML;
+
+//   // Escape special regex characters
+//   let escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+//   let regex = new RegExp(escapedText, "gi");
+//   document.getElementById("content").innerHTML =
+//     content.replace(regex, match => `<mark>${match}</mark>`);
+// }
+
+function highlightText() {
+  const text = document.getElementById("searchBox").value.trim();
+  if (!text) return;
+
+  // Remove previous highlights
+  document.querySelectorAll("mark").forEach(mark => {
+    const parent = mark.parentNode;
+    parent.replaceChild(document.createTextNode(mark.textContent), mark);
+    parent.normalize(); // Merge adjacent text nodes
+  });
+
+  const regex = new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+
+  function searchAndHighlight(node) {
+    if (node.nodeType === 3) { // Text node
+      const match = node.nodeValue.match(regex);
+      if (match) {
+        const span = document.createElement("span");
+        span.innerHTML = node.nodeValue.replace(regex, m => `<mark>${m}</mark>`);
+        node.replaceWith(span);
+      }
+    } else if (node.nodeType === 1 && !["SCRIPT", "STYLE", "MARK", "INPUT", "BUTTON"].includes(node.tagName)) {
+      Array.from(node.childNodes).forEach(child => searchAndHighlight(child));
+    }
+  }
+
+  searchAndHighlight(document.body);
+}
+
+//ye chl rha hai
+// function highlightText() {
+//   // Purane highlights hatao
+//   /*document.querySelectorAll("mark").forEach(m => {
+//     m.outerHTML = m.innerText;
+//   });*/
+
+//   let highlighted = document.querySelectorAll("mark");
+//   highlighted.forEach(h => {
+//     h.outerHTML = h.innerHTML;
+//   });
+
+//   let text = document.getElementById("searchBox").value;
+//   if (text.trim() === "") return;
+
+//   let body = document.body.innerHTML;
+
+//   let regex = new RegExp(text, "gi");
+//   document.body.innerHTML = body.replace(regex, match => '<mark>${match}</mark>');
+//   // document.body.innerHTML = body.replace(regex, match => '<mark>${match}</mark>');
+// }
+//yaha tk hai
+
+  // Input value lo
+  /*const query = input.value.trim();
+  if (!query) return;
+
+  // Regex banao (case insensitive)
+  const regex = new RegExp(query, "gi");
+
+  // Page ke body ke andar sab text me search karo
+  searchAndHighlight(document.body, regex);
+}*/
+
+/*function searchAndHighlight(node, regex) {
+  if (node.nodeType === 3) { // text node
+    if (regex.test(node.nodeValue)) {
+      const span = document.createElement("span");
+      span.innerHTML = node.nodeValue.replace(regex, match => <mark>${match}</mark>);
+      node.replaceWith(span);
+    }
+  } else if (node.nodeType === 1 && !["SCRIPT", "STYLE", "MARK", "INPUT", "BUTTON"].includes(node.tagName)) {
+    node.childNodes.forEach(child => searchAndHighlight(child, regex));
+  }
+}*/
+
+
+</script>
 
 </body>
 </html>
