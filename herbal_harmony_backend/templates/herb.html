@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html  lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
-    <link rel="stylesheet" href="Style1.css">
+     <link rel="stylesheet" href="{% static 'css/Style1.css' %}">
     <title>Herbal Harmony</title>
 
 </head>
@@ -17,12 +18,12 @@
         <nav class="navbar background">
            
                 <ul class="nav-list">
-                    <div class="logo"><a href="Home.html"><img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" width="30%"></a></div>
+                    <div class="logo"><a href="Home.html"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
 
           
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -36,21 +37,21 @@
 
              <section class=" secondSection">
             <div class="card">
-              <img src="pictures/backgroundimg.jpg" alt="herb" width="">
+              <img src="{% static 'pictures/backgroundimg.jpg' %}" alt="herb" width="">
                   <h2>Medicinal Herb</h2>
                  <p><h5>Medicinal herbs are plants that have therapeutic properties and are used in traditional medicine.</h5></p>
                   <a href="medherb.html"><button class="Medicinal">know More...</button> </a>
             </div>
           
                 <div class="card">
-                 <img src="pictures/backgroundimg.jpg" alt="herb" width="">
+                 <img src="{% static 'pictures/backgroundimg.jpg' %}" alt="herb" width="">
                   <h2>Culinary Herbs</h2>
                  <p><h5>Culinary herbs are plants used to flavor dishes and enhance their taste.</h5></p>
                 <a href="CulinaryHerb.html"><button class="Culinary">know More...</button></a>
                  <br>
             </div>
             <div class="card">
-                 <img src="pictures/backgroundimg.jpg" alt="herb" width="">
+                 <img src="{% static 'pictures/backgroundimg.jpg' %}" alt="herb" width="">
                   <h2>Aromatic Herbs</h2>
                  <p><h5>Aromatic herbs are plants that are valued for their fragrant properties and are often used in cooking, perfumery, and traditional medicine.</h5></p>
                  <a href="AromaticHerb.html"><button class="Aromatic">know More...</button></a>

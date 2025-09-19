@@ -18,7 +18,7 @@
         <nav class="navbar background">
            
                 <ul class="nav-list">
-                    <div class="logo"><img src="{% static 'pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png' %}" alt="logo" width="30%"></div>
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
 
                     <li><a href="{% url 'Home' %}">Home</a></li>
                     
@@ -42,7 +42,7 @@
                </div>
                
                <div class="secondHalf">
-                <img src="{% static 'pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png' %}" alt="logo" >
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" >
                </div>
             </div>
         </section>
@@ -62,8 +62,8 @@
               <img src="{% static 'pictures/img2.jpg' %}" alt="herb" width="">
                   <h2>HERBS</h2>
                  <p><h5>Herbs are natural plants that people use for healing, cooking, and health benefits.</h5></p>
-                <a href="herb.html"><button class="herb">knowledge</button></a>
-                <a href="herb.html"><button class="herb">Treatment</button></a>
+                <a href="{% url 'herb' %}"><button class="herb">knowledge</button></a>
+                <a href="{% url 'herb' %}"><button class="herb">Treatment</button></a>
             </div>
           
                 <div class="card">
