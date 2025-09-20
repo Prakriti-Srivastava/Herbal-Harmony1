@@ -176,70 +176,43 @@ p {
 }
 
   /*-------------------first section-----------------------*/
- /* .firstSection {
-    height:80vh;
-  }
-
-      .box-main{
-           display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(212, 223, 212);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      .firstHalf {
-         width: 80%;
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-         text-wrap: wrap;
-      }
-     .secondHalf {
-         width: 100%;
-         display: flex;
-          justify-content: center;
-
-      }
-      .secondHalf img {
-          width:40%;
-          height: auto;
-          border-radius: 40%;
-          border: 4px solid rgb(1, 11, 1);
-         cursor: pointer;
-      }
-
-      .text-big{
-         font-size: 50px;
-         font-weight: bold;
-         touch-action: manipulation; 
-
-         text-align: left;
-  
-      }
-
-     .text-small{
-        font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-       /*font-weight: bold;*/
-
-    /*  } 
-     .firstHalf :hover{
-       text-decoration: none;
-       color: rgb(255, 255, 255);
-      cursor: pointer;
-      }*/ 
-/*.secondSection{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-    height: 60vh;
-    color:azure;
-    background-color: #ccddd5;
-    position: relative;                 /*to move section n stick image
+ .firstSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background: linear-gradient(120deg, #d8f3dc, #f8fff6);
 }
-   .card{
+
+.box-main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.firstHalf {
+  flex: 1;
+}
+
+.firstHalf .text-big {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1b4332;
+  margin-bottom: 15px;
+}
+
+.firstHalf .text-small {
+  font-size: 1rem;
+  color: #444;
+}
+
+.secondHalf img {
+  max-width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+  /* .card{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -247,7 +220,7 @@ p {
         word-wrap: break-word;
         background-color: #e3aaaa;
         background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
+        border: 1px solid rgba(0, 0, 0, .125);}
        /* border-radius: .25rem; 
         width:20%;
         height:100%;
