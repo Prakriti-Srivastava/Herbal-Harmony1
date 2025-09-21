@@ -32,16 +32,18 @@
                 <input type="text" name="search" id="search">
                 <button class="btn-search">search</button>
              </nav>
-
-              <section class="background firstSection">
+         <div class="herbbackground">
+              <img src="{% static 'pictures/herbbackground.png' %}" alt="Herb Background">
+            </div>
+        <section class="background firstSection">
             <div class="box-main">
                <div class="firstHalf">
                 <p class="text-big">Holistic wellness, powered by nature...</p>
-                <p class="text-small">Herbs have been an essential part of human life for centuries, offering healing, flavor, and fragrance. On this page, we explore different types of herbs based on their uses in medicine, cooking, and daily wellness.”
+                <p class="text-small">Herbs have been an essential part of human life for centuries, offering healing, flavor, and fragrance. On this page, we explore different types of herbs based on their uses in medicine, cooking, and daily wellness.”</p>
 
-“Herbs can be broadly categorized into Medicinal Herbs that heal, Aromatic Herbs that refresh, and Culinary Herbs that enhance flavors. Each type plays a unique role in supporting health and lifestyle.”
+<p>“Herbs can be broadly categorized into Medicinal Herbs that heal, Aromatic Herbs that refresh, and Culinary Herbs that enhance flavors. Each type plays a unique role in supporting health and lifestyle.”</p>
 
-“From soothing fevers and boosting immunity to adding aroma in oils and flavor in meals, herbs are nature's versatile gift. Let's discover their types and benefits.”</p>
+<p>“From soothing fevers and boosting immunity to adding aroma in oils and flavor in meals, herbs are nature's versatile gift. Let's discover their types and benefits.”</p>
                </div>
                
                <div class="secondHalf">
@@ -52,28 +54,32 @@
           
              <!-- -------------------first div----------------  -->
 
-             <section class=" secondSection">
-            <div class="card">
-              <img src="{% static 'pictures/medherb.jpg' %}" alt="herb" width="">
-                  <h2>Medicinal Herb</h2>
-                 <p><h5>Medicinal herbs are plants that have therapeutic properties and are used in traditional medicine.</h5></p>
-                  <a href="medherb.html"><button class="Medicinal">know More...</button> </a>
-            </div>
+             <section class=" secondSection" >
+              
+                 <!--  <img src="{% static 'pictures/herbbackground2.png' %}" alt="Herb Background">-->
+              
+                  <div class="card">
+                     <img src="{% static 'pictures/medherb.jpg' %}" alt="herb" width="">
+                     <h2>Medicinal Herb</h2>
+                     <p><h5>Medicinal herbs are plants that have therapeutic properties and are used in traditional medicine.</h5></p>
+                     <a href="medherb.html"><button class="Medicinal">know More...</button> </a>
+                  </div>
           
-                <div class="card">
-                 <img src="{% static 'pictures/herb1.jpg' %}" alt="herb" width="">
-                  <h2>Culinary Herbs</h2>
-                 <p><h5>Culinary herbs are plants used to flavor dishes and enhance their taste.</h5></p>
-                <a href="CulinaryHerb.html"><button class="Culinary">know More...</button></a>
-                 <br>
-            </div>
-            <div class="card">
-                 <img src="{% static 'pictures/aromaticherb.jpg' %}" alt="herb" width="">
-                  <h2>Aromatic Herbs</h2>
-                 <p><h5>Aromatic herbs are plants that are valued for their fragrant properties and are often used in cooking, perfumery, and traditional medicine.</h5></p>
-                 <a href="AromaticHerb.html"><button class="Aromatic">know More...</button></a>
-                 <br>
-            </div>
+                  <div class="card">
+                      <img src="{% static 'pictures/herb1.jpg' %}" alt="herb" width="">
+                      <h2>Culinary Herbs</h2>
+                      <p><h5>Culinary herbs are plants used to flavor dishes and enhance their taste.</h5></p>
+                      <a href="CulinaryHerb.html"><button class="Culinary">know More...</button></a>
+                      <br>
+                   </div>
+                  <div class="card">
+                     <img src="{% static 'pictures/aromaticherb.jpg' %}" alt="herb" width="">
+                     <h2>Aromatic Herbs</h2>
+                     <p><h5>Aromatic herbs are plants that are valued for their fragrant properties and are often used in cooking, perfumery, and traditional medicine.</h5></p>
+                      <a href="AromaticHerb.html"><button class="Aromatic">know More...</button></a>
+                    <br>
+                  </div>
+                  
 
         </section> 
 
