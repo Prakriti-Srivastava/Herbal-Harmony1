@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html  lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
-    <link rel="stylesheet" href="medherb.css">
+    <link rel="stylesheet" href="{% static 'css/medherb.css' %}">
     <title>Herbal Harmony</title>
 
 </head>
@@ -14,12 +15,12 @@
     <nav class="navbar background">
            
                 <ul class="nav-list">
-                    <div class="logo"><a href="Home.html"><img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" width="30%"></a></div>
+                    <div class="logo"><a href="{% url 'Home' %}"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
 
           
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
