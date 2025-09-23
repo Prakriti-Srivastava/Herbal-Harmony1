@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; }
+
+    /* Background full */
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background: url('pictures/forest.jpg')
+        no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    /* Top-left leaf */
+    .leaf {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 150px;
+      z-index: 5;
+    }
+
+    /* Blur panel */
+    .panel {
+      width: 45%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+      z-index: 2;
+    }
+
+    .small-text {
+        text-align: center;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .to-text {
+        text-align: right;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    /* EAR & BODY (clipped text effect) */
+    .clip-text {
+        text-align: right;
+      font-size: 7rem;
+      font-weight: 900;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      background: url('pictures/forest.jpg')
+        no-repeat center center/cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.1;
+    }
+
+    /* Outside TH */
+    .big-th {
+      position: absolute;
+      left: 52%;
+      top: 42%;
+      transform: translateY(-50%);
+      font-size: 7rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 15px;
+      z-index: 3;
+    }
+
+    /* Right bar */
+    .right-bar {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 4;
+    }
+
+    .line {
+      width: 2px;
+      height: 120px;
+      background: #fff;
+      margin-bottom: 15px;
+    }
+
+    .diamond {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #fff;
+      transform: rotate(45deg);
+      margin: 8px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .panel {
+        width: 100%;
+        padding-left: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      .clip-text { font-size: 4rem; }
+      .big-th, .right-bar { display: none; }
+      .leaf { width: 100px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <!-- Leaf -->
+    <img class="leaf" src=" " alt="Leaf">
+
+    <!-- Left blur panel -->
+    <div class="panel">
+      <div class="small-text">FROM</div>
+      <div class="clip-text">EAR</div>
+      <div class="to-text">TO YOUR</div>
+      <div class="clip-text">BODY</div>
+    </div>
+
+    <!-- TH outside -->
+    <div class="big-th">T H</div>
+
+    <!-- Right bar -->
+    <div class="right-bar">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+    </div>
+  </section>
+</body>
+</html>

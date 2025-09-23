@@ -21,7 +21,7 @@
                    <!-- <div class="logo"><img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" width="30%"></div>  -->
 
                     <li><a href="{% url 'Home' %}">Home</a></li>
-                    <li><a href="About.html">About</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -82,7 +82,7 @@
       <!-- Image wala part (upar) -->
       <div class="card__img">              <!-----1------>
         <!-- Image: aap yaha apni image link dal sakte ho -->
-        <img src="{% static 'pictures/kidspic.jpg' %}" />   
+        <img src="{% static 'pictures/kids.jpg' %}" />   
       </div>
 
       <!-- Text wala part (neeche) -->
@@ -143,7 +143,7 @@
   <!-- ===== Card 5:  ===== -->
    <article class="card">
       <div class="card__img">
-        <img src="{% static 'pictures/seniorsyoga.jpg' %}" />
+        <img src="{% static 'pictures/seniors.jpg' %}" />
       </div>
 
       <div class="card__body">
