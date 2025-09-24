@@ -41,7 +41,7 @@
   }
 
 .background-firstSection {
-    background-image: url('../pictures/mainback.jpg'); /* Background image */
+    background-image: url('../pictures/yogamainbg.jpg'); /* Background image */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
@@ -55,23 +55,23 @@
   .quote-box {
   position: absolute;          /* image ke upar rakhne ke liye */
   width: 100%;                       /* full width */
-  top: 50%;                       /* image ke beech me vertically */
-  right: 25%;                     /* image ke right side me thoda space */
-  transform: translateY(-30%);                /* vertically center karne ke liye */
-  max-width: 300px;                                 /* width limit */
+  top: 20%;                       /* image ke beech me vertically */
+  right: 40%;                     /* image ke right side me thoda space */
+  /*transform: translateY(-30%);                /* vertically center karne ke liye */
+  max-width: 350px;                                 /* width limit */
   padding: 20px;                                    /* andar ka space */
   font-family: 'Poppins', sans-serif;                  /* font style */
   /*background: rgba(255, 255, 255, 0.8);             /* halka transparent background */
 
 
   color: #704a4a;                                 /* text color */
-  text-align: left; 
+ /* text-align: left; */
                         
 }
 
 .quote-box h1{
   color: #704d4d;
-  font-size: 30px;                             /* thoda bada font */
+  font-size: 25px;                             /* thoda bada font */
   font-weight: 600 ;
 }
 
