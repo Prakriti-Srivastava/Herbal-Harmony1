@@ -134,7 +134,7 @@
 }
 
 body {
-  background: #f8fff6;
+  background: #e2fcdb;
   color: #333;
   line-height: 1.7;
   text-align: center;
@@ -147,11 +147,21 @@ body {
   background: linear-gradient(120deg, #2d6a4f, #52b788);
   color: white;
   padding: 40px 20px;
+   animation: colorChange 5s infinite alternate;
 }
 
 .heading h1 {
   font-size: 2.5rem;
   letter-spacing: 2px;
+  /* animation: colorChange 5s infinite alternate; */
+  
+}
+@keyframes colorChange {
+  0% { color: #2d6a4f; }
+  25% { color: #52b788; }
+  50% { color: #74c69d; }
+  75% { color: #95d5b2; }
+  100% { color: #2d6a4f; }
 }
 
 /* ===== Navbar ===== */
@@ -193,6 +203,7 @@ body {
   border-radius: 5px;
   border: none;
   outline: none;
+   width: 370px;
 }
 
 .btn-search {
@@ -225,6 +236,12 @@ body {
   color: #1b4332;
   margin-bottom: 15px;
   text-align: center;
+ animation: slideIn 1.5s ease-out forwards;
+
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 .left-section p {
@@ -232,6 +249,8 @@ body {
   margin-bottom: 20px;
   color: #444;
   text-align: justify;
+  text-align: center;
+ animation: slideIn 1.5s ease-out forwards;
 }
 
 .left-section ul {
@@ -256,11 +275,19 @@ body {
 .left-section strong {
   color: #2d6a4f;
 }
+.sticker {
+  margin: 0px 20px;
+  text-align: bottom;
+  height: 90px;
+  width: 20%;
+ 
+}
+
 
 .secondSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 1.5rem;
   
 }
 
@@ -270,6 +297,7 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
 .card:hover {
@@ -278,9 +306,12 @@ body {
 }
 
 .card img {
-  width: 60%;
-  height: 100px;
+  width: 100%;
+  height: 180px;
   object-fit: cover;
+  padding: 10%;
+  position: center;
+  border-radius: 5px
 }
 
 .card h3 {
@@ -295,6 +326,7 @@ body {
   font-size: 0.9rem;
   padding: 0 0.8rem 0.8rem;
   margin-bottom: 1rem;
+  text-underline-offset: 4px;
   
 }
 
