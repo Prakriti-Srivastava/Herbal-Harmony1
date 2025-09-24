@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .navbar{
     overflow: hidden; /* Clear floats */
     position: fixed; /* Fixed position */ 
@@ -35,27 +40,39 @@
         color : rgb(75, 197, 95);
   }
 
-.front-img img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill;
+.background-firstSection {
+    background-image: url('../pictures/mainback.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width :100%;
+    background-position: center center;  /* Center the image */
+    
+  
   }
 
 
   .quote-box {
   position: absolute;          /* image ke upar rakhne ke liye */
+  width: 100%;                       /* full width */
   top: 50%;                       /* image ke beech me vertically */
-  right: 60%;                     /* image ke right side me thoda space */
-  transform: translateY(-50%);                /* vertically center karne ke liye */
+  right: 25%;                     /* image ke right side me thoda space */
+  transform: translateY(-30%);                /* vertically center karne ke liye */
   max-width: 300px;                                 /* width limit */
   padding: 20px;                                    /* andar ka space */
   font-family: 'Poppins', sans-serif;                  /* font style */
-  background: rgba(255, 255, 255, 0.8);             /* halka transparent background */
+  /*background: rgba(255, 255, 255, 0.8);             /* halka transparent background */
 
-  font-size: 1.2rem;
-  color: #4a4a4a;                                 /* text color */
-  text-align: left;
-  line-height: 1.6;                            /* line spacing */
+
+  color: #704a4a;                                 /* text color */
+  text-align: left; 
+                        
+}
+
+.quote-box h1{
+  color: #704d4d;
+  font-size: 30px;                             /* thoda bada font */
+  font-weight: 600 ;
 }
 
 .quote-box span {
@@ -63,7 +80,7 @@
   margin-top: 10px;
   font-style: italic;                             /* italic style */
   font-size: 1rem;
-  color: #6c9b8b;                                 /* thoda halka color */
+  color: #080808;                                 /* thoda halka color */
 }
 
 

@@ -47,14 +47,16 @@
     <section class="background-firstSection">
 
                
-               <div class="front-img">
+               <!--<div class="front-img">
                 <img src="{% static 'pictures/yogahome.jpg' %}" alt="yoga image">
-               </div>
+               </div>-->
             
 
             <div class="quote-box">
-                <p>"Yoga is the journey of the self,<br> through the self, <br>to the self."</p>
-                <span>- The Bhagavad Gita</span>
+                <!--<p>"Yoga is the journey of the self,<br> through the self, <br>to the self."</p>
+                <span>- The Bhagavad Gita</span>-->
+
+                <h1>YOGA <span class="auto-type"></span></h1>
             </div>
 
     </section>
@@ -251,6 +253,11 @@ function highlightText() {
   searchAndHighlight(document.body);
 }
 
+
+//////-----------------auto type js-----------------//////
+//yaha se
+     
+
 //ye chl rha hai
 // function highlightText() {
 //   // Purane highlights hatao
@@ -297,6 +304,24 @@ function highlightText() {
   }
 }*/
 
+
+</script>
+
+</footer>
+</section>
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["A journey to the self, through the self.",
+         "art of waking up to life.", "शरीर, मन और आत्मा का संगम है", "तन को शक्ति और मन को स्थिरता देता है"],
+        typeSpeed: 40,
+        backSpeed: 60,
+        loop: true
+     });
 
 </script>
 
