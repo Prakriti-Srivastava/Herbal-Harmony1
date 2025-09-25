@@ -28,3 +28,5 @@ def herb(request):
 def medherb(request):
     return render(request, 'medherb.html')
 
+def childyoga(request):
+    return render(request, 'childyoga.html')

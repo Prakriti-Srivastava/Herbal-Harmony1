@@ -62,8 +62,6 @@
   padding: 20px;                                    /* andar ka space */
   font-family: 'Poppins', sans-serif;                  /* font style */
   /*background: rgba(255, 255, 255, 0.8);             /* halka transparent background */
-
-
   color: #704a4a;                                 /* text color */
  /* text-align: left; */
                         
@@ -83,6 +81,23 @@
   color: #080808;                                 /* thoda halka color */
 }
 
+.btn{
+    display: block;                          /* inline block */
+    background: #8de7c0;                           /* herbal green */
+    color: #040404;                                /* dark text */
+    padding: 10px 20px;                            /* andar ka space */
+    border-radius: 10px;                           /* gol corners */
+    text-decoration: none;                         /* underline hatana */
+    font-weight: 500;                              /* thoda mota */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);       /* halka shadow */
+    transition: 0.3s ease;                         /* smooth transition */
+    margin: 15px auto;                              /* upar se thoda space */
+    text-align: center;
+}
+
+.btn:hover{
+    background: #0f9251;                           /* thoda dark herbal green */
+}
 
   .main{
     margin-top: 30px;                        /* upar se thoda space */

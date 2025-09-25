@@ -79,7 +79,7 @@
      <!-- Cards ko center me rakhne ke liye outer container -->
   <section class="cards">
 
-    <!-- ===== Card 1: standing ===== -->
+    <!-- ===== Card 1: child ===== -->
     <article class="card">
       <!-- Image wala part (upar) -->
       <div class="card__img">              <!-----1------>
@@ -93,28 +93,31 @@
         <span class="title">Yoga for children (5–12 years) helps improve flexibility, focus, and confidence
            while making their body strong and mind calm in a playful way</span>
       </div>
+      <a href="{% url 'childyoga'%}" class="btn">Know More</a>
     </article>
 
 
 
 
-    <!-- ===== Card 2: sitting ===== -->
+    <!-- ===== Card 2: teenagers ===== -->
     <article class="card">
       <div class="card__img">
         <img src="{% static 'pictures/teenpic.jpg' %}" />
       </div>
 
       <div class="card__body">
+        <a href="{% url 'childyoga' %}"></a>
         <h2 class="tag"><b>YOGA FOR TEENAGERS</b></h2><br>
         <span class="title">Yoga for teenagers (13–19 years) helps reduce stress, improve posture,
           boost confidence, and maintain physical fitness during growth years</span>
       </div>
+      
     </article>
 
 
 
 
-    <!-- ===== Card 3: prone ===== -->
+    <!-- ===== Card 3: adults ===== -->
      <article class="card">
       <div class="card__img">
         <img src="{% static 'pictures/adults.jpg' %}" />
@@ -128,7 +131,7 @@
     </article>
 
 
-  <!-- ===== Card 4:  ===== -->
+  <!-- ===== Card 4:middleage  ===== -->
    <article class="card">
       <div class="card__img">
         <img src="{% static 'pictures/middleage.jpg' %}" />
@@ -142,7 +145,7 @@
     </article>
 
 
-  <!-- ===== Card 5:  ===== -->
+  <!-- ===== Card 5: seniors ===== -->
    <article class="card">
       <div class="card__img">
         <img src="{% static 'pictures/seniors.jpg' %}" />
@@ -317,10 +320,11 @@ function highlightText() {
 <script>
     var typed = new Typed(".auto-type", {
         strings: ["A journey to the self, through the self.",
-         "art of waking up to life.", "शरीर, मन और आत्मा का संगम है", "तन को शक्ति और मन को स्थिरता देता है"],
+        "art of waking up to life.", "शरीर, मन और आत्मा का संगम है", "तन को शक्ति और मन को स्थिरता देता है"],
         typeSpeed: 40,
         backSpeed: 60,
         loop: true
+        
      });
 
 </script>
