@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <title>Herbal Harmony - AI Chat</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'ai' %}">AI Chat</a></li>
+            <li><a href="#Treatment">Treatment</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- AI Section -->
+    <section class="ai-section" style="padding:20px;">
+        <h2>Get Personalized Herbal Remedies & Yoga Plan</h2>
+        
+        <input type="text" id="illness" placeholder="Enter your symptom (e.g., headache)">
+        <input type="text" id="age" placeholder="Enter your age">
+        <input type="text" id="duration" placeholder="Goal/Duration (e.g., stress relief)">
+        <button id="getRemedyBtn">Get Herbal Remedies</button>
+
+        <div id="aiResult" style="margin-top:20px; padding:10px; border:1px solid #ccc;"></div>
+    </section>
+
+    <!-- CSRF token for fetch -->
+    <script>
+        const csrfToken = '{{ csrf_token }}';
+
+        document.getElementById("getRemedyBtn").addEventListener("click", async () => {
+            const illness = document.getElementById("illness").value;
+            const age = document.getElementById("age").value;
+            const duration = document.getElementById("duration").value;
+
+            const responseDiv = document.getElementById("aiResult");
+            responseDiv.innerHTML = "Loading...";
+
+            try {
+                const response = await fetch("{% url 'get_ai_remedy' %}", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": csrfToken
+                    },
+                    body: JSON.stringify({ illness, age, duration })
+                });
+
+                const data = await response.json();
+
+                if(data.error){
+                    responseDiv.innerHTML = `<p style="color:red">${data.error}</p>`;
+                } else {
+                    // Display herbal remedies
+                    let remediesText = "";
+                    for(const key in data.remedies){
+                        remediesText += `<p><strong>${key}:</strong> ${data.remedies[key]}</p>`;
+                    }
+
+                    let yogaText = "";
+                    for(const key in data.yoga){
+                        yogaText += `<p><strong>${key}:</strong> ${data.yoga[key]}</p>`;
+                    }
+
+                    responseDiv.innerHTML = `<h3>Herbal Remedies:</h3>${remediesText}<h3>Yoga/Exercises:</h3>${yogaText}`;
+                }
+            } catch (err) {
+                responseDiv.innerHTML = `<p style="color:red">Error: ${err}</p>`;
+            }
+        });
+    </script>
+
+</body>
+</html>
