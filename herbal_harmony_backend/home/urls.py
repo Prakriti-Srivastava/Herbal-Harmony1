@@ -15,5 +15,8 @@ urlpatterns = [
    path('childyoga', views.childyoga, name='childyoga'),
    path('ai', views.ai, name='ai'),
    path('get_ai_remedy', views.get_ai_remedy, name='get_ai_remedy'),
+   path('healthform', views.healthform, name='healthform'),
+   path('tulsi', views.tulsi, name='tulsi'),
+   path('kapalbhati', views.kapalbhati, name='kapalbhati'),
    
 ]

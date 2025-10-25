@@ -5,6 +5,11 @@ from django.utils.safestring import mark_safe
 from django.http import JsonResponse
 import json
 
+from .form import HealthForm 
+from .ai import getRemedyAndYoga
+
+
+
 # Create your views here.
 #def index(request):
     #return render(request, 'index.html')
@@ -35,6 +40,7 @@ def childyoga(request):
 
 def ai(request):
     return render(request, 'ai.html')
+
 
 def get_ai_remedy(request):
     if request.method == 'POST':
@@ -95,3 +101,41 @@ def get_ai_remedy(request):
         #"""
         return JsonResponse(response)
     return JsonResponse({"error": "Invalid request method."}, status=400)
+
+
+
+def healthform(request):
+    if request.method == 'POST':
+        form = HealthForm(request.POST)
+        if form.is_valid():
+            age_group = form.cleaned_data['age_group']
+            symptom = form.cleaned_data['symptom']
+            # print("Age Group : ", age_group)
+            # print("Symptom : ", symptom)
+            result = getRemedyAndYoga(age_group, symptom)
+
+            if result:
+                return render(request, 'output.html', {
+                    'age': age_group,
+                    'symptom': symptom,
+                    'remedy': result['remedy'],
+                    'yoga': result['yoga'],
+                    'link_remedy': result['link_remedy'],
+                    'link_yoga': result['link_yoga']
+                })
+            else:
+                return render(request, 'output.html', {
+                    'error': 'No matching remedy found for your input. Try again!'
+                })
+            
+            # response_message = f"Form submitted successfully! Age Group: {age_group}, Symptom: {symptom}"
+            # return render(request, 'output.html', {'Age Group': age_group, 'Symptom': symptom})
+    else:
+        form = HealthForm()
+    return render(request, 'healthform.html', {'form': form})
+
+def tulsi(request):
+    return render(request,'tulsi.html')
+
+def kapalbhati(request):
+    return render(request,'kapalbhati.html')
