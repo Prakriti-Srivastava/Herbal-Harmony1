@@ -18,5 +18,6 @@ urlpatterns = [
    path('healthform', views.healthform, name='healthform'),
    path('tulsi', views.tulsi, name='tulsi'),
    path('kapalbhati', views.kapalbhati, name='kapalbhati'),
+   path('Treatment', views.Treatment, name='Treatment'),
    
 ]

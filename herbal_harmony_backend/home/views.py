@@ -139,3 +139,6 @@ def tulsi(request):
 
 def kapalbhati(request):
     return render(request,'kapalbhati.html')
+
+def Treatment(request):
+    return render(request,'Treatment.html')
