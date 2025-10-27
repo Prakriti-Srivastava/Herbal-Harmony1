@@ -3,9 +3,11 @@ from django import forms
 # Django ka 'forms.Form' ek simple form create karne ke liye use hota hai
 class HealthForm(forms.Form):
     AGE_CHOICES = [
-        ('child', 'child'),
-        ('adult', 'adult'),
-        ('elderly', 'elderly'),
+        ('child', 'Child(0-12)'),
+        ('teen', 'Teenagers(13-19)'),
+        ('adult', 'Adult(20-40)'),
+        ('middle_aged', 'Middle Aged(41-60)'),
+        ('elderly', 'Elderly(60+)'),
     ]
 
     # yahan 2 fields banayi gayi hain

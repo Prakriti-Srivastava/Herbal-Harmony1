@@ -1,49 +1,86 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/healthform.css' %}">
     <title>AI Health Results</title>
 </head>
 <body>
-    <h2>🌿 AI Suggested Wellness Plan</h2>
+    <!-- Navigation bar -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
 
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">search</button>
+    </nav>
+
+<section class="ai-section" style="padding:20px;">
+    <h1>Your Personalized Herbal Remedies & Yoga Plan</h1>
+    <h2> AI Suggestions 🤖</h2>
+    <!-- Display Age Group and Symptom -->
     {% if remedy %}
         <p><b>Age Group:</b> {{ age }}</p>
         <p><b>Symptom:</b> {{ symptom }}</p>
 
-        <h3>💊 Remedy Suggestion:</h3>
-        <a href="{{ result.link_remedy }}">{{ remedy }}</a>
-
-        <h3>🧘 Yoga Suggestion:</h3>
-        <a href="{{ result.link_yoga }}">{{ yoga }}</a>
-    {% else %}
-        <p style="color:red;">Sorry, no match found.</p>
-    {% endif %}
-</body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>AI Health Results</title>
-</head>
-<body>
-    <h2>🌿 AI Suggested Wellness Plan</h2>
-
-    {% if remedy %}
-        <p><b>Age Group:</b> {{ age_group }}</p>
-        <p><b>Symptom:</b> {{ symptom }}</p>
-
-        <h3>💊 Remedy Suggestion:</h3>
+        <!-- Display Remedy and Yoga Suggestions -->
+        <h3>Herbal Remedies 🌿:</h3>
         <a href="{{ link_remedy }}">{{ remedy }}</a>
 
-        <h3>🧘 Yoga Suggestion:</h3>
+        <h3>Yoga Suggestion 🧘‍♀️:</h3>
         <a href="{{ link_yoga }}">{{ yoga }}</a>
     {% else %}
         <p style="color:red;">Sorry, no match found.</p>
     {% endif %}
+
+</section>
+
+    <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Yoga</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
-</html> -->
+</html>
 
 
 
@@ -110,27 +147,130 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Remedy Suggestion</title>
-</head>
-<body>
-    {% if error %}
-        <h3 style="color:red;">{{ error }}</h3>
-    {% else %}
-        <h3>🌿 Personalized Suggestions</h3>
-        <p><strong>Age Group:</strong> {{ age_group }}</p>
-        <p><strong>Symptom:</strong> {{ Symptom }}</p>
-        <p><strong>Recommended Remedy:</strong> 
-            <a href="{{ link_remedy }}">{{ remedy }}</a>
-        </p>
-        <p><strong>Recommended Yoga:</strong> 
-            <a href="{{ link_yoga }}">{{ yoga }}</a>
-        </p>
-    {% endif %}
-</body>
-</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

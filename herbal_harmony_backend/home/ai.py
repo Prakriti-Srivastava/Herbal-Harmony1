@@ -1,38 +1,56 @@
 from pymongo import MongoClient
-from django.shortcuts import render
 
-# Step 1 – MongoDB connection
+
+# MongoDB connection
 client = MongoClient("mongodb://localhost:27017/")
 db = client['herbal_harmony']
-herbs_collection = db['herbs']
-yoga_collection = db['yoga']
+herbscol = db['herbs']
+yogacol = db['yoga']
 
+# Free text keyword mapping
+symptomkeywords = {
+    "cold": ["cold", "jhukham", "sardi", "thand lag rahi hai", "mujhe jhukham hai", "nasa band hai"],
+    "headache": ["sir dard", "headache", "sir me dard ho raha hai", "dard sir ka"],
+    "fever": ["bukhaar", "fever", "bukhar", "body temperature badh gaya"]
+}
 
 def getRemedyAndYoga(age_group, symptom):
-    # Clean input (avoid extra spaces, match case)
+    # Normalize inputs
     age_group = age_group.strip().lower()
     symptom = symptom.strip().lower()
 
-    print("🔍 User Input:", symptom, age_group)  # debug print
-    print("📦 Available databases:", client.list_database_names())
-    print("📚 Collections in herbal_harmony:", db.list_collection_names())
+    # Map free text input to symptom keyword
+    symptomkey = None
+    for key, phrases in symptomkeywords.items():
+        for phrase in phrases:
+            if phrase in symptom:
+                symptomkey = key
+                break
+        if symptomkey:
+            break
 
-    # Step 2 – Remedy find karo (case-insensitive)
-    remedy = herbs_collection.find_one({
-        "Symptom": {"$regex": f"^{symptom}$", "$options": "i"},
+    if not symptomkey:
+        print("❌ No matching symptom keyword found for input:", symptom)
+        return None
+
+    print("🔍 User Input:", symptom, "→ Mapped Symptom:", symptomkey)
+
+    # Query MongoDB using mapped keyword
+    remedy = herbscol.find_one({
+        "Symptom": {"$regex": f"^{symptomkey}$", "$options": "i"},
         "age_group": {"$regex": f"^{age_group}$", "$options": "i"}
     })
 
-    # Step 3 – Yoga find karo (case-insensitive)
-    yoga = yoga_collection.find_one({
-        "Symptom": {"$regex": f"^{symptom}$", "$options": "i"},
+
+    yoga = yogacol.find_one({
+        "Symptom": {"$regex": f"^{symptomkey}$", "$options": "i"},
         "age_group": {"$regex": f"^{age_group}$", "$options": "i"}
     })
 
     print("🍃 Remedy found:", remedy)
     print("🧘 Yoga found:", yoga)
+    # Return results
 
-    # Step 4 – Return if any result found
     if remedy or yoga:
         return {
             "remedy": remedy['remedy'] if remedy else "No remedy found",
@@ -42,7 +60,7 @@ def getRemedyAndYoga(age_group, symptom):
         }
     else:
         return None
-
+# # ai.py
 
 
 
