@@ -1,5 +1,13 @@
-from ai import getRemedyAndYoga
+from pymongo import MongoClient
 
-result = getRemedyAndYoga("child", "cold")
-print(result)
+client = MongoClient("mongodb://localhost:27017/")
+db = client['herbal_harmony']
+herbs = db['herbs']
+
+result = herbs.find_one({
+    "Symptom": "cold",
+    "age_group": "child"
+})
+
+print("Result:", result)
 

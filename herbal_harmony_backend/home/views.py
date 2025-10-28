@@ -105,16 +105,27 @@ def get_ai_remedy(request):
 
 
 def healthform(request):
+    print("👉 Entered healthform view")   # line after def healthform(request):
+    result = None
     if request.method == 'POST':
         form = HealthForm(request.POST)
+        
+
         if form.is_valid():
+
             age_group = form.cleaned_data['age_group']
             symptom = form.cleaned_data['symptom']
             # print("Age Group : ", age_group)
             # print("Symptom : ", symptom)
+            print("📥 Form inputs:",(age_group, symptom))
             result = getRemedyAndYoga(age_group, symptom)
+            print("📤 AI function returned:", result)
+            # print("Form inputs received:", age_group, symptom)
+            # print("Result : ", result)
+        
 
-            if result:
+
+            if result:     
                 return render(request, 'output.html', {
                     'age': age_group,
                     'symptom': symptom,
@@ -139,3 +150,6 @@ def tulsi(request):
 
 def kapalbhati(request):
     return render(request,'kapalbhati.html')
+
+def Treatment(request):
+    return render(request,'Treatment.html')
