@@ -4,7 +4,7 @@ from django import forms
 class HealthForm(forms.Form):
     AGE_CHOICES = [
         ('child', 'Child(0-12)'),
-        ('teen', 'Teenagers(13-19)'),
+        ('teenagers', 'Teenagers(13-19)'),
         ('adult', 'Adult(20-40)'),
         ('middle_aged', 'Middle Aged(41-60)'),
         ('elderly', 'Elderly(60+)'),
