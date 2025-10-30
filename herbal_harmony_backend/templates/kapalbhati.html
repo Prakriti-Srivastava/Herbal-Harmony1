@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %}
 <!DOCTYPE html>
 <html  lang="eng">
 <head>
@@ -9,12 +9,12 @@
 
 </head>
 <body>
-                         <!--_______________logo and heading _____________________ -->
+                         <!--_______________logo and heading _____________________ --
   <!--  <div class="logo"><img src="pictures/Black White Minimalist Elegant Beauty House Initial Logo (1).png" alt="logo" width="200" height="160">
           <h1>HERBAL HARMONY</h1>
            <h3>The Balanced Path</h3>
     </div> -->
-                            <!-- _____________________ navigation bar___________________-->
+                            <!-- _____________________ navigation bar___________________--
         <nav class="navbar background">
            
                 <ul class="nav-list">
@@ -35,14 +35,151 @@
                 <button class="btn btn-sm">search</button>
              </nav>
 
+              <!-- _____________________ Balasana Pranayama _____________________--
+    <section class="Balasana-pranayama" style="padding:20px;">
+        <div class="balasana-content">
+          <img src="{% static 'pictures/childsPose.png' %}" alt="Balasana Pose" width="40%" height="40%">
+          <div class="balasana-text">
+            <h1>BALASANA (CHILD POSE)</h1>
+            <p>Balasana, or Child's Pose, is a gentle resting pose that calms the mind and relieves tension in the body. It is often used as a resting position during yoga practice.</p>
+            <h2>Steps to Perform Balasana:</h2>
+            <ol>
+              <li>Kneel on the floor with your big toes touching and knees spread apart to a comfortable width.</li>
+              <li>Exhale and lower your torso between your thighs, extending your arms forward or resting them alongside your body.</li>
+              <li>Rest your forehead on the mat and relax your entire body.</li>
+              <li>Hold the pose for several breaths, allowing your body to sink deeper into relaxation.</li>
+              <li>To release, gently lift your torso back up to a kneeling position.</li>
+            </ol>
+            <h2>Benefits of Balasana:</h2>
+            <ul>
+              <li>Stretches the hips, thighs, and ankles.</li>
+              <li>Calms the mind and relieves stress.</li>
+              <li>Alleviates back and neck pain when performed with proper alignment.</li>
+              <li>Improves circulation to the head and relieves fatigue.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
 
 
 
 
 
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- --
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Yoga</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- 
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- Footer Bottom 
+    <div class="footer-bottom">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html> -->
 
 
 
+{% load static %}
+<!DOCTYPE html>
+<html  lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>BALASANA</title>
+
+</head>
+<body>
+  <div class="heading name">
+
+    <h1>Balasana Pose</h1>
+  </div>
+    <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="#Treatment">Treatment</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+           
+             
+                <input type="text" name="search" id="search">
+                <button class="btn-search">search</button>
+             </nav>
+
+              <!-- _____________________ Balasana Pranayama _____________________ -->
+    
+    <section class="balasana-hero">
+      <div class="balasana-overlay"></div>
+      <!-- <img src="{% static 'pictures/childsPose.png' %}" alt="Balasana Pose" width="40%" height="40%"> -->
+    </section>
+
+    <section class="balasana-info">
+      <div class="balasana-box">
+      <h2>BALASANA (CHILD POSE)</h2>
+      <p>Balasana, or Child's Pose, is a gentle resting pose that calms the mind and relieves tension in the body. It is often used as a resting position during yoga practice.</p>
+      </div>
+    </section>
+
+    <!-- </div> -->
+
+    <div class="section1">
+            <h2>Steps to Perform Balasana:</h2>
+            <ol>
+              <li>Kneel on the floor with your big toes touching and knees spread apart to a comfortable width.</li>
+              <li>Exhale and lower your torso between your thighs, extending your arms forward or resting them alongside your body.</li>
+              <li>Rest your forehead on the mat and relax your entire body.</li>
+              <li>Hold the pose for several breaths, allowing your body to sink deeper into relaxation.</li>
+              <li>To release, gently lift your torso back up to a kneeling position.</li>
+            </ol>
+    </div>
+
+    <div class="section2">
+            <h2>Benefits of Balasana:</h2>
+            <ul>
+              <li>Stretches the hips, thighs, and ankles.</li>
+              <li>Calms the mind and relieves stress.</li>
+              <li>Alleviates back and neck pain when performed with proper alignment.</li>
+              <li>Improves circulation to the head and relieves fatigue.</li>
+            </ul>
+    </div>
+
+
+
+
+ <!-- -----------------footer div--------------------- -->
 <footer>
     <div class="footer-container">
       <div class="footer-column">
@@ -71,19 +208,11 @@
       
     </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
       <p>2025 Herbal Harmony. All rights reserved.</p>
     </div>
   </footer>
-
-
-   
-
-
-
-
-
-
+  
 </body>
 </html>
