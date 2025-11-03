@@ -117,60 +117,15 @@ def getRemedyAndYoga(age_group, symptom):
 
 
 
-# from pymongo import MongoClient
-
-# # Step 1 – MongoDB connection
-# client = MongoClient("mongodb://localhost:27017/")  # localhost par mongo run hota hai
-# db = client['herbal_harmony']  # database ka naam
-# herbs_collection = db['herbs']
-# yoga_collection = db['yoga']
-
-# def getRemedyAndYoga(age_group, symptom):
-
-#     age_group = str(age_group).strip().lower()
-#     symptom = str(symptom).strip().lower()
 
 
-#     # Step 2 – Remedy find karo
-#     remedy = herbs_collection.find_one({
-#         "Symptom": {"$regex": f"^{symptom}$", "$options": "i"},
-#         "age_group": {"$regex": f"^{age_group}$", "$options": "i"}
-#         # "Symptom": symptom,
-#         # "age_group": age_group
-#     })
 
-#     # Step 3 – Yoga find karo
-#     yoga = yoga_collection.find_one({
-#         "Symptom": {"$regex": f"^{symptom}$", "$options": "i"},
-#         "age_group": {"$regex": f"^{age_group}$", "$options": "i"}
-#         # "Symptom": symptom,
-#         # "age_group": age_group
-#     })
 
-#     print("🔍 Herb result:", remedy)
-#     print("🧘 Yoga result:", yoga)
 
-#     # Step 4 – Output return karo
-#     if remedy and yoga:
-#         return {
-#             "remedy": remedy['remedy'] if remedy else "No remedy found",
-#             "link_remedy": remedy['link'] if remedy else "No remedy found",
-#             "yoga": yoga['yoga'] if yoga else "No yoga found",
-#             "link_yoga": yoga['link'] if yoga else "No yoga found"
-#         }
-#     else:
-#         return None
 
-    
 
-    # # symptom ko lowercase me le lo (user uppercase bhi likh sakta hai)
-    # symptom = symptom.lower()
 
-    # # ab logic lagao
-    # if age_group in remedies and symptom in remedies[age_group]:
-    #     return remedies[age_group][symptom]
-    # else:
-    #     return None
+
 
 
 
