@@ -11,7 +11,14 @@ yogacol = db['yoga']
 symptomkeywords = {
     "cold": ["cold", "jhukham", "sardi", "thand lag rahi hai", "mujhe jhukham hai", "nasa band hai"],
     "headache": ["sir dard", "headache", "sir me dard ho raha hai", "dard sir ka"],
-    "fever": ["bukhaar", "fever", "bukhar", "body temperature badh gaya"]
+    "fever": ["bukhaar", "fever", "bukhar", "body temperature badh gaya"],
+    "stress": ["stress", "tanaav", "mujhe stress hai", "dimag par bojh hai", "mera dimag khrab ho rha hai"],
+    "joint pain": ["joint pain", "jodon ka dard", "gathiya", "mere jodon me dard hai", "haddi dard"],
+    "fatigue": ["thakan", "fatigue", "bahut thak gaya hoon", "energy kam hai", "kamzori mehsoos ho rhi hai"],
+    "anxiety": ["chinta", "anxiety", "mujhe chinta ho rhi hai", "nervousness", "bechaini"],
+    "insomnia": ["neend na aana", "insomnia", "sone me dikkat", "neend nahi aati", "sleep problems"],
+    "digestive issues": ["pachak samasya", "digestive issues", "pet ki problem", "indigestion", "pet dard", "khana hazam nahi hota"],
+    "vomiting": ["ulti", "vomiting", "mujhe ulti ho rhi hai", "pet kharab hai", "nausea"],
 }
 
 def getRemedyAndYoga(age_group, symptom):
