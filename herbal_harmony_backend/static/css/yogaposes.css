@@ -302,9 +302,9 @@ footer {
   width: 100%;
   height: 100vh;
   /* background: url('../pictures/ChildsPose.png'); */
-  background-size: cover;
+  /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   overflow: hidden;
   display: flex;
     justify-content: center;
