@@ -61,10 +61,39 @@
         <div class="Why">
           <img src="{% static 'pictures/why.png' %}" alt="Why" width="75%"   height="30%">
         </div>
+         <div class="why">
+          <img src="{% static 'pictures/How.png' %}" alt="How" width="70%"   height="30%">
+          <img src="{% static 'pictures/medicine.svg' %}" alt="design" width="25%" height="8%">
+        </div>
 
            <!--  -------------------card section---------------  -->
+           <section class=" thirdSection">
+            
+              <h1>Treatment for Diseases--- -></h1>
+              <a href="{% url 'Treatment' %}"><button class="diseases">Know More..</button></a>
+              <a href="{% url 'Fever' %}" class="Fever-link">
+                  <div class="card">
+                  <img src="{% static 'pictures/high fever.webp' %}" alt="herb" width="">
+                  <h3>Fever</h3> <br>
+                 </div>
+                </a>
+                 <a href="{% url 'Headache' %}" class="Headache-link">
+                  <div class="card">
+                  <img src="{% static 'pictures/headache.jpeg' %}" alt="herb" width="">
+                  <h3>Headache</h3>
+                   <br>
+                  </div>
+                 </a>
+                 <a href="{% url 'Cold' %}" class="Cold-link">
+             <div class="card">
+                <img src="{% static 'pictures/cold.webp' %}" alt="herb" width="">
+                  <h3>Cold</h3><br>
+                   </a>
+                 </div>
+           </section>
+
         <section class=" secondSection">
-          <h1>For Detailed knowledge....</h1>
+          <h1>For Detailed knowledge---- -></h1>
             <div class="card">
               <img src="{% static 'pictures/herb.jpg' %}" alt="herb" width="">
                   <h2>HERBS</h2>
@@ -91,6 +120,9 @@
             </div>
 
         </section>
+        <video src="videos/vedio.mp4" type="video/mp4" width="100" height="1000" autoplay loop muted playsinline class="bg-video">
+        <!-- <source src="videos/vedio.mp4" type="video/mp4"> -->
+        </video>
 
  <footer>
     <div class="footer-container">

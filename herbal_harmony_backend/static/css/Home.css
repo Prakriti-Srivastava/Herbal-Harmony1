@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* -------------------------navbar-------------------------- */
 .navbar {
   display: flex;
@@ -70,7 +71,11 @@ body {
 .btn-sm:hover {
   background: #52b788;
 }
+.h1{
+  text-align: center;
+  text-colour:green;
 
+}
 /* ------------------------ logo SECTION --------------------------- */
 .firstSection {
   display: flex;
@@ -117,6 +122,45 @@ body {
 
 
 /* ----------------------------- CARD SECTION ----------------------------- */
+.thirdSection {
+ text-align: center;
+  background: linear-gradient(180deg, #f7f3ff, #ffffff);
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background-color: #1b4332;
+  flex-wrap: wrap;
+  gap: 25px;
+  display:flex;
+}
+.thirdSection h1 {
+  color: #6c4ab6; /* lavender theme */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 5px rgba(108, 74, 182, 0.15);
+}
+
+/* "Know More" button */
+.diseases {
+  background: #6c4ab6;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-bottom: 30px;
+}
+
+.diseases:hover {
+  background: #563d99;
+  transform: translateY(-3px);
+}
+
+
 .secondSection {
   display: flex;
   justify-content: center;
@@ -176,6 +220,16 @@ body {
 .herb:hover, .PhysicalFitness:hover, .MentalHealth:hover {
   background: #40916c;
   transform: scale(1.05);
+}
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* min-width: 100%;
+  min-height: 100%; */
+  object-fit: cover;
+  /*z-index: -1; /* keeps it behind text */
+  opacity: 0.8; /* optional: makes it soft */
 }
 
 /* ========== FOOTER ========== */
