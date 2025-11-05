@@ -153,3 +153,14 @@ def kapalbhati(request):
 
 def Treatment(request):
     return render(request,'Treatment.html')
+
+def Fever(request):
+    return render(request,'Fever.html')
+def Cold(request):
+    return render(request,'Cold.html')
+def Bodypain(request):
+    return render(request,'Bodypain.html')
+def Headache(request):
+    return render(request,'Headache.html')
+def Fatigue(request):
+    return render(request,'Fatigue.html')

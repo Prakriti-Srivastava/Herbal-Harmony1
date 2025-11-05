@@ -100,6 +100,10 @@ body {
    gap: 1.5rem;
   
 }
+a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* keeps the card's text color */
+}
 
 .card {
   background: #fff;
@@ -129,6 +133,7 @@ body {
   color: #000000;
   font-size: 1.5rem;
   padding: 0 1rem;
+
 }
 
 .card h5 {
