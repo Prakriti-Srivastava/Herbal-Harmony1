@@ -19,5 +19,9 @@ urlpatterns = [
    path('tulsi', views.tulsi, name='tulsi'),
    path('kapalbhati', views.kapalbhati, name='kapalbhati'),
    path('Treatment', views.Treatment, name='Treatment'),
-   
+   path('Fever', views.Fever, name='Fever'),
+   path('Cold', views.Cold, name='Cold'),
+   path('Bodypain', views.Bodypain, name='Bodypain'),
+   path('Headache', views.Headache, name='Headache'),
+   path('Fatigue', views.Fatigue, name='Fatigue'),
 ]

@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html  lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
-    <link rel="stylesheet" href="Cold.css">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
     <title>Herbal Harmony</title>
 
 </head>
@@ -15,12 +16,11 @@
     <nav class="navbar background">
            
                 <ul class="nav-list">
-                    <div class="logo"><a href="Home"><img src="pictures/logo.png" alt="logo" width="30%"></a></div>
+                    <div class="logo"><a href="Home"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
 
-          
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Yoga">Yoga</a></li>
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -43,6 +43,7 @@
     <p>It's important to recognize these symptoms early for effective treatment.</p>
 </div>
 <div class="section2">
+   
     <h2>Herbal Remedies for Fever</h2>
     <p>Several herbal remedies can help alleviate Fever symptoms:</p>
     <ol>
@@ -169,10 +170,10 @@
       <!-- -------------------Quick Links-------------------- -->
       <div class="footer-column">
         <h3>Quick Links</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Yoga</a>
-        <a href="#">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="{% url 'yoga' %}">Yoga</a>
+        <a href="#Contact">Contact us</a>
       </div>
 
       <!-- -------------------Contact Info-------------------- -->

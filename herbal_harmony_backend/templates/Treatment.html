@@ -30,32 +30,42 @@
                 <button class="btn-search">search</button>
              </nav>
               <section class="secondSection">
-            <div class="card">
-              <img src="{% static 'pictures/high fever.webp' %}" alt="herb" width="">
+                <a href="{% url 'Fever' %}" class="Fever-link">
+                  <div class="card">
+                  <img src="{% static 'pictures/high fever.webp' %}" alt="herb" width="">
                   <h3>Fever</h3> <br>
-            </div>
+                 </div>
+                </a>
           
-                <div class="card">
-                 <img src="{% static 'pictures/headache.jpeg' %}" alt="herb" width="">
-                <h3>Headache</h3>
-                 <br>
-            </div>
-            <div class="card">
-                 <img src="{% static 'pictures/cold.webp' %}" alt="herb" width="">
-                  <h3>Cold</h3>
-                  <br>
-            </div>
+             <a href="{% url 'Headache' %}" class="Headache-link">
+                  <div class="card">
+                  <img src="{% static 'pictures/headache.jpeg' %}" alt="herb" width="">
+                  <h3>Headache</h3>
+                   <br>
+                  </div>
+                 </a>
+           <a href="{% url 'Cold' %}" class="Cold-link">
              <div class="card">
-                 <img src="{% static 'pictures/bodypain.jpeg' %}" alt="herb" width="">
+                <img src="{% static 'pictures/cold.webp' %}" alt="herb" width="">
+                  <h3>Cold</h3><br>
+                 </div>
+          </a>
+            <a href="{% url 'Bodypain' %}" class="Bodypain-link">
+              <div class="card">
+                  <img src="{% static 'pictures/bodypain.jpeg' %}" alt="herb" width="">
                   <h3>Body Pain</h3>
                   <br>
-            </div>
-             <div class="card">
-                 <img src="{% static 'pictures/fatigue.webp' %}" alt="herb" width="">
+               </div>
+           </a>
+            <a href="{% url 'Fatigue' %}" class="Fatigue-link">
+              <div class="card">
+                  <img src="{% static 'pictures/fatigue.webp' %}" alt="herb" width="">
                   <h3>Fatigue</h3>
                   <br>
-            </div>
-             <div class="card">
+              </div> 
+           </a>
+             
+               <div class="card">
                  <img src="{% static 'pictures/peppermint.jpg' %}" alt="herb" width="">
                   <h3>Weak Immunity</h3>
                   <br>
