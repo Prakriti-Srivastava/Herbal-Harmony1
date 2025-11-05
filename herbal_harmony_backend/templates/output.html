@@ -26,9 +26,10 @@
     </nav>
 
 <section class="ai-section" style="padding:20px;">
-    <h1>Your Personalized Herbal Remedies & Yoga Plan</h1>
-    <h2> AI Suggestions 🤖</h2>
+    <h1><strong>Your Personalized Herbal Remedies & Yoga Plan</strong></h1>
+    <h2> AI Suggestions</h2>
     
+<div class="aisection">
     <!-- Display Age Group and Symptom -->
     {% if remedy %}
         <p><b>Age Group:</b> {{ age }}</p>
@@ -43,6 +44,7 @@
     {% else %}
         <p style="color:red;">Sorry, no match found.</p>
     {% endif %}
+  </div>
 
 </section>
 

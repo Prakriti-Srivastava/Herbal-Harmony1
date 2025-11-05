@@ -14,7 +14,7 @@ urlpatterns = [
    path('medherb', views.medherb, name='medherb'),
    path('childyoga', views.childyoga, name='childyoga'),
    path('ai', views.ai, name='ai'),
-   path('get_ai_remedy', views.get_ai_remedy, name='get_ai_remedy'),
+   # path('get_ai_remedy', views.get_ai_remedy, name='get_ai_remedy'),
    path('healthform', views.healthform, name='healthform'),
    path('tulsi', views.tulsi, name='tulsi'),
    path('kapalbhati', views.kapalbhati, name='kapalbhati'),
@@ -24,4 +24,7 @@ urlpatterns = [
    path('Bodypain', views.Bodypain, name='Bodypain'),
    path('Headache', views.Headache, name='Headache'),
    path('Fatigue', views.Fatigue, name='Fatigue'),
+   path('basic', views.basic, name='basic'),
+   path('tadasana', views.tadasana, name='tadasana'),
+   path('setubandhasana', views.setubandhasana, name='setubandhasana'),
 ]
