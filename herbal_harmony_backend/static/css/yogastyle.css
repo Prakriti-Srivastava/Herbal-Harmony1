@@ -3,21 +3,84 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ------------------------new-navbar-------------------------- */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background:rgb(37 118 47);
+  /*position: sticky;
+  top: 0;
+  z-index: 1000;
+  width:0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #95d5b2;
+}
+
+.logo img {
+  max-height: 80px;
+}
+
+#search {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  align-items: right;
+  width: 370px;
+
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  margin-left: 5px;
+  background: #40916c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-sm:hover {
+  background: #52b788;
+} */
+
+/*----------------------------navbar------------------------*/
 .navbar{
     overflow: hidden; /* Clear floats */
-    position: fixed; /* Fixed position */ 
-    background-color: rgb(183, 19, 19); /* Dark herbal green */
+    position: fixed; /* Fixed position  */
+    background: rgb(46, 122, 76); /* Dark herbal green*/ 
     width: 100%; /* Full width */
-   /* z-index: 100; /* Sit on top */
+    z-index: 100; /* Sit on top*/ 
     top:0; /* Stay on top */
     left:0;
   }
 .nav-list {
     display:flex;        /* Horizontal layout */
-    align-items: center;                  /* Vertically center */
+    align-items: center;                  /* Vertically center*/ 
     position: fixed;                    /* Fixed position */
-    /*background-color: rgb(183, 19, 19); /* Dark herbal green */
-    justify-content: flex-end;           /* Align to right */
+    background-color: rgb(45, 141, 73); /* Dark herbal green */
+    justify-content: flex-end;           /* Align to right*/ 
     width: 100%;                       /* Full width */
     margin: 0;                      /* No default margin */
     padding: 0 20px;                 /* Horizontal padding */
@@ -26,8 +89,8 @@
   }
 .nav-list li{
     list-style: none;           /* No bullets */
-    color: rgb(14, 14, 14);                /* Text color */
-    padding: 26px 30px;         /* Spacing */
+    color: rgb(14, 14, 14);                /* Text color*/ 
+    padding: 26px 30px;         /* Spacing*/ 
 
   }
 .nav-list li a{
@@ -38,10 +101,10 @@
   .nav-list li a:hover{
         text-decoration: none;
         color : rgb(75, 197, 95);
-  }
+  } 
 
-.background-firstSection {
-    background-image: url('../pictures/yogamainbg.jpg'); /* Background image */
+ .background-firstSection {
+    background-image: url('../pictures/yogamainbg.jpg'); /* Background image*/ 
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
@@ -186,7 +249,7 @@
 }
 
 footer {
-      background: #8de7c0; /* Dark herbal green */
+      background: #3e8968; /* Dark herbal green */
       color: #040404; /* Dark text for contrast */
       margin-top: 40px;
       padding: 40px 20px; /* Increased padding for better spacing */
@@ -204,7 +267,7 @@ footer {
     .footer-column h3 {
       margin-bottom: 12px;
       font-size: 1.2rem;
-      border-bottom: 2px solid #40916c;
+      border-bottom: 2px solid #7aba9d;
       display: inline-block;
       padding-bottom: 5px;
     }
@@ -239,21 +302,21 @@ footer {
 
 
 /* Search bar styles */
-mark {
-  background-color: yellow; /* Highlight color */
-  padding: 0;                /* No extra padding */
-  margin: 0;                 /* No extra margin */
+/* mark {
+  background-color: yellow; /* Highlight color 
+  padding: 0;                /* No extra padding 
+  margin: 0;                 /* No extra margin 
 }
 
 #searchForm {
-  margin: 20px 0;            /* Top and bottom margin */
-  text-align: center;        /* Center align the form */
+  margin: 20px 0;            /* Top and bottom margin 
+  text-align: center;        /* Center align the form 
 }
 
 #searchInput {
-  width: 60%;                /* Input field width */
-  padding: 10px;             /* Padding inside the input */
-  font-size: 1rem;           /* Font size */
-  border: 2px solid #100d0d;    /* Border style */
-  border-radius: 5px;        /* Rounded corners */
+  width: 60%;                /* Input field width 
+  padding: 10px;             /* Padding inside the input 
+  font-size: 1rem;           /* Font size 
+  border: 2px solid #100d0d;    /* Border style 
+  border-radius: 5px;        Rounded corners 
 }

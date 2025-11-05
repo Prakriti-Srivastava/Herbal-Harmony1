@@ -27,7 +27,7 @@
 
 <section class="ai-section" style="padding:20px;">
     <h1>Your Personalized Herbal Remedies & Yoga Plan</h1>
-    <h2> AI Suggestions 🤖</h2>
+    <h2> AI Suggestions </h2>
     
     <!-- Display Age Group and Symptom -->
     {% if remedy %}
@@ -35,10 +35,10 @@
         <p><b>Symptom:</b> {{ symptom }}</p>
 
         <!-- Display Remedy and Yoga Suggestions -->
-        <h3>Herbal Remedies 🌿:</h3>
+        <h3>Herbal Remedies :</h3>
         <a href="{{ link_remedy }}">{{ remedy }}</a>
 
-        <h3>Yoga Suggestion 🧘‍♀️:</h3>
+        <h3>Yoga Suggestion :</h3>
         <a href="{{ link_yoga }}">{{ yoga }}</a>
     {% else %}
         <p style="color:red;">Sorry, no match found.</p>
