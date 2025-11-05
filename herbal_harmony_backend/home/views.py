@@ -95,8 +95,8 @@ def Fever(request):
     return render(request,'Fever.html')
 def Cold(request):
     return render(request,'Cold.html')
-def Bodypain(request):
-    return render(request,'Bodypain.html')
+def bodypain(request):
+    return render(request,'bodypain.html')
 def Headache(request):
     return render(request,'Headache.html')
 def Fatigue(request):
