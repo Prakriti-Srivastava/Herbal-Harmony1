@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html  lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>TADASANA</title>
+
+</head>
+<body>
+  <div class="heading name">
+
+    <h1>Tadasana Pose</h1>
+  </div>
+    <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="#Treatment">Treatment</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+           
+             
+                <input type="text" name="search" id="search">
+                <button class="btn-search">search</button>
+             </nav>
+
+              <!-- _____________________ Balasana Pranayama _____________________ -->
+    
+    <section class="balasana-hero">
+      <div class="balasana-overlay"></div>
+      <img src="{% static 'pictures/Tadasanahome2.jpg' %}" alt="Balasana Pose" width="100%" height="100%">
+    </section>
+
+    <section class="balasana-info">
+      <div class="balasana-box">
+      <h2>TADASANA (MOUNTAIN POSE)</h2>
+      <P>Tadasana, or Mountain Pose, is the foundation of all standing yoga postures. It improves posture, strengthens legs, and brings awareness to balance and alignment.</P>
+      </div>
+    </section>
+
+    <!-- </div> -->
+
+    <div class="section3">
+      <h2>Sanskrit</h2>
+      <p>Tadasana (tah-DAHS-ah-nah)</p>
+      <p>tada = mountain</p>
+      <p>asana = seat; posture</p>
+    </div>
+
+    <div class="section1">
+        <h2>Steps to Perform Tadasana:</h2>
+            <ol>
+                <li>Stand straight with feet together and arms at your sides.</li>
+                <li>Distribute your weight evenly on both feet.</li>
+                <li>Inhale deeply and raise your arms overhead, keeping them parallel or palms together.</li>
+                <li>Stretch your body upward as much as possible, lifting your heels slightly off the ground.</li>
+                <li>Hold the pose for a few breaths, then exhale and return to the starting position.</li>
+            </ol>
+    </div>
+
+    <div class="section2">
+            <h2>Benefits of Tadasana:</h2>
+                <ul>
+                    <li>Improves posture and balance.</li>
+                    <li>Strengthens thighs, knees, and ankles.</li>
+                    <li>Increases awareness and focus.</li>
+                    <li>Relieves tension and boosts energy levels.</li>
+                </ul>
+    </div>
+
+    <div class="section3">
+        <h2>Beginner Tips for Mountain Pose</h2>
+        <p>Take your feet hip-distance apart to find better balance and ease muscle tension in your lower back.</p>
+        <p>Rock back and forth and side to side on your feet. Slowly reduce the sway and come to a standstill with your weight balanced evenly across your feet. Root down through all edges of your feet. Feel the energy draw from your feet up through your core.</p>
+        <p>Ask a teacher to check whether your ears, shoulder joints,  hips, and ankles are in a straight line.</p>
+        <p>Elongate from your pelvis through the top of your head. You’ll notice where your body is tugging from stress or lack of movement, explains McMillan.</p>
+    </div>
+
+
+
+
+ <!-- -----------------footer div--------------------- -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Yoga</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Yoga and Wellness</title>
-    <link rel="stylesheet" href="{% static 'css/childyogastyle.css' %}">
-    <title>Child Yoga</title>
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <title>SETU BANDHASANA</title>
 </head>
 <body>
 <!------------------------------Navbar-------------------------------------->
@@ -23,8 +23,6 @@
                     <li><a href="{% url 'Home' %}">Home</a></li>
                     <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="{% url 'yoga' %}">Yoga</a></li>
-                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
-                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -41,34 +39,58 @@
     <section class=" secondSection" >
               
                   <div class="card">
-                     <img src="{% static 'pictures/basicasanachild.jpg' %}" alt="herb" width="100%">
-                     <h2>Basic Asanas (Simple Postures)</h2>
-                     <p><h5>simple yoga poses that help children improve flexibility, balance, posture,
-                         and concentration while keeping their bodies strong and active.</h5></p>
-                     <a href="{% url 'basic' %}"><button class="Asanas">know More...</button> </a>
+                     <img src="{% static 'pictures/tadasana.jpg' %}" alt="herb" width="100%">
+                     <h2>Tadasana (Mountain Pose)</h2>
+                     <!-- <p><h5>simple yoga poses that help children improve flexibility, balance, posture,
+                         and concentration while keeping their bodies strong and active.</h5></p> -->
+                     <a href="{% url 'tadasana' %}"><button class="Asanas">know More...</button> </a>
                   </div>
           
                   <div class="card">
-                      <img src="{% static 'pictures/animalfunposes.jpg' %}" alt="herb">
-                      <h2>Animal & Fun Poses (Playful Yoga)</h2>
-                      <p><h5>child-friendly yoga poses inspired by animals and nature, making practice enjoyable 
-                        while enhancing flexibility, imagination, and body awareness.</h5></p>
+                      <img src="{% static 'pictures/vrikshasana.jpg' %}" alt="herb">
+                      <h2>Vrikshasana (Tree Pose)</h2>
+                      <!-- <p><h5>child-friendly yoga poses inspired by animals and nature, making practice enjoyable 
+                        while enhancing flexibility, imagination, and body awareness.</h5></p> -->
                       <a href="CulinaryHerb.html"><button class="Animal">know More...</button></a>
                       <br>
                    </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/SimpleBreathingExercises.jpg' %}" alt="herb">
-                     <h2>Pranayama (Simple Breathing Exercises)</h2>
-                     <p><h5>easy breathing practices that calm the mind, improve focus, and support healthy lungs in children.</h5></p>
+                     <img src="{% static 'pictures/bhujangasana.jpg' %}" alt="herb">
+                     <h2>Bhujangasana (Cobra Pose)</h2>
+                     <!-- <p><h5>easy breathing practices that calm the mind, improve focus, and support healthy lungs in children.</h5></p> -->
                       <a href="AromaticHerb.html"><button class="Pranayama">know More...</button></a>
                     <br>
                   </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/Relaxation&Mindfulness.jpg' %}" alt="herb">
-                     <h2>Relaxation & Mindfulness</h2>
-                     <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p>
+                     <img src="{% static 'pictures/setubandhasana.png' %}" alt="herb">
+                     <h2>Setu Bandhasana (Bridge Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'setubandhasana'%}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/balasana1.jpg' %}" alt="herb">
+                     <h2>Balasana (Child’s Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'kapalbhati' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/matsyasana.jpg' %}" alt="herb">
+                     <h2>Matsyasana (Fish Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="AromaticHerb.html"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/supta.jpg' %}" alt="herb">
+                     <h2>Supta Baddha Konasana (Reclined Butterfly)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
                       <a href="AromaticHerb.html"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>

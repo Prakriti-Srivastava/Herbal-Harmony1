@@ -19,6 +19,8 @@ symptomkeywords = {
     "insomnia": ["neend na aana", "insomnia", "sone me dikkat", "neend nahi aati", "sleep problems"],
     "digestive issues": ["pachak samasya", "digestive issues", "pet ki problem", "indigestion", "pet dard", "khana hazam nahi hota"],
     "vomiting": ["ulti", "vomiting", "mujhe ulti ho rhi hai", "pet kharab hai", "nausea"],
+    "body pain": ["body pain", "dard ho raha hai", "pure sharir me dard hai", "sarir dard", "sari body me pain hai", "sharir me jalan hai", "thakan aur dard", "muscle pain", "sharir dard kar raha hai"]
+
 }
 
 def getRemedyAndYoga(age_group, symptom):
@@ -37,10 +39,10 @@ def getRemedyAndYoga(age_group, symptom):
             break
 
     if not symptomkey:
-        print("❌ No matching symptom keyword found for input:", symptom)
+        print("No matching symptom keyword found:", symptom)
         return None
 
-    print("🔍 User Input:", symptom, "→ Mapped Symptom:", symptomkey)
+    print(" User Input:", symptom, "Mapped Symptom:", symptomkey)
 
     # Query MongoDB using mapped keyword
     remedy = herbscol.find_one({
@@ -54,8 +56,8 @@ def getRemedyAndYoga(age_group, symptom):
         "age_group": {"$regex": f"^{age_group}$", "$options": "i"}
     })
 
-    print("🍃 Remedy found:", remedy)
-    print("🧘 Yoga found:", yoga)
+    print("Remedy found:", remedy)
+    print("Yoga found:", yoga)
     # Return results
 
     if remedy or yoga:
