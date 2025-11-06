@@ -32,14 +32,16 @@
 <div class="aisection">
     <!-- Display Age Group and Symptom -->
     {% if remedy %}
+        <br>
         <p><b>Age Group:</b> {{ age }}</p>
-        <p><b>Symptom:</b> {{ symptom }}</p>
+        <p><b>Symptom:</b> {{ symptom }}</p><br>
 
         <!-- Display Remedy and Yoga Suggestions -->
         <h3>Herbal Remedies :</h3>
         <a href="{{ link_remedy }}">{{ remedy }}</a>
-
-        <h3>Yoga Suggestion :</h3>
+        <br>
+        
+        <br><h3>Yoga Suggestion :</h3>
         <a href="{{ link_yoga }}">{{ yoga }}</a>
     {% else %}
         <p style="color:red;">Sorry, no match found.</p>

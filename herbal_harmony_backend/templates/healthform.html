@@ -32,9 +32,11 @@
 
     <!-- form section -->
     <form method="POST">
+      <br>
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <br>
+        <button type="submit"><h3>Submit</h3></button>
     </form>
 
     </section>
