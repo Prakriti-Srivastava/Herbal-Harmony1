@@ -225,11 +225,11 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-  /* min-width: 100%;
-  min-height: 100%; */
+   /* min-width: 100%; */
+  /* min-height: 100%;  */
   object-fit: cover;
-  /*z-index: -1; /* keeps it behind text */
-  opacity: 0.8; /* optional: makes it soft */
+  z-index: -1; /* keeps it behind text */
+   opacity: 0.8;  /*optional: makes it soft */
 }
 
 /* ========== FOOTER ========== */

@@ -99,7 +99,7 @@
                   <h2>HERBS</h2>
                  <p><h5>Herbs are natural plants that people use for healing, cooking, and health benefits.</h5></p>
                 <a href="{% url 'herb' %}"><button class="herb">knowledge</button></a>
-                <a href="{% url 'herb' %}"><button class="herb">Treatment</button></a>
+                <a href="{% url 'Treatment' %}"><button class="herb">Treatment</button></a>
             </div>
           
                 <div class="card">
@@ -120,7 +120,8 @@
             </div>
 
         </section>
-        <video src="videos/vedio.mp4" type="video/mp4" width="100" height="1000" autoplay loop muted playsinline class="bg-video">
+        
+        <video src="{% static 'pictures/vedio.mp4' %}" type="video/mp4" width="100%" height="100%" autoplay loop muted playsinline class="bg-video">
         <!-- <source src="videos/vedio.mp4" type="video/mp4"> -->
         </video>
 
