@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Dhanurasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Dhanurasana (Bow Pose)</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/dhanurasana.jpg' %}" alt="Dhanurasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>DHANURASANA (BOW POSE)</h2>
+            <p>
+                Dhanurasana is a powerful backbend that strengthens the spine, opens the chest, 
+                and improves flexibility. It helps stimulate the abdominal organs, improves posture, 
+                and boosts energy levels. It is one of the main backbending poses in traditional yoga.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Dhanur = Bow</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Bow Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Dhanurasana:</h2>
+        <ol>
+            <li>Lie on your stomach with legs hip-width apart and arms beside your body.</li>
+            <li>Bend your knees and bring your heels close to your hips.</li>
+            <li>Hold your ankles with both hands.</li>
+            <li>Inhale and lift your chest, head, and thighs off the ground.</li>
+            <li>Pull your legs upward to lift your upper body, forming a bow shape.</li>
+            <li>Keep your gaze forward and breathe normally.</li>
+            <li>Hold for 10–20 seconds, then exhale and release slowly.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Dhanurasana:</h2>
+        <ul>
+            <li>Strengthens the back, spine, and core muscles</li>
+            <li>Improves posture and increases back flexibility</li>
+            <li>Opens the chest, shoulders, and hip flexors</li>
+            <li>Stimulates abdominal organs and improves digestion</li>
+            <li>Reduces stress, fatigue, and anxiety</li>
+            <li>Helps relieve mild back pain and stiffness</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Do not over-strain your lower back—lift only as much as comfortable.</p>
+        <p>Keep knees hip-width apart; avoid bringing them too close.</p>
+        <p>Engage your core muscles to reduce pressure on the spine.</p>
+        <p>Practice slowly and avoid jerky movements.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

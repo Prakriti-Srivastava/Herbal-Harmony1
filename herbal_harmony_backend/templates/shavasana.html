@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Shavasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Shavasana</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/shavasana.jpg' %}" alt="Shavasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>SHAVASANA (CORPSE POSE)</h2>
+            <p>
+                Shavasana is a deep relaxation posture practiced at the end of yoga sessions.  
+                It calms the mind, relaxes every muscle, reduces stress, and restores energy.  
+                This pose helps in grounding the body and improving overall mental clarity.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Shava = Corpse</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Corpse Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Shavasana:</h2>
+        <ol>
+            <li>Lie down flat on your back with legs slightly apart.</li>
+            <li>Place your arms comfortably at your sides with palms facing upward.</li>
+            <li>Close your eyes and take slow, deep breaths.</li>
+            <li>Relax your toes, legs, hips, stomach, chest, shoulders, and face.</li>
+            <li>Let your body feel heavy and completely relaxed.</li>
+            <li>Stay in this pose for 5–10 minutes or until your body feels calm.</li>
+            <li>To come out, gently wiggle your fingers and toes, turn to your right side, and sit up slowly.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Shavasana:</h2>
+        <ul>
+            <li>Reduces stress, anxiety, and mental fatigue</li>
+            <li>Promotes full-body relaxation</li>
+            <li>Improves concentration and mental clarity</li>
+            <li>Normalizes heart rate and breathing</li>
+            <li>Helps in muscle recovery after yoga practice</li>
+            <li>Improves sleep quality</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Keep your body completely still for best relaxation.</p>
+        <p>Do not control your breathing—let it happen naturally.</p>
+        <p>Use a thin blanket under the head or knees if needed for comfort.</p>
+        <p>Practice in a quiet environment for deeper relaxation.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

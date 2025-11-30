@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Ustrasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Ustrasana (Camel Pose)</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/ustrasana.jpg' %}" alt="Ustrasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>USTRASANA (CAMEL POSE)</h2>
+            <p>
+                Ustrasana is a deep backbend that stretches the entire front body and strengthens the back muscles.  
+                It opens the chest, improves posture, and boosts energy levels. This pose also helps relieve fatigue, 
+                improves flexibility, and enhances lung capacity.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT MEANING -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Ustra = Camel</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Camel Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Ustrasana:</h2>
+        <ol>
+            <li>Kneel on the floor with your knees hip-width apart.</li>
+            <li>Place your hands on your hips and keep your spine straight.</li>
+            <li>Inhale and lift your chest upward.</li>
+            <li>Exhale and slowly bend backward, keeping the neck neutral.</li>
+            <li>Reach your hands back and hold your heels one by one.</li>
+            <li>Push your hips forward while lifting your chest up and opening your shoulders.</li>
+            <li>Hold the position for 10–20 seconds, breathing slowly.</li>
+            <li>To come out, bring hands back to hips and slowly rise up.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Ustrasana:</h2>
+        <ul>
+            <li>Improves spinal flexibility</li>
+            <li>Strengthens back, shoulders, and arms</li>
+            <li>Opens the chest and lungs, improving breathing</li>
+            <li>Reduces neck and back stiffness</li>
+            <li>Boosts energy and reduces fatigue</li>
+            <li>Improves posture and tones the abdomen</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Keep your thighs perpendicular to the floor for proper alignment.</p>
+        <p>If reaching your heels is hard, keep hands on lower back for support.</p>
+        <p>Do not drop your head too far back—keep neck relaxed.</p>
+        <p>Engage your core to protect the lower back.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

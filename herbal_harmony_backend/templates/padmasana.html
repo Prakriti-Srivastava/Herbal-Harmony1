@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>PADMASANA</title>
+</head>
+
+<body>
+
+    <div class="heading name">
+        <h1>Padmasana (Lotus Pose)</h1>
+    </div>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- ------------------- Padmasana Image Section ------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/padmasana1.jpg' %}" alt="Padmasana" width="100%" height="100%">
+    </section>
+
+    <!-- ------------------- Intro Section ------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>PADMASANA (LOTUS POSE)</h2>
+            <p>Padmasana is a classical seated yoga posture that promotes deep meditation, calmness of mind, and flexibility of the lower body. It stabilizes the spine and balances energy flow throughout the body.</p>
+        </div>
+    </section>
+
+    <!-- ---------------- Sanskrit Meaning ---------------- -->
+    <div class="section3">
+        <h2>Sanskrit</h2>
+        <p>Padmasana (pud-MAH-sah-nah)</p>
+        <p>padma = lotus</p>
+        <p>asana = posture</p>
+        <p>Meaning: “Lotus Pose”</p>
+    </div>
+
+    <!-- ---------------- Steps Section ---------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Padmasana:</h2>
+        <ol>
+            <li>Sit on the floor with your legs stretched out in front of you.</li>
+            <li>Bend your right knee and place your right foot on your left thigh.</li>
+            <li>Now bend your left knee and place your left foot on your right thigh.</li>
+            <li>Keep your spine straight and rest your hands on your knees in Chin mudra or Gyan mudra.</li>
+            <li>Close your eyes and breathe slowly, sitting calmly for 1–5 minutes.</li>
+        </ol>
+    </div>
+
+    <!-- ---------------- Benefits Section ---------------- -->
+    <div class="section2">
+        <h2>Benefits of Padmasana:</h2>
+        <ul>
+            <li>Calms the mind and reduces stress and anxiety.</li>
+            <li>Improves posture and strengthens the spine.</li>
+            <li>Enhances hip, knee, and ankle flexibility.</li>
+            <li>Promotes better digestion and activates abdominal organs.</li>
+            <li>Ideal for meditation and pranayama practice.</li>
+        </ul>
+    </div>
+
+    <!-- ----------------- Tips Section ------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>If Padmasana feels too intense, start with Ardha Padmasana (Half Lotus).</p>
+        <p>Warm up your hips with butterfly pose (Baddha Konasana) before practicing.</p>
+        <p>Avoid forcing your legs into position to prevent knee injury.</p>
+        <p>Use a cushion or folded blanket to elevate your hips for comfort.</p>
+    </div>
+
+    <!-- ------------------ Footer ------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We are committed to provide the best life experience through naturopathy, promoting wellness through herbs and yoga.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Vrikshasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Vrikshasana</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/vrikshasana.jpg' %}" alt="Vrikshasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>VRIKSHASANA (TREE POSE)</h2>
+            <p>
+                Vrikshasana is a balancing posture that improves focus, stability, 
+                and concentration. It strengthens the legs, tones the hips, and 
+                helps develop mental clarity and calmness. It is a grounding pose 
+                that enhances mind-body coordination.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Vriksha = Tree</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Tree Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Vrikshasana:</h2>
+        <ol>
+            <li>Stand straight with feet together and arms by your sides.</li>
+            <li>Shift your weight onto your left foot and lift your right foot.</li>
+            <li>Place the right foot on your left inner thigh or calf (avoid the knee).</li>
+            <li>Join your palms in Namaste and bring them in front of your chest.</li>
+            <li>Once balanced, raise your arms overhead, keeping them straight.</li>
+            <li>Keep your spine straight and gaze at a fixed point for balance.</li>
+            <li>Hold for 10–20 seconds, then switch sides.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Vrikshasana:</h2>
+        <ul>
+            <li>Improves balance and stability</li>
+            <li>Strengthens legs, ankles, and core muscles</li>
+            <li>Enhances concentration and mental calmness</li>
+            <li>Tones hips and thigh muscles</li>
+            <li>Improves posture and spinal alignment</li>
+            <li>Helps develop focus and confidence</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Use a wall for support if you find it hard to balance.</p>
+        <p>Keep your gaze fixed on one still point to maintain stability.</p>
+        <p>Avoid placing the foot on the knee joint—use thigh or calf.</p>
+        <p>Engage your core muscles to stay steady.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

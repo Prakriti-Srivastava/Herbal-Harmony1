@@ -110,3 +110,72 @@ def tadasana(request):
 
 def setubandhasana(request):
     return render(request, 'setubandhasana.html')
+
+def teenager(request):
+    return render(request, 'teenager.html')
+
+def kapalbhatiadult(request):
+    return render(request, 'kapalbhatiadult.html')
+
+def padmasana(request):
+    return render(request, 'padmasana.html')
+
+def viparitakarani(request):
+    return render(request, 'viparitakarani.html')
+
+def Adhomukha(request):
+    return render(request, 'Adhomukha.html')
+
+def sukhasana(request):
+    return render(request, 'sukhasana.html')
+
+def suryana(request):
+    return render(request, 'suryana.html')
+
+def adult(request):
+    return render(request, 'adult.html')
+
+def prana(request):
+    return render(request, 'prana.html')
+
+def bhujang(request):
+    return render(request, 'bhujang.html')
+
+def dhanurasana(request):
+    return render(request, 'dhanurasana.html')
+
+def vrikshasana(request):
+    return render(request, 'vrikshasana.html')
+
+def anulomvilom(request):
+    return render(request, 'anulomvilom.html')
+
+def middleage(request):
+    return render(request, 'middleage.html')
+
+def shavasana(request):
+    return render(request, 'shavasana.html')
+
+def shashankasana(request):
+    return render(request, 'shashankasana.html')
+
+def ardhamatsyendrasana(request):
+    return render(request, 'ardhamatsyendrasana.html')
+
+def ustrasana(request):
+    return render(request, 'ustrasana.html')
+
+def trikonasana(request):
+    return render(request, 'trikonasana.html')
+
+def apanasana(request):
+    return render(request, 'apanasana.html')
+
+def seniors(request):
+    return render(request, 'seniors.html')
+
+def pavanamuktasana(request):
+    return render(request, 'pavanamuktasana.html')
+
+def suptabaddhakonasana(request):
+    return render(request, 'suptabaddhakonasana.html')

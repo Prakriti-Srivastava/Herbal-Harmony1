@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>ADHO MUKHA SVANASANA</title>
+</head>
+
+<body>
+
+    <div class="heading name">
+        <h1>Adho Mukha Svanasana</h1>
+    </div>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- ------------------- Adho Mukha Svanasana Image Section ------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/adhomukhasvanasana1.jpg' %}" alt="Adho Mukha Svanasana" width="100%" height="100%">
+    </section>
+
+    <!-- ------------------- Intro Section ------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>ADHO MUKHA SVANASANA (DOWNWARD-FACING DOG)</h2>
+            <p>Adho Mukha Svanasana is a foundational yoga posture that energizes the body, stretches the spine and legs, strengthens the arms, and improves circulation. It is a rejuvenating pose often used as a transition or resting posture in yoga sequences.</p>
+        </div>
+    </section>
+
+    <!-- ---------------- Sanskrit Meaning ---------------- -->
+    <div class="section3">
+        <h2>Sanskrit</h2>
+        <p>Adho Mukha Svanasana (AH-doh MOO-kah shvah-NAH-sah-nah)</p>
+        <p>adho = downward</p>
+        <p>mukha = face</p>
+        <p>svana = dog</p>
+        <p>asana = posture</p>
+        <p>Meaning: “Downward-Facing Dog Pose”</p>
+    </div>
+
+    <!-- ---------------- Steps Section ---------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Adho Mukha Svanasana:</h2>
+        <ol>
+            <li>Start on your hands and knees in a tabletop position.</li>
+            <li>Spread your fingers wide and press firmly into the ground.</li>
+            <li>Tuck your toes under and lift your knees off the floor.</li>
+            <li>Straighten your legs and raise your hips toward the ceiling, forming an inverted “V” shape.</li>
+            <li>Keep your spine long, heels reaching toward the floor, and gaze toward your feet.</li>
+            <li>Hold the pose for 5–10 breaths, then slowly release back to the starting position.</li>
+        </ol>
+    </div>
+
+    <!-- ---------------- Benefits Section ---------------- -->
+    <div class="section2">
+        <h2>Benefits of Adho Mukha Svanasana:</h2>
+        <ul>
+            <li>Stretches the hamstrings, calves, and spine.</li>
+            <li>Strengthens the arms, shoulders, and wrists.</li>
+            <li>Improves blood flow to the brain, increasing energy.</li>
+            <li>Relieves back pain and enhances posture.</li>
+            <li>Calms the mind and reduces stress.</li>
+        </ul>
+    </div>
+
+    <!-- ----------------- Tips Section ------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Bend your knees slightly if your hamstrings feel tight.</p>
+        <p>Keep your spine long—avoid rounding your back.</p>
+        <p>Press your hands firmly into the mat to relieve pressure from your wrists.</p>
+        <p>Pedal your feet (bend one knee at a time) to warm up the legs.</p>
+    </div>
+
+    <!-- ------------------ Footer ------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We are committed to provide the best life experience through naturopathy, promoting wellness through herbs and yoga.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Apanasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Apanasana (Knees-to-Chest Pose)</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/apanasana.jpg' %}" alt="Apanasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>APANASANA (KNEES-TO-CHEST POSE)</h2>
+            <p>
+                Apanasana is a gentle reclining pose that relaxes the lower back,  
+                improves digestion, and releases gas and bloating.  
+                It also calms the nervous system and helps relieve stress and fatigue.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT MEANING -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Apana = Downward-moving life force</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Wind-Relieving Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Apanasana:</h2>
+        <ol>
+            <li>Lie down on your back with legs extended.</li>
+            <li>Bend both knees and bring them toward your chest.</li>
+            <li>Hold your knees with your hands or interlock your fingers.</li>
+            <li>Relax your shoulders and keep your spine on the floor.</li>
+            <li>Gently pull your knees closer as you exhale.</li>
+            <li>Breathe slowly and hold for 20–30 seconds.</li>
+            <li>Optionally rock side-to-side for lower back massage.</li>
+            <li>Release legs slowly and return to the starting position.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Apanasana:</h2>
+        <ul>
+            <li>Relieves gas, bloating, and constipation</li>
+            <li>Improves digestion and stimulates abdominal organs</li>
+            <li>Reduces lower back pain and stiffness</li>
+            <li>Calms the mind and reduces stress</li>
+            <li>Gently massages the spine</li>
+            <li>Helps relax the hips and lower abdomen</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Keep your neck and shoulders relaxed on the floor.</p>
+        <p>Do not lift your head while pulling knees in.</p>
+        <p>If you feel pressure in the knees, hold thighs instead.</p>
+        <p>Move slowly and avoid jerky movements.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

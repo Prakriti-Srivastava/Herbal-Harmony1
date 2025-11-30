@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Herbal Harmony - a holistic wellness platform blending herbal remedies, homeopathy, yoga, and AI-powered health roadmaps." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Yoga and Wellness</title>
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <title>Adult Yoga</title>
+</head>
+<body>
+<!------------------------------Navbar-------------------------------------->
+
+  <nav class="navbar background">
+           
+                <ul class="nav-list">
+                   <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            <input type="text" name="search" id="search">
+                <button class="btn btn-sm">search</button>
+
+            </nav>
+
+
+
+<!---------------------------cards---------------------------->
+
+
+    <section class=" secondSection" >
+              
+                  <div class="card">
+                     <img src="{% static 'pictures/balasana1.jpg' %}" alt="herb" width="100%">
+                     <h2>Balasana (Child's Pose)</h2>
+                     <!-- <p><h5>simple yoga poses that help children improve flexibility, balance, posture,
+                         and concentration while keeping their bodies strong and active.</h5></p> -->
+                     <a href="{% url 'kapalbhati' %}"><button class="Asanas">know More...</button> </a>
+                  </div>
+          
+                  <div class="card">
+                      <img src="{% static 'pictures/padmasana' %}" alt="herb">
+                      <h2>Shavasana (Corpse Pose)</h2>
+                      <!-- <p><h5>child-friendly yoga poses inspired by animals and nature, making practice enjoyable 
+                        while enhancing flexibility, imagination, and body awareness.</h5></p> -->
+                      <a href="{% url 'shavasana' %}"><button class="Animal">know More...</button></a>
+                      <br>
+                   </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/viparita' %}" alt="herb">
+                     <h2>Shashankasana (Moon Pose)</h2>
+                     <!-- <p><h5>easy breathing practices that calm the mind, improve focus, and support healthy lungs in children.</h5></p> -->
+                      <a href="{% url 'shashankasana' %}"><button class="Pranayama">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/setubandhasana.png' %}" alt="herb">
+                     <h2>Ardha Matsyendrasana (Half Lord of the Fishes Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'ardhamatsyendrasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/tada.jpg' %}" alt="herb">
+                     <h2>Ustrasana (Camel Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'ustrasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/adho' %}" alt="herb">
+                     <h2>Trikonasana (Triangle Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'trikonasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/sukha' %}" alt="herb">
+                     <h2>Viparita Karani (Legs-Up-The-Wall Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'viparitakarani' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/surya' %}" alt="herb">
+                     <h2>Apanasana (Knees to Chest Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'apanasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+                  
+
+        </section> 
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Yoga</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- Footer Last Line -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

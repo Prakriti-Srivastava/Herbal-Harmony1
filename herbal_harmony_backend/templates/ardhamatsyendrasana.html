@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Ardha Matsyendrasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Ardha Matsyendrasana (Half Lord of the Fishes Pose)</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/ardha_matsyendrasana.jpg' %}" alt="Ardha Matsyendrasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>ARDHA MATSYENDRASANA (HALF LORD OF THE FISHES POSE)</h2>
+            <p>
+                Ardha Matsyendrasana is a gentle spinal twisting pose that improves flexibility,
+                detoxifies the body, and enhances digestion. It stimulates the spinal nerves,
+                opens the chest and shoulders, and promotes better posture and relaxation.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT MEANING -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Ardha = Half</p>
+        <p>Matsyendra = Lord of the Fishes (a yogi)</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Half Lord of the Fishes Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Ardha Matsyendrasana:</h2>
+        <ol>
+            <li>Sit on the floor with legs extended in front of you.</li>
+            <li>Bend your right knee and place the right foot outside the left thigh.</li>
+            <li>Fold your left leg and place the foot near the right hip.</li>
+            <li>Inhale, lengthen your spine upward.</li>
+            <li>Exhale, twist your torso to the right and place your left elbow on the right knee.</li>
+            <li>Place your right hand behind your back for support.</li>
+            <li>Look over your right shoulder and maintain the twist gently.</li>
+            <li>Hold the pose for 20–30 seconds, breathing deeply.</li>
+            <li>Release and repeat on the other side.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Ardha Matsyendrasana:</h2>
+        <ul>
+            <li>Improves spinal flexibility and posture</li>
+            <li>Enhances digestion and detoxifies organs</li>
+            <li>Stimulates liver and kidneys</li>
+            <li>Reduces back pain and stiffness</li>
+            <li>Strengthens shoulders, neck, and hips</li>
+            <li>Improves energy flow in the body</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Do not force the twist; rotate only as much as comfortable.</p>
+        <p>Keep the spine straight throughout the pose.</p>
+        <p>Use a folded blanket under the hips if flexibility is low.</p>
+        <p>Breathe deeply to ease into the twist.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Shashankasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Shashankasana Pose</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/shashankasana.jpg' %}" alt="Shashankasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>SHASHANKASANA (CHILD POSE)</h2>
+            <p>
+                Shashankasana is a calming forward–bending posture that helps reduce stress,
+                relaxes the spine, and brings emotional grounding. This pose releases tension
+                from the back, shoulders, and mind, making it ideal for relaxation and deep breathing.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Shashank = Rabbit / Hare</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Rabbit/Child Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Shashankasana:</h2>
+        <ol>
+            <li>Sit in Vajrasana with your spine straight and hands on your thighs.</li>
+            <li>Inhale deeply and raise both arms straight above your head.</li>
+            <li>Exhale slowly and bend forward from the waist.</li>
+            <li>Stretch your arms forward and place your forehead gently on the floor.</li>
+            <li>Relax your shoulders, back, and neck completely.</li>
+            <li>Breathe slowly and stay in this pose for 20–40 seconds.</li>
+            <li>Inhale, lift your torso up, and return to the starting position.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Shashankasana:</h2>
+        <ul>
+            <li>Reduces stress, anxiety, and mental tension</li>
+            <li>Relaxes the back, shoulders, and neck muscles</li>
+            <li>Improves blood circulation to the brain</li>
+            <li>Calms the nervous system</li>
+            <li>Helps in emotional balance and grounding</li>
+            <li>Improves breathing by releasing chest tightness</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Spread your knees slightly apart if you feel pressure in the abdomen.</p>
+        <p>Keep your arms stretched for deeper relaxation.</p>
+        <p>Do not force your head to touch the floor; go only as far as comfortable.</p>
+        <p>Practice in a peaceful environment for maximum calmness.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
