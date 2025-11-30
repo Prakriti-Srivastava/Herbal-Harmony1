@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Pavanamuktasana</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Pavanamuktasana (Wind-Relieving Pose)</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <input type="text" name="search" id="search">
+        <button class="btn-search">search</button>
+    </nav>
+
+    <!-- -------------------- HERO IMAGE -------------------- -->
+    <section class="balasana-hero">
+        <div class="balasana-overlay"></div>
+        <img src="{% static 'pictures/pavanamuktasana.jpg' %}" alt="Pavanamuktasana" width="100%" height="100%">
+    </section>
+
+    <!-- -------------------- INTRO SECTION -------------------- -->
+    <section class="balasana-info">
+        <div class="balasana-box">
+            <h2>PAVANAMUKTASANA (WIND-RELIEVING POSE)</h2>
+            <p>
+                Pavanamuktasana is a calming reclined yoga pose that improves digestion,  
+                reduces gas and bloating, and releases tension from the lower back.  
+                It enhances abdominal functioning and promotes relaxation and circulation.
+            </p>
+        </div>
+    </section>
+
+    <!-- -------------------- SANSKRIT MEANING -------------------- -->
+    <div class="section3">
+        <h2>Sanskrit Meaning</h2>
+        <p>Pavana = Air / Wind</p>
+        <p>Mukta = Release</p>
+        <p>Asana = Posture</p>
+        <p>Meaning: “The Wind-Relieving Pose”</p>
+    </div>
+
+    <!-- -------------------- STEPS -------------------- -->
+    <div class="section1">
+        <h2>Steps to Perform Pavanamuktasana:</h2>
+        <ol>
+            <li>Lie down on your back with legs stretched out and arms by your sides.</li>
+            <li>Bend your right knee and bring it toward your chest.</li>
+            <li>Interlock your fingers over the shin or hold the knee.</li>
+            <li>Exhale and gently pull the knee closer to your chest.</li>
+            <li>Keep your left leg straight and your back flat on the floor.</li>
+            <li>Hold the pose for 20–30 seconds while breathing normally.</li>
+            <li>Release and repeat with the left leg.</li>
+            <li>Finally, bend both knees to the chest for the full pose and hug them gently.</li>
+            <li>Slowly release legs and relax.</li>
+        </ol>
+    </div>
+
+    <!-- -------------------- BENEFITS -------------------- -->
+    <div class="section2">
+        <h2>Benefits of Pavanamuktasana:</h2>
+        <ul>
+            <li>Relieves gas, acidity, and bloating</li>
+            <li>Improves digestion and stimulates digestive organs</li>
+            <li>Reduces constipation</li>
+            <li>Releases stiffness in lower back and hips</li>
+            <li>Improves blood circulation in abdominal region</li>
+            <li>Calms the mind and reduces fatigue</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- TIPS -------------------- -->
+    <div class="section3">
+        <h2>Beginner Tips</h2>
+        <p>Keep your spine fully relaxed on the mat.</p>
+        <p>Do not raise your head unless comfortable.</p>
+        <p>Avoid pressing the knee too hard into the chest.</p>
+        <p>Breathe deeply and maintain slow movements.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We promote natural wellness through herbs and yoga to improve lifestyle and health.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Yoga</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
