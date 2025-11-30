@@ -50,4 +50,5 @@ urlpatterns = [
    path('seniors', views.seniors, name='seniors'),
    path('pavanamuktasana', views.pavanamuktasana, name='pavanamuktasana'),
    path('suptabaddhakonasana', views.suptabaddhakonasana, name='suptabaddhakonasana'),
+   path('mentalhealth', views.mentalhealth, name='mentalhealth'),
 ]

@@ -179,3 +179,6 @@ def pavanamuktasana(request):
 
 def suptabaddhakonasana(request):
     return render(request, 'suptabaddhakonasana.html')
+
+def mentalhealth(request):
+    return render(request, 'mentalhealth.html')
