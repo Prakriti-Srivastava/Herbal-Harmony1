@@ -24,7 +24,7 @@
             <li><a href="{% url 'Treatment' %}">Treatment</a></li>
             <li><a href="{% url 'About' %}">About</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
         </ul>
 
         <input type="text" name="search" id="search">
@@ -32,14 +32,15 @@
     </nav>
 
     <!-- ------------------- Padmasana Image Section ------------------- -->
-    <section class="balasana-hero">
+    <!-- <section class="balasana-hero">
         <div class="balasana-overlay"></div>
         <img src="{% static 'pictures/padmasana1.jpg' %}" alt="Padmasana" width="100%" height="100%">
-    </section>
+    </section> -->
 
     <!-- ------------------- Intro Section ------------------- -->
     <section class="balasana-info">
         <div class="balasana-box">
+            <img src="{% static 'pictures/padmasana1.jpg' %}" alt="Padmasana" width="100%" height="100%">
             <h2>PADMASANA (LOTUS POSE)</h2>
             <p>Padmasana is a classical seated yoga posture that promotes deep meditation, calmness of mind, and flexibility of the lower body. It stabilizes the spine and balances energy flow throughout the body.</p>
         </div>
@@ -88,7 +89,7 @@
     </div>
 
     <!-- ------------------ Footer ------------------- -->
-    <footer>
+    <footer id="contact" tabindex="-1">
         <div class="footer-container">
 
             <div class="footer-column">

@@ -28,7 +28,7 @@
             <li><a href="{% url 'Treatment' %}">Treatment</a></li>
             <li><a href="{% url 'About' %}">About</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+           <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
         </ul>
 
         <input type="text" name="search" id="search">
@@ -36,14 +36,15 @@
     </nav>
 
     <!-- -------------------- HERO IMAGE -------------------- -->
-    <section class="balasana-hero">
+    <!-- <section class="balasana-hero">
         <div class="balasana-overlay"></div>
         <img src="{% static 'pictures/ustrasana.jpg' %}" alt="Ustrasana" width="100%" height="100%">
-    </section>
+    </section> -->
 
     <!-- -------------------- INTRO SECTION -------------------- -->
     <section class="balasana-info">
         <div class="balasana-box">
+             <img src="{% static 'pictures/ustrasana.jpg' %}" alt="Ustrasana" width="80%" height="60%">
             <h2>USTRASANA (CAMEL POSE)</h2>
             <p>
                 Ustrasana is a deep backbend that stretches the entire front body and strengthens the back muscles.  
@@ -99,7 +100,7 @@
     </div>
 
     <!-- -------------------- FOOTER -------------------- -->
-    <footer>
+    <footer id="contact" tabindex="-1">
         <div class="footer-container">
 
             <div class="footer-column">

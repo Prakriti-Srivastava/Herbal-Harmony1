@@ -26,8 +26,7 @@
                     <li><a href="{% url 'Treatment' %}">Treatment</a></li>
                      <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-
+                   <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
                 </ul>
            
              
@@ -36,14 +35,52 @@
              </nav>
 
 
-        <div class="Why">
-          <img src="{% static 'pictures/mentalhealth.jpg' %}" alt="Why" width="100%"   height="100%">
-        </div>
-         
+    <!--    <div class="bg-mbackground">
+          <img src="{% static 'pictures/mentalhealth.jpg' %}" alt="mbackground" width="100%"   height="100%">
+        </div>-->
+        
 
+         
+ <section class=" secondSection">
+          <!-- <h1>For Detailed knowledge---- -></h1> -->
+            <div class="card">
+              <img src="{% static 'pictures/herb.jpg' %}" alt="herb" width="">
+                  <h2>Meditation</h2>
+                 <p><h5>Meditation is a mindful practice that trains the mind to focus, relax, and achieve a state of inner calm.</h5></p>
+                <a href="{% url 'herb' %}"><button class="herb">knowledge</button></a>
+                <a href="{% url 'Treatment' %}"><button class="herb">Treatment</button></a>
+            </div>
+          
+                <div class="card">
+                 <img src="{% static 'pictures/physicalfitness.jpg' %}" alt="herb" width="">
+                  <h2>Aromatherapy</h2>
+                 <p><h5>Aromatherapy is a natural healing practice that uses essential oils extracted from plants to support physical, emotional, and mental well-being.</h5></p>
+                 <a href="{% url 'yoga' %}"><button class="PhysicalFitness">knowledge</button></a>
+                 <a href="{% url 'yoga' %}"><button class="PhysicalFitness">Treatment</button></a>
+                 <br>
+            </div>
+            <div class="card">
+                 <img src="{% static 'pictures/mentalhealth.png' %}" alt="herb" width="">
+                  <h2>Nature Therapy</h2>
+                 <p><h5>also known as ecotherapy, is a holistic healing practice that improves mental, emotional well-being by spending intentional time in natural environments.</h5></p>
+                 <a href="{% url 'mentalhealth' %}"><button class="MentalHealth">knowledge</button></a>
+                 <a href="{% url 'mentalhealth' %}"><button class="MentalHealth">Treatment</button></a>
+                 <br>
+            </div>
+             <div class="card">
+                 <img src="{% static 'pictures/mentalhealth.png' %}" alt="herb" width="">
+                  <h2>Music Therapy</h2>
+                 <p><h5>Music therapy is a therapeutic practice that uses music, sound, and rhythm to improve emotional, mental, and physical well-being.</h5></p>
+                 <a href="{% url 'mentalhealth' %}"><button class="MentalHealth">knowledge</button></a>
+                 <a href="{% url 'mentalhealth' %}"><button class="MentalHealth">Treatment</button></a>
+                 <br>
+            </div>
+            
+
+        </section>
            
 
- <footer>
+ <footer id="contact" tabindex="-1">
     <div class="footer-container">
       <div class="footer-column">
         <h3>Motive</h3>

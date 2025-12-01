@@ -26,7 +26,7 @@
                     <li><a href="{% url 'Treatment' %}">Treatment</a></li>
                     <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
                 </ul>
            
              
@@ -36,13 +36,14 @@
 
               <!-- _____________________ Balasana Pranayama _____________________ -->
     
-    <section class="balasana-hero">
+    <!-- <section class="balasana-hero">
       <div class="balasana-overlay"></div>
       <img src="{% static 'pictures/Tadasanahome2.jpg' %}" alt="Balasana Pose" width="100%" height="100%">
-    </section>
+    </section> -->
 
     <section class="balasana-info">
         <div class="balasana-box">
+           <img src="{% static 'pictures/Tadasanahome2.jpg' %}" alt="Balasana Pose" width="80%" height="60%">
             <h2>KAPALBHATI PRANAYAMA</h2>
             <p>Kapalbhati is a powerful breathing technique that involves forceful exhalation and passive inhalation. It helps detoxify the lungs, improves digestive fire, boosts metabolism, and enhances mental clarity.</p>
         </div>
@@ -93,7 +94,7 @@
 
 
  <!-- -----------------footer div--------------------- -->
-<footer>
+<footer id="contact" tabindex="-1">
     <div class="footer-container">
       <div class="footer-column">
         <h3>Motive</h3>

@@ -24,7 +24,7 @@
             <li><a href="{% url 'Treatment' %}">Treatment</a></li>
             <li><a href="{% url 'About' %}">About</a></li>
             <li><a href="#disclaimer">Disclaimer</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+           <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
         </ul>
 
         <input type="text" name="search" id="search">
@@ -32,14 +32,15 @@
     </nav>
 
     <!-- ------------------- Viparita Karani Image Section ------------------- -->
-    <section class="balasana-hero">
+    <!-- <section class="balasana-hero">
         <div class="balasana-overlay"></div>
         <img src="{% static 'pictures/viparitakarani1.jpg' %}" alt="Viparita Karani" width="100%" height="100%">
-    </section>
+    </section> -->
 
     <!-- ------------------- Intro Section ------------------- -->
     <section class="balasana-info">
         <div class="balasana-box">
+             <img src="{% static 'pictures/viparitakarani1.jpg' %}" alt="Viparita Karani" width="100%" height="100%">
             <h2>VIPARITA KARANI (LEGS-UP-THE-WALL POSE)</h2>
             <p>Viparita Karani is a deeply relaxing restorative posture where the legs are elevated to promote circulation, calm the nervous system, and reduce fatigue and stress. It is also helpful for digestion, swelling, and overall relaxation.</p>
         </div>
@@ -88,7 +89,7 @@
     </div>
 
     <!-- ------------------ Footer ------------------- -->
-    <footer>
+    <footer id="contact" tabindex="-1">
         <div class="footer-container">
 
             <div class="footer-column">
