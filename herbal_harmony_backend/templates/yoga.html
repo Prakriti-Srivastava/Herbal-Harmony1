@@ -13,26 +13,6 @@
     
 </head>
 <body>  
-  <!-- --------------------new navbar----------------     -->
-   <!-- <nav class="navbar background">
-           
-                <ul class="nav-list">
-                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
-
-                    <li><a href="{% url 'Home' %}">Home</a></li>
-                    
-                    <li><a href="{% url 'About' %}">About</a></li>
-                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
-                   <li><a href="{% url 'healthform' %}">AI Chat</a></li>
-                    <li><a href="{% url 'Treatment' %}">Treatment</a></li> 
-                    <li><a href="#disclaimer">Disclaimer</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-           
-             
-                <input type="text" name="search" id="search">
-                <button class="btn btn-sm">search</button>
-             </nav> -->
 <!------------------------------Navbar-------------------------------------->
 
  <nav class="navbar-background">
@@ -53,32 +33,16 @@
             <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
             <button type="submit">search</button> 
 
-     <!--   <input type="text" id="searchBox" placeholder="Search here...">
-            <input type="text" id="searchBox" oninput="highlightText()" placeholder="Search..."> 
-          <button onclick="highlightText()">search</button> --> 
-
-
-        <!--</form>-->
-
+    
             </ul>
     </nav>
-    <!-- <div>
-          {{ content|safe }}
-        </div>-->
+   
         <img src="{%  static '../pictures/yogamainbg.jpg' %}" alt="image" width="100%" height="100vh">
 <!---------------------------front page section------------------------------>  
 
     <section class="background-firstSection">
 
-               
-               <!--<div class="front-img">
-                <img src="{% static 'pictures/yogahome.jpg' %}" alt="yoga image">
-               </div>-->
-            
-
             <div class="quote-box">
-                <!--<p>"Yoga is the journey of the self,<br> through the self, <br>to the self."</p>
-                <span>- The Bhagavad Gita</span>-->
 
                 <h1>YOGA<span class="auto-type"></span></h1>
             </div>
@@ -229,34 +193,6 @@
 
     
 <script>
-/*document.addEventListener("DOMContentLoaded", () => {
-      const form = document.getElementById("searchForm");
-     const input = document.getElementById("searchInput");
-
-      form.addEventListener("submit", function(e){
-          e.preventDefault(); // Form submit hone se roko
-          highlightText(); // Text highlight karo
-  });*/
-
-
-// function highlightText() {
-//   // Remove old highlights
-//   document.querySelectorAll("#content mark").forEach(m => {
-//     m.outerHTML = m.innerHTML;
-//   });
-
-//   let text = document.getElementById("searchBox").value;
-//   if (text.trim() === "") return;
-
-//   let content = document.getElementById("content").innerHTML;
-
-//   // Escape special regex characters
-//   let escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-//   let regex = new RegExp(escapedText, "gi");
-//   document.getElementById("content").innerHTML =
-//     content.replace(regex, match => `<mark>${match}</mark>`);
-// }
 
 function highlightText() {
   const text = document.getElementById("searchBox").value.trim();
@@ -286,58 +222,6 @@ function highlightText() {
 
   searchAndHighlight(document.body);
 }
-
-
-//////-----------------auto type js-----------------//////
-//yaha se
-     
-
-//ye chl rha hai
-// function highlightText() {
-//   // Purane highlights hatao
-//   /*document.querySelectorAll("mark").forEach(m => {
-//     m.outerHTML = m.innerText;
-//   });*/
-
-//   let highlighted = document.querySelectorAll("mark");
-//   highlighted.forEach(h => {
-//     h.outerHTML = h.innerHTML;
-//   });
-
-//   let text = document.getElementById("searchBox").value;
-//   if (text.trim() === "") return;
-
-//   let body = document.body.innerHTML;
-
-//   let regex = new RegExp(text, "gi");
-//   document.body.innerHTML = body.replace(regex, match => '<mark>${match}</mark>');
-//   // document.body.innerHTML = body.replace(regex, match => '<mark>${match}</mark>');
-// }
-//yaha tk hai
-
-  // Input value lo
-  /*const query = input.value.trim();
-  if (!query) return;
-
-  // Regex banao (case insensitive)
-  const regex = new RegExp(query, "gi");
-
-  // Page ke body ke andar sab text me search karo
-  searchAndHighlight(document.body, regex);
-}*/
-
-/*function searchAndHighlight(node, regex) {
-  if (node.nodeType === 3) { // text node
-    if (regex.test(node.nodeValue)) {
-      const span = document.createElement("span");
-      span.innerHTML = node.nodeValue.replace(regex, match => <mark>${match}</mark>);
-      node.replaceWith(span);
-    }
-  } else if (node.nodeType === 1 && !["SCRIPT", "STYLE", "MARK", "INPUT", "BUTTON"].includes(node.tagName)) {
-    node.childNodes.forEach(child => searchAndHighlight(child, regex));
-  }
-}*/
-
 
 </script>
 

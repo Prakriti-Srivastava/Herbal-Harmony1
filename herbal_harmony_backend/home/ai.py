@@ -12,7 +12,7 @@ symptomkeywords = {
     "cold": ["cold", "jhukham", "sardi", "thand lag rahi hai", "mujhe jhukham hai", "nasa band hai"],
     "headache": ["sir dard", "headache", "sir me dard ho raha hai", "dard sir ka"],
     "fever": ["bukhaar", "fever", "bukhar", "body temperature badh gaya"],
-    "stress": ["stress", "tanaav", "mujhe stress hai", "dimag par bojh hai", "mera dimag khrab ho rha hai"],
+    "stress": ["stress", "tanaav", "mujhe stress hai", "dimag par bojh hai", "mera dimag khrab ho rha hai", "body shivir kr rahi hai"],
     "joint pain": ["joint pain", "jodon ka dard", "gathiya", "mere jodon me dard hai", "haddi dard"],
     "fatigue": ["thakan", "fatigue", "bahut thak gaya hoon", "energy kam hai", "kamzori mehsoos ho rhi hai"],
     "anxiety": ["chinta", "anxiety", "mujhe chinta ho rhi hai", "nervousness", "bechaini"],
