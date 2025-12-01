@@ -21,13 +21,16 @@
                     <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
 
                     <li><a href="{% url 'Home' %}">Home</a></li>
-                     <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                     <!-- <li><a href="{% url 'yoga' %}">Yoga</a></li> -->
                     <li><a href="{% url 'healthform' %}">AI Chat</a></li>
                     <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
                      <li><a href="{% url 'About' %}">About</a></li>
-                    <li><a href="#disclaimer">Disclaimer</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+                     
                 </ul>
            
              
@@ -125,7 +128,7 @@
         <!-- <source src="videos/vedio.mp4" type="video/mp4"> -->
         </video>
 
- <footer>
+<footer id="contact" tabindex="-1">
     <div class="footer-container">
       <div class="footer-column">
         <h3>Motive</h3>
@@ -143,9 +146,9 @@
 
       <!-- -------------------Contact Info-------------------- -->
       <div class="footer-column">
-        <h3>  Us</h3>
+        <h3> Contact Us</h3>
         <p>Email: info@herbalharmony.com</p>
-        <p>Phone: +91 98765 43210</p>
+        <p>Phone: +91 98765 43210,+91 12345 67890</p>
         <p>Location: Prayagraj, India</p>
       </div>
 
