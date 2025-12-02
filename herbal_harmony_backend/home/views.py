@@ -182,3 +182,8 @@ def suptabaddhakonasana(request):
 
 def mentalhealth(request):
     return render(request, 'mentalhealth.html')
+
+def aromaherb(request):
+    return render(request, 'aromaherb.html')
+def culinherb(request):
+    return render(request, 'culinherb.html')

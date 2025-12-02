@@ -18,13 +18,15 @@
                 <ul class="nav-list">
                     <div class="logo"><a href="Home"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
 
-                    <li><a href="{% url 'Home' %}">Home</a></li>
-                    
-                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                  
+                     <li><a href="{% url 'Home' %}">Home</a></li>
                     <li><a href="{% url 'healthform' %}">AI Chat</a></li>
                     <li><a href="{% url 'Treatment' %}">Treatment</a></li>
-                    <li><a href="{% url 'About' %}">About</a></li>
-                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
                     <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
                 </ul>
            
@@ -45,7 +47,7 @@
     </ul>
     <p>It's important to recognize these symptoms early for effective treatment.</p>
      <div class="secondHalf">
-                <img src="{% static 'pictures/high fever.webp' %}" alt="img" height="60%" width="100%">
+                <img src="{% static 'pictures/high fever.webp' %}" alt="img" height="60%" width="80%">
                </div>
 </div>
 <div class="section2">
@@ -54,6 +56,7 @@
     <p>Several herbal remedies can help alleviate Fever symptoms:</p>
     <ol>
         <li><strong><h3>Tulsi (Holy Basil) Tea:</h3></strong>
+             <img src="{% static 'pictures/tulsi tea.jpg' %}" alt="img" height="40%" width="50%">
             <ul>
                 <strong>Ingredients:</strong>
                 <li>10 Tulsi leaves</li>
@@ -79,6 +82,7 @@
         </li><br>
 
         <li><strong><h3>Giloy (Guduchi) Juice</h3></strong>
+             <img src="{% static 'pictures/giloy juice.jpg' %}" alt="img" height="40%" width="50%">
             <ul>
                 <strong>Ingredients:</strong>
                 <li>2 tbsp Giloy juice</li>
@@ -91,6 +95,7 @@
                 </li>
 <br>
         <li><strong><h3>Neem Leaves Water:</h3></strong> 
+             <img src="{% static 'pictures/neem leaf juice.jpg' %}" alt="img" height="40%" width="50%">
             <ul>
                 <strong>Ingredients:</strong>
                 <li>10-12 fresh neem leaves</li>
@@ -103,6 +108,7 @@
                 </ul>
         </li><br>
        <li><strong><h3>Ginger & Cinnamon Tea:</h3></strong> 
+         <img src="{% static 'pictures/ginger cinnamon tea.jpg' %}" alt="img" height="40%" width="50%">
             <ul>
                 <strong>Ingredients:</strong>
                 <li>1-inch ginger</li>
@@ -115,6 +121,7 @@
                 </ul>
                 </li><br>
        <li><strong><h3>Cold Compress (External Remedy):</h3></strong> 
+        
             <ul>
                 <strong>How to Use:</strong>
                 <li>Soak a cloth in cool (not cold) water and place it on the forehead for 5 minutes. Repeat several times.</li>
@@ -134,6 +141,7 @@
         </li><br>
 
        <li><strong><h3>Papaya Leaf Juice:</h3></strong> 
+         <img src="{% static 'pictures/papaya leaf juice.jpg' %}" alt="img" height="50%" width="60%">
             <ul>
                 <strong>How to Use:</strong>
                 <li>Mix equal parts of clove oil, peppermint oil, and eucalyptus oil.</li>
