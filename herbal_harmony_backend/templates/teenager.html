@@ -28,8 +28,16 @@
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
                 </ul>
-            <input type="text" name="search" id="search">
-                <button class="btn btn-sm">search</button>
+
+                   <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+            
 
             </nav>
 
@@ -41,7 +49,7 @@
     <section class=" secondSection" >
               
                   <div class="card">
-                     <img src="{% static 'pictures/kapal' %}" alt="herb" width="100%">
+                     <img src="{% static 'pictures/kapal.png' %}" alt="herb" width="100%">
                      <h2>Kapalbhati (Skull-Shining Breath)</h2>
                      <!-- <p><h5>simple yoga poses that help children improve flexibility, balance, posture,
                          and concentration while keeping their bodies strong and active.</h5></p> -->
@@ -49,7 +57,7 @@
                   </div>
           
                   <div class="card">
-                      <img src="{% static 'pictures/padmasana' %}" alt="herb">
+                      <img src="{% static 'pictures/padmasana.png' %}" alt="herb">
                       <h2>Padmasana (Lotus Pose)</h2>
                       <!-- <p><h5>child-friendly yoga poses inspired by animals and nature, making practice enjoyable 
                         while enhancing flexibility, imagination, and body awareness.</h5></p> -->
@@ -82,10 +90,10 @@
                   </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/adho' %}" alt="herb">
+                     <img src="{% static 'pictures/adho.png' %}" alt="herb">
                      <h2>Adho Mukha Svanasana (downward-facing dog)</h2>
                      <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
-                      <a href="{% url 'Adhomukha' %}"><button class="Relaxation">know More...</button></a>
+                      <a href="{% url 'adhomukhasvanasana' %}"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>
 
@@ -117,10 +125,14 @@
       <!-- -------------------Quick Links-------------------- -->
       <div class="footer-column">
         <h3>Quick Links</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Yoga</a>
-        <a href="#">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
       </div>
 
       <!-- -------------------Contact Info-------------------- -->

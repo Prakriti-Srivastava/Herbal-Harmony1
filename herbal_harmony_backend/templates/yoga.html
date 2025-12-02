@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Yoga and Wellness</title>
     <link rel="stylesheet" href="{% static 'css/yogastyle.css' %}">
+
+    
     
 </head>
 <body>  
@@ -57,13 +59,18 @@
                       <form method="get" action="{% url 'yoga' %}">
                       <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
                       <button type="submit">search</button> 
+                      </form>
 
                 </ul>
            
              
                 <!-- <input type="text" name="search" id="search">
                 <button class="btn btn-sm">search</button> -->
+                
+
              </nav>
+
+             
    
         
 <!---------------------------front page section------------------------------>  
@@ -195,10 +202,14 @@
       <!-------------------------------Quick Links----------------------------------->
       <div class="footer-column">
         <h3>Quick Links</h3>
-        <a href="Home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="yoga.html">Yoga</a>
-        <a href="contact.html">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
       </div>
 
       <!--------------------------------Contact Info------------------------------------>

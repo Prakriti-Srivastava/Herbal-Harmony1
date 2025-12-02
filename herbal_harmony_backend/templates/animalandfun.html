@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Yoga and Wellness</title>
     <link rel="stylesheet" href="{% static 'css/basic.css' %}">
-    <title>Adult Yoga</title>
+    <title>SETU BANDHASANA</title>
 </head>
 <body>
 <!------------------------------Navbar-------------------------------------->
@@ -26,9 +26,9 @@
                     <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="{% url 'yoga' %}">Yoga</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
-                   <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
-
+                
                 <div id="google_element"></div>
               <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
               <script>
@@ -37,6 +37,7 @@
                 }
               </script>
             
+
             </nav>
 
 
@@ -47,48 +48,56 @@
     <section class=" secondSection" >
               
                   <div class="card">
-                     <img src="{% static 'pictures/balasana1.jpg' %}" alt="herb" width="100%">
-                     <h2>Balasana (Child's Pose)</h2>
+                     <img src="{% static 'pictures/images.png' %}" alt="herb" width="100%">
+                     <h2>Marjariasana (cat-cow Pose)</h2>
                      <!-- <p><h5>simple yoga poses that help children improve flexibility, balance, posture,
                          and concentration while keeping their bodies strong and active.</h5></p> -->
-                     <a href="{% url 'kapalbhati' %}"><button class="Asanas">know More...</button> </a>
+                     <a href="{% url 'marjariasana' %}"><button class="Asanas">know More...</button> </a>
                   </div>
-          
-                  <div class="card">
-                      <img src="{% static 'pictures/sukhasana.jpg' %}" alt="herb">
-                      <h2>Sukhasana (Easy Pose)</h2>
-                      <!-- <p><h5>child-friendly yoga poses inspired by animals and nature, making practice enjoyable 
-                        while enhancing flexibility, imagination, and body awareness.</h5></p> -->
-                      <a href="{% url 'sukhasana' %}"><button class="Animal">know More...</button></a>
-                      <br>
-                   </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/shavasana.png' %}" alt="herb">
-                     <h2>Shavasana (Corpse Pose)</h2>
+                     <img src="{% static 'pictures/setubandhasana.png' %}" alt="herb">
+                     <h2>Ustrasana (Camel Pose)</h2>
                      <!-- <p><h5>easy breathing practices that calm the mind, improve focus, and support healthy lungs in children.</h5></p> -->
-                      <a href="{% url 'shavasana' %}"><button class="Pranayama">know More...</button></a>
+                      <a href="{% url 'ustrasana' %}"><button class="Pranayama">know More...</button></a>
                     <br>
                   </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/pavanamuktasana.jpg' %}" alt="herb">
-                     <h2>Pavanamuktasana (Wind-Relieving Pose)</h2>
+                     <img src="{% static 'pictures/adho.png' %}" alt="herb">
+                     <h2>Adho Mukha Svanasana (Downward-Facing Dog Pose)</h2>
                      <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
-                      <a href="{% url 'pavanamuktasana' %}"><button class="Relaxation">know More...</button></a>
+                      <a href="{% url 'adhomukhasvanasana' %}"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>
 
                   <div class="card">
-                     <img src="{% static 'pictures/suptabaddha.jpg' %}" alt="herb">
-                     <h2>Supta Baddha Konasana (Reclining Bound Angle Pose)</h2>
+                     <img src="{% static 'pictures/lionpose.jpg' %}" alt="herb">
+                     <h2>Simhasana(Lion Pose) </h2>
                      <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
-                      <a href="{% url 'suptabaddhakonasana' %}"><button class="Relaxation">know More...</button></a>
+                      <a href="{% url 'simhasana' %}"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/frogpose.png' %}" alt="herb">
+                     <h2>Mandukasana (Frog Pose)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'mandukasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+
+                  <div class="card">
+                     <img src="{% static 'pictures/butterfly.jpg' %}" alt="herb">
+                     <h2>Supta Baddha Konasana (Reclined Butterfly)</h2>
+                     <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
+                      <a href="{% url 'baddhakonasana' %}"><button class="Relaxation">know More...</button></a>
+                    <br>
+                  </div>
+                  
 
         </section> 
-<footer id="contact" tabindex="-1">
+<footer>
     <div class="footer-container">
       <div class="footer-column">
         <h3>Motive</h3>

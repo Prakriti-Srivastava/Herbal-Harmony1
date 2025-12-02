@@ -54,7 +54,8 @@ html { scroll-behavior: smooth; }
   25% { color: #1e5faf; }
   50% { color: #15a9d2; }
   75% { color: #5aa3ca; }
-  100% { color: #f0ab0a; }
+  100% { color: #0a72f0; }
+ 
 }
 
 /* ===== Navbar ===== */
@@ -383,3 +384,32 @@ footer {
     transform: translateY(0);
   }
 }
+
+.translated-ltr{
+        margin-top: -40px;
+      }
+
+ .translated-ltr{
+        margin-top: -40px;
+      }
+
+.goog-te-banner-frame{
+        display: none !important;
+       
+      }
+
+body{
+        top:0px !important;
+      }
+
+.goog-logo-link{
+        display: none !important;
+      }
+ .goog-te-gadget span{
+        color: transparent !important;
+      }
+
+      .goog-te-gadget img{
+        display: none !important;
+      }
+

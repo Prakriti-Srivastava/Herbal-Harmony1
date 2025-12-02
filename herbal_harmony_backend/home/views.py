@@ -123,8 +123,8 @@ def padmasana(request):
 def viparitakarani(request):
     return render(request, 'viparitakarani.html')
 
-def Adhomukha(request):
-    return render(request, 'Adhomukha.html')
+def adhomukhasvanasana(request):
+    return render(request, 'adhomukhasvanasana.html')
 
 def sukhasana(request):
     return render(request, 'sukhasana.html')
@@ -135,11 +135,11 @@ def suryana(request):
 def adult(request):
     return render(request, 'adult.html')
 
-def prana(request):
-    return render(request, 'prana.html')
+def pranayama(request):
+    return render(request, 'pranayama.html')
 
-def bhujang(request):
-    return render(request, 'bhujang.html')
+def bhujangasana(request):
+    return render(request, 'bhujangasana.html')
 
 def dhanurasana(request):
     return render(request, 'dhanurasana.html')
@@ -187,3 +187,24 @@ def aromaherb(request):
     return render(request, 'aromaherb.html')
 def culinherb(request):
     return render(request, 'culinherb.html')
+
+def baddhakonasana(request):
+    return render(request, 'baddhakonasana.html')
+
+def animalandfun(request):
+    return render(request, 'animalandfun.html')
+
+def marjariasana(request):
+    return render(request, 'marjariasana.html')
+
+def simhasana(request):
+    return render(request, 'simhasana.html')
+
+def mandukasana(request):
+    return render(request, 'mandukasana.html')
+
+def matsyasana(request):
+    return render(request, 'matsyasana.html')
+
+def weakness(request):
+    return render(request, 'weakness.html')

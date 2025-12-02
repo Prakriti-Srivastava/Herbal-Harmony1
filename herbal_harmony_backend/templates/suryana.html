@@ -31,8 +31,15 @@
            <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
         </ul>
 
-        <input type="text" name="search" id="search">
-        <button class="btn-search">search</button>
+        <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+        
     </nav>
 
     <!-- -------------------- HERO IMAGE -------------------- -->
@@ -44,7 +51,7 @@
     <!-- -------------------- INTRO SECTION -------------------- -->
     <section class="balasana-info">
         <div class="balasana-box">
-             <img src="{% static 'pictures/suryanamaskar1.jpg' %}" alt="Surya Namaskar" width="100%" height="100%">
+             <img src="{% static 'pictures/surya' %}" alt="Surya Namaskar" width="100%" height="100%">
             <h2>SURYA NAMASKAR (SUN SALUTATION)</h2>
             <p>
                 Surya Namaskar is a dynamic sequence of 12 powerful yoga postures.  
@@ -127,10 +134,14 @@
 
             <div class="footer-column">
                 <h3>Quick Links</h3>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Yoga</a>
-                <a href="#">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
             </div>
 
             <div class="footer-column">

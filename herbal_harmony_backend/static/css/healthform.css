@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f8fff6;
+  background: hsl(120, 15%, 94%);
   color: #333;
   line-height: 1.6;
 }
@@ -98,8 +98,8 @@ html { scroll-behavior: smooth; }
     text-align: center;
     padding: 10px 20px;
     height: 70vh;
-    background-color: #f8fff6;
-    color: #333;
+    background-color: #bcd4b6;
+    color: #000000;
 
 
 }
@@ -153,4 +153,25 @@ footer {
   color: #b7e4c7;
   border-top: 1px solid #40916c;
   padding-top: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 5px 10px;
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 10px auto;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background: #40916c;
+  transform: scale(1.05);
 }

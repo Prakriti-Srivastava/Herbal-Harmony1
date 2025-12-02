@@ -19,7 +19,8 @@ symptomkeywords = {
     "insomnia": ["neend na aana", "insomnia", "sone me dikkat", "neend nahi aati", "sleep problems"],
     "digestive issues": ["pachak samasya", "digestive issues", "pet ki problem", "indigestion", "pet dard", "khana hazam nahi hota"],
     "vomiting": ["ulti", "vomiting", "mujhe ulti ho rhi hai", "pet kharab hai", "nausea"],
-    "body pain": ["body pain", "dard ho raha hai", "pure sharir me dard hai", "sarir dard", "sari body me pain hai", "sharir me jalan hai", "thakan aur dard", "muscle pain", "sharir dard kar raha hai"]
+    "body pain": ["body pain", "dard ho raha hai", "pure sharir me dard hai", "sarir dard", "sari body me pain hai", "sharir me jalan hai", "thakan aur dard", "muscle pain", "sharir dard kar raha hai"],
+    "weakness": ["kamzori", "weakness", "bahut kamzor mehsoos ho rha hoon", "taqat kam hai", "energy kam hai"]
 
 }
 

@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
+    <title>Herbal Harmony</title>
+</head>
+
+<body>
+
+    <div class="heading name">
+        <h1>Treatment of Weakness</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <a href="Home">
+                    <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+                </a>
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'herb' %}">Herbs</a></li>
+            <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+            <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+        </ul>
+
+        <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+        
+    </nav>
+
+    <!-- -------------------- SECTION 1 -------------------- -->
+    <div class="section1">
+        <h2>Understanding Weakness Symptoms</h2>
+        <p>Weakness is often caused by low energy levels, nutritional deficiency, or underlying health issues. Common symptoms include:</p>
+
+        <ul>
+            <li>Constant tiredness or fatigue</li>
+            <li>Dizziness or lightheadedness</li>
+            <li>Low energy and reduced stamina</li>
+            <li>Muscle weakness or heaviness</li>
+            <li>Poor concentration</li>
+            <li>Low appetite</li>
+            <li>Slow recovery after physical activity</li>
+        </ul>
+
+        <p>Identifying the symptoms early helps in restoring strength and health.</p>
+
+        <div class="secondHalf">
+            <img src="{% static 'pictures/weakness.png' %}" alt="img" height="60%" width="80%">
+        </div>
+    </div>
+
+    <!-- -------------------- SECTION 2 (HERBAL REMEDIES) -------------------- -->
+    <div class="section2">
+
+        <h2>Herbal Remedies for Weakness</h2>
+        <p>These herbal remedies help boost energy, immunity, and overall vitality:</p>
+
+        <ol>
+            <!-- Remedy 1 -->
+            <li><strong><h3>Ashwagandha Milk</h3></strong>
+                <img src="{% static 'pictures/ashwagandha.jpg' %}" alt="img" height="40%" width="50%">
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 tsp Ashwagandha powder</li>
+                    <li>1 glass warm milk</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Mix and drink before bedtime daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Boosts energy, reduces stress, and strengthens immunity.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 2 -->
+            <li><strong><h3>Amla (Indian Gooseberry) Juice</h3></strong>
+                <!-- <img src="{% static 'pictures/amla juice.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>2 tbsp amla juice</li>
+                    <li>1 glass water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Drink daily on an empty stomach.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Rich in Vitamin C – enhances immunity and reduces tiredness.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 3 -->
+            <li><strong><h3>Dates & Milk (Khajoor Milk)</h3></strong>
+                <!-- <img src="{% static 'pictures/dates milk.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>3–4 dates</li>
+                    <li>1 glass warm milk</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Soak dates overnight and blend with warm milk.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Instant energy booster & improves hemoglobin levels.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 4 -->
+            <li><strong><h3>Honey Lemon Water</h3></strong>
+                <!-- <img src="{% static 'pictures/honey lemon water.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 glass warm water</li>
+                    <li>1 tsp honey</li>
+                    <li>½ lemon</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Mix and drink every morning.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Flushes toxins, boosts metabolism, and energizes the body.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 5 -->
+            <li><strong><h3>Chyawanprash</h3></strong>
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 tsp Chyawanprash</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Consume daily with warm milk.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Enhances immunity and improves overall strength.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 6 -->
+            <li><strong><h3>Banana & Honey</h3></strong>
+                <!-- <img src="{% static 'pictures/banana honey.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 ripe banana</li>
+                    <li>1 tsp honey</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Mash and consume once daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Provides instant energy, rich in potassium.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 7 -->
+            <li><strong><h3>Ginger Tea</h3></strong>
+                <!-- <img src="{% static 'pictures/ginger tea.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>How to Use:</strong>
+                    <li>Boil ginger in water and sip warm.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Improves digestion and reduces fatigue.</li>
+                </ul>
+            </li>
+
+        </ol>
+
+        <p>Consult a healthcare professional if chronic weakness persists.</p>
+    </div>
+
+    <!-- -------------------- SECTION 3 -------------------- -->
+    <div class="section3">
+        <h2>Preventive Measures for Weakness</h2>
+        <p>Follow these daily habits to avoid weakness:</p>
+
+        <ul>
+            <li>Eat a balanced diet rich in iron and vitamins.</li>
+            <li>Stay well-hydrated throughout the day.</li>
+            <li>Get at least 7–8 hours of sleep.</li>
+            <li>Practice yoga & breathing exercises daily.</li>
+            <li>Avoid skipping meals.</li>
+            <li>Limit junk food and sugary drinks.</li>
+            <li>Maintain regular physical activity.</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- SECTION 4 -------------------- -->
+    <div class="section4">
+        <h2>When to Seek Medical Attention</h2>
+        <p>If weakness is severe, long-lasting, or accompanied by symptoms like breathlessness, chest pain, or dizziness, consult a doctor immediately.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer id="contact" tabindex="-1">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We are committed to providing natural wellness through herbs, yoga, and self-care.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

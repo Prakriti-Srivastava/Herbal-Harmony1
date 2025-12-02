@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
     <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
     <title>BALASANA</title>
+    <style>
+      
+    </style>
 
 </head>
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let interval = setInterval(function() {
+      let banner = document.querySelector(".goog-te-banner-frame");
+      if (banner) {
+        banner.style.display = "none";
+        document.body.style.top = "0px";
+        clearInterval(interval);
+      }
+      
+    }, 500);
+});
+</script> -->
 <body>
   <div class="heading name">
 
@@ -26,11 +42,15 @@
                     <li><a href="#Treatment">Treatment</a></li>
                     <li><a href="#disclaimer">Disclaimer</a></li>
                     <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
-                </ul>
-           
-             
-                <input type="text" name="search" id="search">
-                <button class="btn-search">search</button>
+                </ul> 
+                    <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+                
              </nav>
 
               <!-- _____________________ Balasana Pranayama _____________________ -->
@@ -42,7 +62,7 @@
 
     <section class="balasana-info">
       <div class="balasana-box">
-        <img src="{% static 'pictures/bal.jpg' %}" alt="Balasana Pose" width="80%" height="60%">
+        <img src="{% static 'pictures/ChildsPose.png' %}" alt="Balasana Pose" width="80%" height="60%">
       <h2>BALASANA (CHILD POSE)</h2>
       <p>Balasana, or Child's Pose, is a gentle resting pose that calms the mind and relieves tension in the body. It is often used as a resting position during yoga practice.</p>
       </div>
@@ -100,10 +120,14 @@
       <!-- -------------------Quick Links-------------------- -->
       <div class="footer-column">
         <h3>Quick Links</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Yoga</a>
-        <a href="#">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
       </div>
 
       <!-- -------------------Contact Info-------------------- -->

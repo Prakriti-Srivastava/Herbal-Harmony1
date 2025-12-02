@@ -61,7 +61,7 @@
                      <img src="{% static 'pictures/pranayama.jpg' %}" alt="herb">
                      <h2>Pranayama (Breathing Exercises)</h2>
                      <!-- <p><h5>easy breathing practices that calm the mind, improve focus, and support healthy lungs in children.</h5></p> -->
-                      <a href="{% url 'prana' %}"><button class="Pranayama">know More...</button></a>
+                      <a href="{% url 'pranayama' %}"><button class="Pranayama">know More...</button></a>
                     <br>
                   </div>
 
@@ -69,7 +69,7 @@
                      <img src="{% static 'pictures/bhujangasana.jpg' %}" alt="herb">
                      <h2>Bhujangasana (Cobra Pose)</h2>
                      <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
-                      <a href="{% url 'bhujang' %}"><button class="Relaxation">know More...</button></a>
+                      <a href="{% url 'bhujangasana' %}"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>
 
@@ -101,7 +101,7 @@
                      <img src="{% static 'pictures/ardhamatsyendrasana.jpg' %}" alt="herb">
                      <h2>Ardha Matsyendrasana (Half Lord of the Fishes Pose)</h2>
                      <!-- <p><h5>Relaxation & Mindfulness help children rest, stay calm, and develop better focus through simple relaxation and awareness practices.</h5></p> -->
-                      <a href="{% url 'suryana' %}"><button class="Relaxation">know More...</button></a>
+                      <a href="{% url 'ardhamatsyendrasana' %}"><button class="Relaxation">know More...</button></a>
                     <br>
                   </div>
                   
@@ -117,10 +117,14 @@
       <!-- -------------------Quick Links-------------------- -->
       <div class="footer-column">
         <h3>Quick Links</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Yoga</a>
-        <a href="#">Contact us</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
       </div>
 
       <!-- -------------------Contact Info-------------------- -->
