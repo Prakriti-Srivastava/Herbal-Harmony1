@@ -187,3 +187,5 @@ def aromaherb(request):
     return render(request, 'aromaherb.html')
 def culinherb(request):
     return render(request, 'culinherb.html')
+def Termeric(request):
+    return render(request, 'Termeric.html')

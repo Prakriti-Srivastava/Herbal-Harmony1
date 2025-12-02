@@ -53,4 +53,5 @@ urlpatterns = [
    path('mentalhealth', views.mentalhealth, name='mentalhealth'),
    path('aromaherb', views.aromaherb, name="aromaherb"),
    path('culinherb', views.culinherb, name='culinherb'),
+   path('Termeric', views.Termeric, name='Termeric'),
 ]
