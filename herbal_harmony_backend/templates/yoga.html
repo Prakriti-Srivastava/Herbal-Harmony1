@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About Herbal Harmony – a holistic wellness platform blending herbal remedies, homeopathy, yoga, and AI-powered health roadmaps." />
@@ -13,9 +14,9 @@
     
 </head>
 <body>  
-<!------------------------------Navbar-------------------------------------->
+<!-------------------------------------------Navbar------------------------------------------------------------>
 
- <nav class="navbar-background">
+ <!-- <nav class="navbar-background">
            
                 <ul class="nav-list">
                   <div class="logo"><img src="{% static 'pictures/'}" alt="logo" width="30%"></div>  
@@ -35,16 +36,43 @@
 
     
             </ul>
-    </nav>
+    </nav> -->
+
+    <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                     <!-- <li><a href="{% url 'yoga' %}">Yoga</a></li> -->
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#f8f4f4; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+                     
+                      <form method="get" action="{% url 'yoga' %}">
+                      <input type="text" name="query" placeholder="Search here..." value="{{ request.GET.query }}">
+                      <button type="submit">search</button> 
+
+                </ul>
+           
+             
+                <!-- <input type="text" name="search" id="search">
+                <button class="btn btn-sm">search</button> -->
+             </nav>
    
-        <img src="{%  static '../pictures/yogamainbg.jpg' %}" alt="image" width="100%" height="100vh">
+        
 <!---------------------------front page section------------------------------>  
 
     <section class="background-firstSection">
 
             <div class="quote-box">
-
-                <h1>YOGA<span class="auto-type"></span></h1>
+                <!-- <img src="{%  static '../pictures/yogamainbg.jpg' %}" alt="image" width="100%" height="100vh"> -->
+                <h1>YOGA <span class="auto-type"></span></h1>
             </div>
 
     </section>
@@ -54,12 +82,13 @@
     <section class="yogatype">
 
       <div class="yoga-info">
-        <h1><u>Wellness for All Ages with Yoga</u></h1>
+        <h1>Wellness for All Ages with Yoga</h1>
         <p><i>The Timeless power of yoga that adapts to every age, guiding children,
           teenagers, adults, and seniors alike toward balance, strength, and inner 
           peace throughout life’s journey.</i></p>
 
         </div>
+    </section>
 
 
 <!-----------------------------------cards section------------------------------>
@@ -226,7 +255,7 @@ function highlightText() {
 </script>
 
 </footer>
-</section>
+
 
 
 

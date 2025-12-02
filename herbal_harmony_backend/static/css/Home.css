@@ -92,10 +92,11 @@ html { scroll-behavior: smooth; }
 }
 .h1{
   text-align: center;
-  textcolour:green;
+  color: green;
 
 }
 /* ------------------------ logo SECTION --------------------------- */
+
 .firstSection {
   display: flex;
   align-items: center;
