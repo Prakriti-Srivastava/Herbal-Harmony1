@@ -1,0 +1,210 @@
+{% load static %}
+<!DOCTYPE html>
+<html  lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
+    <title>Herbal Harmony</title>
+
+</head>
+<body>
+  <div class="heading name">
+
+    <h1>Treatment of Cold</h1>
+  </div>
+    <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><a href="{% url 'Home' %}"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
+
+          
+                    
+                     <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+                </ul>
+           
+             
+                <input type="text" name="search" id="search">
+                <button class="btn-search">search</button>
+             </nav>
+<div class="section1">
+    <h2>Understanding cold Symptoms</h2>
+    <p>Cold can be mild or temporary depending on its cause.
+It often affects the mood, activeness of body:</p>
+    <ul>
+        <li>Sneezing</li>
+        <li>runny nose</li>
+        <li>Fatigue or Tiredness</li>
+        <li>caugh in throat</li>
+        <li>worm body</li>
+        <li>Weakness or Reduced Mobility</li>
+    </ul>
+    <p>It's important to recognize these symptoms early for effective treatment.</p>
+</div>
+<div class="section2">
+    <h2>Herbal Remedies for Cold</h2>
+    <p>Several herbal remedies can help alleviate cold symptoms:</p>
+    <ol>
+        <li><strong><h3>Turmeric Milk (Haldi Doodh):</h3></strong>
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 glass warm milk</li>
+                <li> ½ tsp turmeric powder</li>
+                <strong>How to Use:</strong>
+                <li>Drink every night before sleeping.</li>
+                <strong>Benefits:</strong>
+                <li>Turmeric has curcumin, a powerful anti-inflammatory compound that reduces muscle pain, joint stiffness, and inflammation.</li>
+
+            </ul>
+    </li><br>
+    <li><strong><h3>Ginger Tea:</h3></strong>
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 inch fresh ginger(crushed)</li>
+                <li>1 cup water</li>
+                <li>Honey (optional)</li>
+                <strong>How to Use:</strong>
+                <li>Boil ginger in water for 10 minutes, strain, and drink twice daily.</li>
+                <strong>Benefits:</strong>
+                <li>Ginger improves blood circulation and helps reduce body and joint pain.</li>
+                </ul>
+        </li><br>
+
+        <li><strong><h3>Tulsi (Holy Basil) Kadha</h3></strong>
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>7-10 fresh Tulsi leaves</li>
+                <li>1-inch ginger (crushed)</li>
+                <li>4-5 black pepper</li>
+                <li>1 cup water</li>
+                <li>1 tsp honey (optional)</li>
+                <strong>How to Prepare:</strong>
+                <li>Boil water in a pan.</li>
+                <li>Add tulsi leaves, ginger, and black pepper.</li>
+                <li>Let it boil for 7-10 minutes until water reduces.</li>
+                <li>Strain and drink warm.</li>
+                <li>Add honey after cooling slightly.</li>
+                <strong>Benefits:</strong>
+                <li>Clears nasal congestion</li>
+                <li>Reduces cold and cough</li>
+                <li>Anti-viral + immune boosting</li>
+                </ul>
+                </li>
+<br>
+        <li><strong><h3>Ajwain (Carom Seeds) Steam Inhalation</h3></strong> 
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 tsp ajwain</li>
+                <li>Hot water bowl</li>
+                <strong>How to Use:</strong>
+                <li>Add ajwain to hot water.</li>
+                <li>Cover head with towel and inhale steam for 5-7 minutes.</li>
+                <strong>Benefits:</strong>
+                <li>Opens blocked nose</li>
+                <li>Reduces sinus pressure</li>
+                <li>Clears chest congestion</li>
+                </ul>
+        </li><br>
+       <li><strong><h3>Mulethi (Licorice) Tea:</h3></strong> 
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>½ tsp mulethi powder</li>
+                <li>1 cup water</li>
+                <strong>How to prepare:</strong>
+                <li>Boil water with mulethi for 3-4 minutes.</li>
+                <li>Strain and drink warm.</li>
+                <strong>Benefits:</strong>
+                <li>Relieves sore throat</li>
+                <li>Reduces cough</li>
+                <li>Acts as a natural expectorant</li>
+                </ul>
+         </li><br>
+       <li><strong><h3>Giloy (Guduchi) Decoction:</h3></strong> 
+            <ul>
+                <strong>How to Use:</strong>
+                <li>1 tbsp giloy stem</li>
+                <li>2 cups water</li>
+                <strong>How to Use:</strong>
+                <li>Boil till reduced to half and drink twice daily.</li>
+                <strong>Benefits:</strong>
+                <li>Giloy purifies blood and helps fight fatigue, fever, and inflammation.</li>
+            </ul>
+        </li><br>
+        <li><strong><h3>Cinnamon & Honey Water:</h3></strong> 
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>½ tsp cinnamon powder</li>
+                <li>1 cup warm water</li>
+                <li>1 tsp honey</li>
+                <strong>How to prepare:</strong>
+                <li>Mix cinnamon powder in warm water and add honey. Stir well and drink.</li>
+                <strong>Benefits:</strong>
+                <li>Reduces throat irritation</li>
+                <li>Strong anti-viral effect</li>
+                <li>Helps in runny nose</li>
+            </ul>
+        </li><br>
+
+       
+    </ol>
+
+    <p>Always consult with a healthcare provider before starting any new herbal treatments.</p>
+    </div>
+<div class="section3">
+    <h2>Precautions</h2>
+    <p>While using these herbal remedies, keep the following precautions in mind:</p>
+    <ul>
+        <li>Avoid cold drinks.</li>
+        <li>use mask .</li>
+        <li>use hanckerchief while sneezing.</li>
+    </ul>
+    </div>
+<div class="section4">
+    <h2>When to Seek Medical Attention</h2>
+    <p>If you experience severe symptoms or if your body pain lasts for more than a week, it's important to seek medical attention. Additionally, if you have difficulty moving, swelling, or intense pain, contact a healthcare professional immediately.</p>
+</div>
+ <!-- -----------------footer div--------------------- -->
+<footer id="contact" tabindex="-1">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="#About">About</a>
+        <a href="{% url 'yoga' %}">Yoga</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -187,6 +187,7 @@ def aromaherb(request):
     return render(request, 'aromaherb.html')
 def culinherb(request):
     return render(request, 'culinherb.html')
+<<<<<<< HEAD
 
 def baddhakonasana(request):
     return render(request, 'baddhakonasana.html')
@@ -208,3 +209,7 @@ def matsyasana(request):
 
 def weakness(request):
     return render(request, 'weakness.html')
+=======
+def Termeric(request):
+    return render(request, 'Termeric.html')
+>>>>>>> 01316d9bae573aac709d42308cb6390379420351
