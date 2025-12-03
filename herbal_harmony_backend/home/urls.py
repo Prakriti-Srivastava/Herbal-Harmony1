@@ -61,4 +61,5 @@ urlpatterns = [
    path('matsyasana', views.matsyasana, name='matsyasana'),
    path('weakness', views.weakness, name='weakness'),
    path('Termeric', views.Termeric, name='Termeric'),
+   path('stress', views.stress, name='stress'),
 ]

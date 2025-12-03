@@ -213,3 +213,6 @@ def weakness(request):
 def Termeric(request):
     return render(request, 'Termeric.html')
 
+def stress(request):
+    return render(request, 'stress.html')
+

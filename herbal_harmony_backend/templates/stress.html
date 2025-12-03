@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
+    <title>Stress Relief</title>
+</head>
+
+<body>
+
+    <!-- -------------------- HEADING -------------------- -->
+    <div class="heading name">
+        <h1>Treatment of Stress</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">      
+        <ul class="nav-list">
+            <div class="logo"><a href="Home"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'herb' %}">Herbs</a></li>
+            <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+            <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+        </ul>
+
+        <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+        
+    </nav>
+
+    <!-- -------------------- SECTION 1 -------------------- -->
+    <div class="section1">
+        <h2>Understanding Stress Symptoms</h2>
+        <p>Stress affects the mind and body. Common symptoms include:</p>
+        <ul>
+            <li>Headache and fatigue</li>
+            <li>Restlessness and irritability</li>
+            <li>Difficulty sleeping</li>
+            <li>Loss of focus and motivation</li>
+            <li>Muscle tension or body pain</li>
+            <li>Increased heart rate</li>
+        </ul>
+
+        <p>Recognizing stress early helps in managing it effectively.</p>
+
+        <div class="secondHalf">
+            <img src="{% static 'pictures/stress.jpg' %}" alt="Stress Image" height="60%" width="80%">
+        </div>
+    </div>
+
+    <!-- -------------------- SECTION 2 -------------------- -->
+    <div class="section2">
+        <h2>Herbal & Natural Remedies for Stress</h2>
+        <p>These natural remedies help calm the mind and reduce stress:</p>
+
+        <ol>
+
+            <li><strong><h3>Ashwagandha Tea</h3></strong>
+                <!-- <img src="{% static 'pictures/ashwagandha tea.jpg' %}" alt="Ashwagandha Tea" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 tsp Ashwagandha powder</li>
+                    <li>1 cup warm water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Mix well and drink once daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Reduces stress, improves sleep, balances hormones.</li>
+                </ul>
+            </li><br>
+
+            <li><strong><h3>Brahmi Tea</h3></strong>
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 tsp Brahmi leaves or powder</li>
+                    <li>1 cup hot water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil and sip warm.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Improves concentration, reduces anxiety.</li>
+                </ul>
+            </li><br>
+
+            <li><strong><h3>Chamomile Tea</h3></strong>
+                <!-- <img src="{% static 'pictures/chamomile tea.jpg' %}" alt="Chamomile Tea" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 tbsp dried chamomile flowers</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil in water for 5 minutes and drink before sleep.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Relieves anxiety and improves sleep quality.</li>
+                </ul>
+            </li><br>
+
+            <li><strong><h3>Lemon Balm Water</h3></strong>
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>Fresh lemon balm leaves</li>
+                    <li>Warm water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Steep leaves for 5 minutes and drink.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Calms the nervous system.</li>
+                </ul>
+            </li><br>
+
+            <li><strong><h3>Lavender Oil (Aromatherapy)</h3></strong>
+                <ul>
+                    <strong>How to Use:</strong>
+                    <li>Add a few drops to a diffuser or pillow.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Reduces stress, improves mental relaxation.</li>
+                </ul>
+            </li><br>
+
+            <li><strong><h3>Deep Breathing & Meditation</h3></strong>
+                <ul>
+                    <strong>How to Use:</strong>
+                    <li>Practice 5–10 minutes daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Balances mind, reduces stress hormones.</li>
+                </ul>
+            </li><br>
+
+        </ol>
+
+        <p>For chronic stress, always consult a healthcare expert.</p>
+    </div>
+
+    <!-- -------------------- PREVENTION -------------------- -->
+    <div class="section3">
+        <h2>Preventive Measures</h2>
+        <p>To reduce stress naturally:</p>
+        <ul>
+            <li>Practice yoga & meditation daily</li>
+            <li>Maintain healthy sleep habits</li>
+            <li>Spend time in nature</li>
+            <li>Eat a balanced diet</li>
+            <li>Take breaks during work</li>
+            <li>Avoid overthinking & screen overload</li>
+            <li>Stay hydrated</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- WHEN TO SEEK HELP -------------------- -->
+    <div class="section4">
+        <h2>When to Seek Medical Attention</h2>
+        <p>If stress causes severe symptoms like panic attacks, long-term insomnia, chest pain, or inability to function normally, seek medical help immediately.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer id="contact" tabindex="-1">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We are committed to providing natural wellness solutions through herbs, yoga, and mindful practices.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="{% url 'Home' %}">Home</a>
+                <a href="{% url 'About' %}">About</a>
+                <a href="{% url 'yoga' %}">Yoga</a>
+                <a href="#Contact">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
