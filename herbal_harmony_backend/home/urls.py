@@ -53,7 +53,6 @@ urlpatterns = [
    path('mentalhealth', views.mentalhealth, name='mentalhealth'),
    path('aromaherb', views.aromaherb, name="aromaherb"),
    path('culinherb', views.culinherb, name='culinherb'),
-<<<<<<< HEAD
    path('baddhakonasana', views.baddhakonasana, name='baddhakonasana'),
    path('animalandfun', views.animalandfun, name='animalandfun'),
    path('marjariasana', views.marjariasana, name='marjariasana'),
@@ -61,7 +60,5 @@ urlpatterns = [
    path('mandukasana', views.mandukasana, name='mandukasana'),
    path('matsyasana', views.matsyasana, name='matsyasana'),
    path('weakness', views.weakness, name='weakness'),
-=======
    path('Termeric', views.Termeric, name='Termeric'),
->>>>>>> 01316d9bae573aac709d42308cb6390379420351
 ]
