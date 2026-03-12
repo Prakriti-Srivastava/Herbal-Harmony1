@@ -216,3 +216,5 @@ def Termeric(request):
 def stress(request):
     return render(request, 'stress.html')
 
+def WeakImunity(request):
+    return render(request, 'WeakImunity.html')
