@@ -221,3 +221,6 @@ def WeakImunity(request):
 
 def Diarrhea(request):
     return render(request, 'Diarrhea.html')
+
+def Diabetes(request):
+    return render(request, 'diabetes.html')
