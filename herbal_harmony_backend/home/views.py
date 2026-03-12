@@ -218,3 +218,6 @@ def stress(request):
 
 def WeakImunity(request):
     return render(request, 'WeakImunity.html')
+
+def Diarrhea(request):
+    return render(request, 'Diarrhea.html')

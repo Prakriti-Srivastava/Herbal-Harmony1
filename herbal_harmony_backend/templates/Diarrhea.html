@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html  lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
+    <title>Herbal Harmony</title>
+
+</head>
+<body>
+  <div class="heading name">
+
+    <h1>Treatment of Diarrhea</h1>
+  </div>
+    <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><a href="Home"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></a></div>
+
+                  
+                     <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+                </ul>
+
+                <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+             </nav>
+<div class="section1">
+    <h2>Understanding Diarrhea Symptoms</h2>
+    <p>Diarrhea is a common symptom of various illnesses and can lead to a variety of symptoms, including:</p>
+    <ul>
+        <li>Loose, watery stools</li>
+        <li>Abdominal pain and cramping</li>
+        <li>Nausea and vomiting</li>
+        <li>Dehydration</li>
+        <li>Fever</li>
+        <li>Loss of appetite</li>
+    </ul>
+    <p>It's important to recognize these symptoms early for effective treatment.</p>
+     <div class="secondHalf">
+                <img src="{% static 'pictures/diarrhea.webp' %}" alt="img" height="60%" width="80%">
+               </div>
+</div>
+<div class="section2">
+   
+    <h2>Herbal Remedies for Diarrhea</h2>
+    <p>Several herbal remedies can help alleviate Diarrhea symptoms:</p>
+    <ol>
+        <li><strong><h3>Ginger Tea:</h3></strong>
+             <img src="{% static 'pictures/ginger cinnamon tea.jpg' %}" alt="img" height="40%" width="50%">
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 inch ginger piece</li>
+                 <li>1 cup water</li>
+                <strong>How to Use:</strong>
+                <li>Boil water with ginger for 5 minutes and drink the tea warm.</li>
+                <strong>Benefits:</strong>
+                <li>Helps reduce stomach cramps, improves digestion, and controls diarrhea.</li>
+
+            </ul>
+    </li><br>
+    <li><strong><h3>Mint (Pudina) Water:</h3></strong>
+         <img src="{% static 'pictures/peppermint.jpg' %}" alt="img" height="40%" width="50%">
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>6-7 mint leaves</li>
+                <li>1 cup water</li>
+                <strong>How to Use:</strong>
+                <li>Crush the mint leaves, mix them in water, strain, and drink twice a day.</li>
+                <strong>Benefits:</strong>
+                <li>Relieves stomach pain, improves digestion, and helps stop loose motions.</li>
+                </ul>
+        </li><br>
+
+        <li><strong><h3>Cumin (Jeera) Water</h3></strong>
+             <!-- <img src="{% static 'pictures/giloy juice.jpg' %}" alt="img" height="40%" width="50%"> -->
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 tbsp cumin seeds</li>
+                <li>1 glass water</li>
+                <strong>How to Use:</strong>
+                <li>Boil cumin seeds in water for 5 minutes, strain, and drink when warm.</li>
+                <strong>Benefits:</strong>
+                <li>Helps control diarrhea, reduces bloating, and improves digestion.</li>
+                </ul>
+                </li>
+<br>
+        <li><strong><h3>Banana Remedy:</h3></strong> 
+             <!-- <img src="{% static 'pictures/neem leaf juice.jpg' %}" alt="img" height="40%" width="50%"> -->
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 ripe banana</li>
+                <li>A pinch of salt</li>
+
+                <strong>How to Use:</strong>
+                <li>Mash the banana with a pinch of salt and eat once or twice a day.</li>
+                <strong>Benefits:</strong>
+                <li>Restores lost nutrients and helps stop diarrhea..</li>
+                </ul>
+        </li><br>
+       <li><strong><h3>Fenugreek (Methi) Seeds:</h3></strong> 
+         <!-- <img src="{% static 'pictures/ginger cinnamon tea.jpg' %}" alt="img" height="40%" width="50%"> -->
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 tsp fenugreek seeds</li>
+                <li>1 glass warm water</li>
+                <strong>How to Use:</strong>
+                <li>Swallow the fenugreek seeds with warm water once a day.</li>
+                <strong>Benefits:</strong>
+                <li>Helps control loose motions and improves digestion.</li>
+                </ul>
+                </li><br>
+       
+        <li><strong><h3>Chamomile Tea:</h3></strong> 
+           <img src="{% static 'pictures/chamomile.jpg' %}" alt="img" height="40%" width="50%"> 
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 tsp dried chamomile flowers</li>
+                <li>1 cup hot water</li>
+                <strong>How to Use:</strong>
+                <li>Boil chamomile flowers in water for 5 minutes, strain, and drink the tea warm.</li>
+                <strong>Benefits:</strong>
+                <li>Helps relax stomach muscles, reduces inflammation, and controls diarrhea.</li>
+            </ul>
+        </li><br>
+
+       <li><strong><h3>Fennel (saunf) Water:</h3></strong> 
+         <!-- <img src="{% static 'pictures/papaya leaf juice.jpg' %}" alt="img" height="50%" width="60%"> -->
+            <ul>
+                <strong>Ingredients:</strong>
+                <li>1 tsp fennel seeds</li>
+                <li>1 cup water</li>
+                <strong>How to Use:</strong>
+                <li>Boil fennel seeds in water for 5 minutes, strain, and drink the tea warm.</li>
+                <strong>Benefits:</strong>
+                <li>Helps with digestion and provides relief from loose motions.</li>
+                </ul>
+                </li><br>
+    </ol>
+
+   
+    </div>
+<div class="section3">
+    <h2>Preventive Measures</h2>
+    <p>To reduce the risk of catching Fever, consider the following preventive measures:</p>
+    <ul>
+        <li>Maintain Proper Hygiene,Drink Clean and Safe Water.</li>
+        <li>Eat a Balanced, Healthy Diet.</li>
+        <li>Properly wash fruits and vegetables before eating to remove harmful germs.</li>
+        <li>Use digestive herbs like Mint, Ginger, and Cumin in food to support healthy digestion.</li>
+        <li>Avoid Street Food and Junk Food.</li>
+         <li>Strengthen Immunity Naturally.</li>
+          <li>Stay Hydrated.</li>
+
+    </ul>
+    </div>
+<div class="section4">
+    <h2>When to Seek Medical Attention</h2>
+    <p>If you experience severe symptoms or if your diarrhea lasts for more than 3-4 days, it's important to seek medical attention. Additionally, if you have difficulty breathing, chest pain, or a high fever, contact a healthcare professional immediately.</p>
+</div>
+ <!-- -----------------footer div--------------------- -->
+<footer id="contact" tabindex="-1">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
