@@ -65,4 +65,5 @@ urlpatterns = [
    path('WeakImunity',views.WeakImunity,name='WeakImunity'),
    path('Diarrhea', views.Diarrhea, name='Diarrhea'),
    path('Diabetes', views.Diabetes, name='Diabetes'),
+   path('WeakEyesight', views.WeakEyesight, name='WeakEyesight'),
 ]

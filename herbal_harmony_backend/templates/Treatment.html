@@ -94,24 +94,26 @@
                    <br>
                 </div>
               </a>
-             <div class="card">
-                 <img src="{% static 'pictures/weak eyesight.jpg' %}" alt="herb" width="">
+              <a href="{% url 'WeakEyesight' %}" class="WeakEyesight-link">
+                <div class="card">
+                  <img src="{% static 'pictures/weak eyesight.jpg' %}" alt="herb" width="">
                   <h3>weak eye sight</h3>  <br>
-            </div>
+                </div>
+              </a>
 
-            <a href="{% url 'weakness' %}" class="weakness-link">
-            <div class="card">
-                <img src="{% static 'pictures/weakness.png' %}" alt="herb" width="">
-                <h3>Weakness</h3>  <br>
-            </div>
-            </a>
+              <a href="{% url 'weakness' %}" class="weakness-link">
+                 <div class="card">
+                 <img src="{% static 'pictures/weakness.png' %}" alt="herb" width="">
+                 <h3>Weakness</h3>  <br>
+                </div>
+              </a>
 
-            <a href="{% url 'stress' %}" class="Stress-link">
-              <div class="card">
+               <a href="{% url 'stress' %}" class="Stress-link">
+                  <div class="card">
                   <img src="{% static 'pictures/stress.jpg' %}" alt="herb" width="">
                   <h3>Stress</h3><br>
-              </div> 
-           </a>
+                   </div> 
+               </a>
  
     </section>
   

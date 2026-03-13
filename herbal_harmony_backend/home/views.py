@@ -224,3 +224,6 @@ def Diarrhea(request):
 
 def Diabetes(request):
     return render(request, 'diabetes.html')
+
+def WeakEyesight(request):
+    return render(request, 'WeakEyesight.html')
