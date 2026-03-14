@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aromatherapy | Herbal Harmony</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:linear-gradient(120deg,#f4fbf6,#eef7f1);color:#2e3d34}
+
+header{
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:100px 20px
+}
+
+header h1{font-size:3rem;margin-bottom:15px}
+header p{max-width:700px;margin:auto}
+
+.container{padding:60px 8%}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px
+}
+
+.card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 12px 25px rgba(0,0,0,0.12);
+transition:0.35s;
+cursor:pointer
+}
+
+.card:hover{transform:translateY(-8px)}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover
+}
+
+.card-content{padding:20px}
+
+.card-content h3{color:#2f6f4f;margin-bottom:8px}
+
+.details{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.5s ease
+}
+
+.details p{margin:6px 0}
+
+.benefits{
+background:#f1f8f4;
+padding:10px;
+border-radius:8px;
+margin-top:10px
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#2f6f4f;
+color:white;
+margin-top:50px
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Aromatherapy</h1>
+<p>Aromatherapy uses natural plant extracts and essential oils to improve mental and physical well-being. Explore different oils and methods used for relaxation, focus and emotional balance.</p>
+</header>
+
+<div class="container">
+<div class="grid" id="aromaGrid"></div>
+</div>
+
+<footer>
+<p>Herbal Harmony • Natural Aromatherapy Guide</p>
+</footer>
+
+<script>
+
+const therapies=[
+{
+name:"Lavender Aromatherapy",
+img:"https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+how:["Add few drops of lavender oil in a diffuser","Inhale the calming aroma","Use before sleep for relaxation"],
+benefits:["Reduces stress","Improves sleep","Relaxes mind"]
+},
+{
+name:"Peppermint Aromatherapy",
+img:"https://images.unsplash.com/photo-1628771065518-0d82f1938462",
+how:["Add peppermint oil in diffuser","Inhale during study or work","Can also mix with carrier oil for temples massage"],
+benefits:["Boosts energy","Improves concentration","Relieves headache"]
+},
+{
+name:"Rosemary Aromatherapy",
+img:"https://images.unsplash.com/photo-1615486363979-35f3cb147f9a",
+how:["Diffuse rosemary oil in room","Inhale aroma while studying","Use in steam inhalation"],
+benefits:["Improves memory","Enhances focus","Stimulates brain activity"]
+},
+{
+name:"Chamomile Aromatherapy",
+img:"https://images.unsplash.com/photo-1519681393784-d120267933ba",
+how:["Add chamomile oil in warm bath","Diffuse before bedtime","Inhale deeply while relaxing"],
+benefits:["Promotes relaxation","Reduces anxiety","Improves sleep"]
+},
+{
+name:"Lemon Aromatherapy",
+img:"https://images.unsplash.com/photo-1497534446932-c925b458314e",
+how:["Diffuse lemon oil in room","Add few drops in warm water steam","Inhale fresh citrus aroma"],
+benefits:["Boosts mood","Improves alertness","Refreshes mind"]
+},
+{
+name:"Eucalyptus Aromatherapy",
+img:"https://images.unsplash.com/photo-1598899134739-24c46f58b8c6",
+how:["Add eucalyptus oil to hot water","Inhale steam slowly","Diffuse during cold or congestion"],
+benefits:["Clears breathing","Relieves stress","Refreshes senses"]
+},
+{
+name:"Tea Tree Aromatherapy",
+img:"https://images.unsplash.com/photo-1606755962773-0c2dfb5c1c77",
+how:["Diffuse tea tree oil in room","Use in steam inhalation","Mix with carrier oil for massage"],
+benefits:["Purifies air","Improves respiratory health","Boosts immunity"]
+},
+{
+name:"Sandalwood Aromatherapy",
+img:"https://images.unsplash.com/photo-1604908176997-125f25cc6d7a",
+how:["Diffuse sandalwood oil","Use during meditation","Inhale slowly in calm environment"],
+benefits:["Promotes meditation","Reduces anxiety","Enhances mental clarity"]
+},
+{
+name:"Orange Aromatherapy",
+img:"https://images.unsplash.com/photo-1502741338009-cac2772e18bc",
+how:["Diffuse orange oil","Add drops to aroma lamp","Inhale citrus fragrance"],
+benefits:["Improves mood","Reduces stress","Boosts positivity"]
+},
+{
+name:"Rose Aromatherapy",
+img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+how:["Diffuse rose oil","Add few drops in bath","Inhale calming floral scent"],
+benefits:["Enhances emotional balance","Reduces anxiety","Promotes relaxation"]
+}
+];
+
+const grid=document.getElementById("aromaGrid");
+
+therapies.forEach((t,i)=>{
+
+const card=document.createElement("div");
+card.className="card";
+
+card.innerHTML=`
+<img src="${t.img}" alt="${t.name}">
+<div class="card-content">
+<h3>${t.name}</h3>
+<p>Click to explore therapy</p>
+<div class="details" id="d${i}">
+<p><strong>How to Use:</strong></p>
+${t.how.map(step=>`<p>• ${step}</p>`).join("")}
+<div class="benefits">
+<p><strong>Benefits:</strong></p>
+${t.benefits.map(b=>`<p>✔ ${b}</p>`).join("")}
+</div>
+</div>
+</div>
+`;
+
+card.onclick=()=>{
+const detail=document.getElementById("d"+i);
+if(detail.style.maxHeight){
+detail.style.maxHeight=null;
+}else{
+detail.style.maxHeight=detail.scrollHeight+"px";
+}
+};
+
+grid.appendChild(card);
+
+});
+
+</script>
+
+</body>
+</html>
