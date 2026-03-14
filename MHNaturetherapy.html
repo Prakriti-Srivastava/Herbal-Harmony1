@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Therapy | Herbal Harmony</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Fredoka:wght@400;500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:linear-gradient(135deg,#e8ffe8,#e0f7ff);
+font-family:'Poppins',sans-serif;
+color:#2f3e34;
+overflow-x:hidden;
+}
+
+header{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(180deg,#b9fbc0,#a0e7e5);
+}
+
+header h1{
+font-family:'Baloo 2',cursive;
+font-size:3.2rem;
+margin-bottom:10px;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+font-size:1.1rem;
+}
+
+.timeline{
+position:relative;
+padding:80px 0;
+width:90%;
+margin:auto;
+}
+
+.line{
+position:absolute;
+left:50%;
+top:0;
+bottom:0;
+width:4px;
+background:#7ed957;
+transform:translateX(-50%);
+}
+
+.activity{
+width:50%;
+padding:30px;
+position:relative;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:25px;
+box-shadow:0 15px 25px rgba(0,0,0,0.12);
+transition:0.35s;
+}
+
+.card:hover{
+transform:scale(1.05) rotate(1deg);
+}
+
+.activity h3{
+font-family:'Baloo 2',cursive;
+color:#2f6f4f;
+margin-bottom:8px;
+}
+
+.activity img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.activity ul{
+margin-top:8px;
+padding-left:18px;
+}
+
+.left{left:0;text-align:right}
+.left .card{margin-right:60px}
+
+.right{left:50%}
+.right .card{margin-left:60px}
+
+.dot{
+position:absolute;
+top:40px;
+right:-10px;
+width:18px;
+height:18px;
+background:#ffcc70;
+border-radius:50%;
+}
+
+.right .dot{left:-10px}
+
+/* BIG SIDE TEXT */
+.side-text{
+position:absolute;
+width:40%;
+font-family:'Fredoka',sans-serif;
+font-size:28px;
+line-height:1.4;
+color:#2f6f4f;
+}
+
+.side-left{
+left:-45%;
+text-align:right;
+}
+
+.side-right{
+right:-45%;
+text-align:left;
+}
+
+.side-text span{
+display:block;
+font-size:40px;
+margin-bottom:8px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:60px;
+background:#a0e7e5;
+font-family:'Baloo 2',cursive;
+}
+
+.leaf{
+position:fixed;
+font-size:24px;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(-10vh) rotate(0deg)}
+100%{transform:translateY(110vh) rotate(360deg)}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌿 Nature Therapy</h1>
+<p>Reconnect with nature and refresh your mind. Small moments with sunlight, grass, trees and fresh air can bring happiness and calmness to your daily life.</p>
+</header>
+
+<section class="timeline">
+<div class="line"></div>
+
+<div class="activity left">
+<div class="card">
+<h3>☀️ Morning Sun Bath</h3>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<p>Spend 10–15 minutes in gentle morning sunlight.</p>
+<ul>
+<li>Stand or sit in sunlight</li>
+<li>Close eyes and breathe deeply</li>
+<li>Feel warmth on your skin</li>
+</ul>
+<p><b>Benefits:</b> Vitamin D, mood improvement, better sleep.</p>
+</div>
+<div class="side-text side-right">
+<span>☀️ Sunshine = Happiness</span>
+Morning sunlight helps your brain release serotonin which improves mood and energy.
+</div>
+<div class="dot"></div>
+</div>
+
+<div class="activity right">
+<div class="card">
+<h3>🌿 Walk Barefoot on Grass</h3>
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9">
+<p>Walking barefoot connects your body with the earth.</p>
+<ul>
+<li>Find soft grass</li>
+<li>Walk slowly for 10 minutes</li>
+<li>Focus on the cool sensation</li>
+</ul>
+<p><b>Benefits:</b> Relaxation, grounding, stress relief.</p>
+</div>
+<div class="side-text side-left">
+<span>🌿 Feel the Earth</span>
+Walking barefoot relaxes the nervous system and gives a natural calming effect.
+</div>
+<div class="dot"></div>
+</div>
+
+<div class="activity left">
+<div class="card">
+<h3>🌳 Forest Walk</h3>
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<p>Slow mindful walking in a green area.</p>
+<ul>
+<li>Walk slowly</li>
+<li>Listen to birds</li>
+<li>Observe trees and leaves</li>
+</ul>
+<p><b>Benefits:</b> Calm mind, improved focus.</p>
+</div>
+<div class="side-text side-right">
+<span>🌳 Nature Heals</span>
+Spending time around trees reduces stress hormones and improves concentration.
+</div>
+<div class="dot"></div>
+</div>
+
+<div class="activity right">
+<div class="card">
+<h3>🌬 Fresh Air Breathing</h3>
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+<p>Deep breathing in open natural air.</p>
+<ul>
+<li>Stand in balcony or garden</li>
+<li>Inhale slowly through nose</li>
+<li>Exhale gently</li>
+</ul>
+<p><b>Benefits:</b> Oxygen boost, stress reduction.</p>
+</div>
+<div class="side-text side-left">
+<span>🌬 Breathe Deep</span>
+Fresh oxygen improves brain activity and instantly refreshes your mind.
+</div>
+<div class="dot"></div>
+</div>
+
+<div class="activity left">
+<div class="card">
+<h3>🌼 Gardening Therapy</h3>
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+<p>Spend time planting and caring for plants.</p>
+<ul>
+<li>Plant herbs or flowers</li>
+<li>Water them daily</li>
+<li>Observe their growth</li>
+</ul>
+<p><b>Benefits:</b> Joy, creativity, relaxation.</p>
+</div>
+<div class="side-text side-right">
+<span>🌼 Grow Happiness</span>
+Gardening creates a sense of purpose and naturally boosts happiness.
+</div>
+<div class="dot"></div>
+</div>
+
+<div class="activity right">
+<div class="card">
+<h3>🌅 Sunset Watching</h3>
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<p>Watching sunset calmly improves mindfulness.</p>
+<ul>
+<li>Sit in quiet place</li>
+<li>Watch colors of sky</li>
+<li>Relax and reflect</li>
+</ul>
+<p><b>Benefits:</b> Emotional balance, peace.</p>
+</div>
+<div class="side-text side-left">
+<span>🌅 End the Day Calmly</span>
+Watching sunset relaxes the mind and helps release daily stress.
+</div>
+<div class="dot"></div>
+</div>
+
+</section>
+
+<footer>
+🌿 Herbal Harmony • Feel Happy with Nature 🌿
+</footer>
+
+<script>
+for(let i=0;i<12;i++){
+let leaf=document.createElement('div');
+leaf.className='leaf';
+leaf.innerHTML='🍃';
+leaf.style.left=Math.random()*100+'vw';
+leaf.style.animationDuration=(6+Math.random()*6)+'s';
+document.body.appendChild(leaf);
+}
+</script>
+
+</body>
+</html>
