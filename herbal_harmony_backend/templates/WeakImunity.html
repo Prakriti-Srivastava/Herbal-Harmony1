@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/Cold.css' %}">
+    <title>Herbal Harmony</title>
+</head>
+
+<body>
+
+    <div class="heading name">
+        <h1>Treatment of Weak Immunity</h1>
+    </div>
+
+    <!-- -------------------- NAVBAR -------------------- -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <a href="Home">
+                    <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+                </a>
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+            <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+            <li><a href="{% url 'herb' %}">Herbs</a></li>
+            <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+            <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+        </ul>
+
+        <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+        
+    </nav>
+
+    <!-- -------------------- SECTION 1 -------------------- -->
+    <div class="section1">
+        <h2>Understanding Weak Immunity Symptoms</h2>
+        <p>Weak immunity is often caused by low energy levels, nutritional deficiency, or underlying health issues. Common symptoms include:</p>
+
+        <ul>
+            <li>Constant tiredness or fatigue</li>
+            <li> Frequent infections or illnesses</li>
+            <li>Slow healing of wounds</li>
+            <li>Recurring colds or flu</li>
+            <li>Chronic fatigue</li>
+            <li>Low resistance to diseases</li>
+            <li>Hair fall or weak hair</li>
+        </ul>
+
+        <p>Identifying the symptoms early helps in restoring strength and health.</p>
+
+        <div class="secondHalf">
+            <img src="{% static 'pictures/weak immunity.jpg' %}" alt="img" height="60%" width="80%">
+        </div>
+    </div>
+
+    <!-- -------------------- SECTION 2 (HERBAL REMEDIES) -------------------- -->
+    <div class="section2">
+
+        <h2>Herbal Remedies for Weak Immunity</h2>
+        <p>These herbal remedies help boost  immunity and overall vitality:</p>
+
+        <ol>
+            <!-- Remedy 1 -->
+            <li><strong><h3>Turmeric Milk</h3></strong>
+                <img src="{% static 'pictures/Turmeric.jpg' %}" alt="img" height="40%" width="50%">
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1/2 tsp Turmeric powder</li>
+                    <li>1 glass warm milk</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Mix turmeric in warm milk and drink before bedtime daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Boosts energy, reduces inflation in the body, and strengthens immunity.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 2 -->
+            <li><strong><h3>Ginger Tea</h3></strong>
+                <img src="{% static 'pictures/ginger cinnamon tea.jpg' %}" alt="img" height="40%" width="50%">
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 inch ginger piece </li>
+                    <li>1 cup water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil crushed gimger in water for 5 minutes and drink the tea warm.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Improves immunity, helps fight infections, and supports digestion.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 3 -->
+            <li><strong><h3>Amla juice </h3></strong>
+                <!-- <img src="{% static 'pictures/dates milk.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1 fresh amla</li>
+                    <li>1 glass water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Blend amla with water and drink the juice in the morning</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Rich in vitamin C, strengthens immunity, and protects against diseases.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 4 -->
+            <li><strong><h3>Garlic Remedy</h3></strong>
+                <!-- <img src="{% static 'pictures/honey lemon water.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>1-2 garlic cloves</li>
+                    <li>1 glass water</li>
+            
+
+                    <strong>How to Use:</strong>
+                    <li>Crush the garlic cloves and consume them with warm water in the morning.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Improves immune function and helps the body fight bacteria and viruses.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 5 -->
+            <li><strong><h3>Tulsi(Holy Basil) Tea</h3></strong>
+                 <img src="{% static 'pictures/tulsi tea.jpg' %}" alt="img" height="40%" width="50%">
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>4-5 Tulsi leaves</li>
+                    <li>1 cup water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil the tulsi leaves in water for 5 minutes and drink the tea once or twice daily.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Boosts immunity, helps fight infections, and protects the body from cold and cough.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 6 -->
+            <li><strong><h3>Neem Drink</h3></strong>
+                <img src="{% static 'pictures/neem leaf juice.jpg' %}" alt="img" height="40%" width="50%">
+                <ul>
+                    <strong>Ingredients:</strong>
+                    <li>4-5 neem leaves</li>
+                    <li>1 glass water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil neem leaves in water for 5 minutes, strain, and drink the water once a day.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Purifies the blood, strengthens the immune system, and helps the body fight infections.</li>
+                </ul>
+            </li>
+            <br>
+
+            <!-- Remedy 7 -->
+            <li><strong><h3>Cinnamon (Dalchini) Tea</h3></strong>
+                <!-- <img src="{% static 'pictures/ginger tea.jpg' %}" alt="img" height="40%" width="50%"> -->
+                <ul>
+                     <strong>Ingredients:</strong>
+                    <li>1 small cinnamon stick</li>
+                    <li>1 cup water</li>
+
+                    <strong>How to Use:</strong>
+                    <li>Boil the cinnamon stick in water for 5-7 minutes and drink the tea warm.</li>
+
+                    <strong>Benefits:</strong>
+                    <li>Boosts immunity, improves metabolism, and helps protect the body from infections.</li>
+                </ul>
+            </li>
+
+        </ol>
+
+        <p>Consult a healthcare professional if chronic weakness persists.</p>
+    </div>
+
+    <!-- -------------------- SECTION 3 -------------------- -->
+    <div class="section3">
+        <h2>Preventive Measures for Weak immunity</h2>
+        <p>Follow these daily habits to avoid weak immunity:</p>
+
+        <ul>
+            <li>Eat a balanced diet rich in iron,fruits,vegetables and vitamins.</li>
+            <li>Stay well-hydrated throughout the day.</li>
+            <li>Get at least 7–8 hours of sleep.</li>
+            <li>Practice yoga & breathing exercises daily.</li>
+            <li>Avoid skipping meals.</li>
+            <li>Limit junk food and sugary drinks.</li>
+            <li>Maintain regular physical activity.</li>
+            <li>Practicing meditation, deep breathing, or relaxation techniques helps reduce stress, which can weaken immunity.</li>
+        </ul>
+    </div>
+
+    <!-- -------------------- SECTION 4 -------------------- -->
+    <div class="section4">
+        <h2>When to Seek Medical Attention</h2>
+        <p>If weak immunity is severe, long-lasting, or accompanied by symptoms like breathlessness, chest pain, or dizziness, consult a doctor immediately.</p>
+    </div>
+
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer id="contact" tabindex="-1">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Motive</h3>
+                <p>We are committed to providing natural wellness through herbs, yoga, and self-care.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@herbalharmony.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Prayagraj, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-lastline">
+            <p>2025 Herbal Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

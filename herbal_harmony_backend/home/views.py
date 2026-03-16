@@ -216,3 +216,14 @@ def Termeric(request):
 def stress(request):
     return render(request, 'stress.html')
 
+def WeakImunity(request):
+    return render(request, 'WeakImunity.html')
+
+def Diarrhea(request):
+    return render(request, 'Diarrhea.html')
+
+def Diabetes(request):
+    return render(request, 'diabetes.html')
+
+def WeakEyesight(request):
+    return render(request, 'WeakEyesight.html')
