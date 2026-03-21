@@ -47,7 +47,278 @@
           <img src="{% static 'pictures/mentalhealth.jpg' %}" alt="mbackground" width="100%"   height="100%">
         </div>-->
         
+<!-- --------------------header section-------------------- -->
+        <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:linear-gradient(120deg,#e8f5e9,#f1f8e9);color:#2e3d2f}
 
+header{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("{% static 'pictures/mentalhealth.jpg' %}");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+header h1{font-size:3rem;margin-bottom:15px}
+header p{max-width:700px;font-size:1.1rem}
+
+button{
+padding:12px 25px;
+border:none;
+background:#2f6f4f;
+color:white;
+border-radius:25px;
+cursor:pointer;
+margin-top:20px;
+transition:0.3s
+}
+button:hover{background:#1f4e38}
+
+section{padding:60px 10%;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-10px)}
+
+.card h3{margin-bottom:10px;color:#2f6f4f}
+
+.about{text-align:center;max-width:900px;margin:auto;line-height:1.7}
+
+.tips{
+background:#ffffff;
+border-radius:12px;
+padding:40px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1)
+}
+
+.quiz-container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+.quiz-container h2{text-align:center;margin-bottom:20px}
+
+.question{font-size:18px;margin-bottom:20px}
+
+.option{
+display:block;
+background:#f1f8f4;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s
+}
+
+.option:hover{background:#dff2e6}
+
+.next-btn{display:block;margin:auto;margin-top:20px}
+
+.result{text-align:center;font-size:20px;margin-top:20px;font-weight:600}
+
+/* Emoji Meter */
+.meter{
+width:100%;
+height:20px;
+background:#e0e0e0;
+border-radius:20px;
+margin-top:20px;
+overflow:hidden;
+}
+
+.meter-fill{
+height:100%;
+width:0%;
+background:#2f6f4f;
+transition:width 1s ease;
+}
+
+.emoji{
+font-size:40px;
+margin-top:15px
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#2f6f4f;
+color:white;
+margin-top:40px
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Introduction to Mental Health</h1>
+<p>Mental health is an essential part of our overall well-being. It affects how we think, feel, and behave in daily life. Herbal and natural practices can help maintain emotional balance and reduce stress.</p>
+<button onclick="scrollPage()">Explore More</button>
+</header>
+
+<section id="content">
+<div class="about">
+<h2>Why Mental Health Matters</h2>
+<p>Good mental health helps people handle stress, build relationships, and make healthy life decisions. Natural practices such as herbal teas, aromatherapy, meditation, and healthy lifestyle habits help maintain emotional balance and a calm mind.</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Stress Management</h3>
+<p>Herbal solutions like Ashwagandha, Tulsi, and Chamomile help reduce stress naturally.</p>
+</div>
+
+<div class="card">
+<h3>Better Sleep</h3>
+<p>Relaxing herbs and herbal teas improve sleep quality and help the body recover.</p>
+</div>
+
+<div class="card">
+<h3>Improved Focus</h3>
+<p>Natural herbs such as Brahmi and Rosemary support memory and concentration.</p>
+</div>
+
+<div class="card">
+<h3>Emotional Balance</h3>
+<p>A balanced lifestyle with herbal support helps maintain positive mood.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="tips">
+<h2>Simple Daily Mental Wellness Tips</h2>
+<ul>
+<li>Practice meditation or deep breathing for 10 minutes daily.</li>
+<li>Drink herbal tea such as chamomile or tulsi.</li>
+<li>Spend time in nature and reduce screen time.</li>
+<li>Maintain a healthy sleep routine.</li>
+<li>Stay physically active with yoga or walking.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="quiz-container">
+<h2>Check Your Mental Wellness</h2>
+<div id="quiz">
+<div class="question" id="question"></div>
+<div id="options"></div>
+<button class="next-btn" onclick="nextQuestion()">Next</button>
+<div class="result" id="result"></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><h2>Herbal Harmony Natural Wellness Therapies for Mind and Body</h2></p>
+</footer>
+
+<script>
+function scrollPage(){
+ document.getElementById('content').scrollIntoView({behavior:'smooth'});
+}
+
+const quizData=[
+{question:"How often do you feel stressed?",options:["Rarely","Sometimes","Often"]},
+{question:"How is your sleep quality?",options:["Good","Average","Poor"]},
+{question:"How often do you feel anxious or worried?",options:["Rarely","Sometimes","Frequently"]},
+{question:"Do you feel motivated for daily activities?",options:["Yes","Sometimes","No"]},
+{question:"How often do you practice self-care or relaxation?",options:["Regularly","Occasionally","Never"]}
+];
+
+let currentQuestion=0;
+let score=0;
+
+function loadQuestion(){
+const q=quizData[currentQuestion];
+document.getElementById("question").innerText=q.question;
+
+const optionsContainer=document.getElementById("options");
+optionsContainer.innerHTML="";
+
+q.options.forEach((option,index)=>{
+const btn=document.createElement("div");
+btn.classList.add("option");
+btn.innerText=option;
+btn.onclick=()=>selectOption(index);
+optionsContainer.appendChild(btn);
+});
+}
+
+function selectOption(index){
+if(index===0) score+=2;
+else if(index===1) score+=1;
+}
+
+function nextQuestion(){
+currentQuestion++;
+
+if(currentQuestion<quizData.length){
+loadQuestion();
+}else{
+showResult();
+}
+}
+
+function showResult(){
+let message="";
+let emoji="";
+let meterValue=0;
+
+if(score>=8){
+message="Healthy Mind";
+emoji="😄";
+meterValue=90;
+}
+else if(score>=4){
+message="Moderate Stress";
+emoji="🙂";
+meterValue=60;
+}
+else{
+message="High Stress";
+emoji="😟";
+meterValue=30;
+}
+
+document.getElementById("quiz").innerHTML=`
+<div class="result">${message}</div>
+<div class="emoji">${emoji}</div>
+<div class="meter"><div class="meter-fill" id="meterFill"></div></div>
+<p style="margin-top:15px">Your mental wellness indicator</p>
+`;
+
+setTimeout(()=>{
+document.getElementById("meterFill").style.width=meterValue+"%";
+},200);
+}
+
+loadQuestion();
+</script>
          
  <section class=" secondSection">
           <!-- <h1>For Detailed knowledge---- -></h1> -->
