@@ -1,16 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aromatherapy | Herbal Harmony</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap' %}" rel="stylesheet">
+ <link rel="stylesheet" href="{% static 'css/Aromatherapy.css' %}">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:linear-gradient(120deg,#f4fbf6,#eef7f1);color:#2e3d34}
 
 header{
-background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108');
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("{% static 'pictures/Aroma1.jpg' %}");
 background-size:cover;
 background-position:center;
 color:white;
@@ -75,7 +78,25 @@ margin-top:50px
 </style>
 </head>
 <body>
+  <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
 
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+
+                </ul>
+        
+             </nav>
+       
 <header>
 <h1>Aromatherapy</h1>
 <p>Aromatherapy uses natural plant extracts and essential oils to improve mental and physical well-being. Explore different oils and methods used for relaxation, focus and emotional balance.</p>
@@ -94,61 +115,61 @@ margin-top:50px
 const therapies=[
 {
 name:"Lavender Aromatherapy",
-img:"https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+img:"{% static 'pictures/Lavender Aroma.jpeg' %}",
 how:["Add few drops of lavender oil in a diffuser","Inhale the calming aroma","Use before sleep for relaxation"],
 benefits:["Reduces stress","Improves sleep","Relaxes mind"]
 },
 {
 name:"Peppermint Aromatherapy",
-img:"https://images.unsplash.com/photo-1628771065518-0d82f1938462",
+img:"{% static 'pictures/peppermint.jpg' %}",
 how:["Add peppermint oil in diffuser","Inhale during study or work","Can also mix with carrier oil for temples massage"],
 benefits:["Boosts energy","Improves concentration","Relieves headache"]
 },
 {
 name:"Rosemary Aromatherapy",
-img:"https://images.unsplash.com/photo-1615486363979-35f3cb147f9a",
+img:"{% static 'pictures/Rosemary Aroma.jpg' %}",
 how:["Diffuse rosemary oil in room","Inhale aroma while studying","Use in steam inhalation"],
 benefits:["Improves memory","Enhances focus","Stimulates brain activity"]
 },
 {
 name:"Chamomile Aromatherapy",
-img:"https://images.unsplash.com/photo-1519681393784-d120267933ba",
+img:"{% static 'pictures/Chamomile Aroma.jpg' %}",
 how:["Add chamomile oil in warm bath","Diffuse before bedtime","Inhale deeply while relaxing"],
 benefits:["Promotes relaxation","Reduces anxiety","Improves sleep"]
 },
 {
 name:"Lemon Aromatherapy",
-img:"https://images.unsplash.com/photo-1497534446932-c925b458314e",
+img:"{% static 'pictures/lemon Aroma.jpg' %}",
 how:["Diffuse lemon oil in room","Add few drops in warm water steam","Inhale fresh citrus aroma"],
 benefits:["Boosts mood","Improves alertness","Refreshes mind"]
 },
 {
 name:"Eucalyptus Aromatherapy",
-img:"https://images.unsplash.com/photo-1598899134739-24c46f58b8c6",
+img:"{% static 'pictures/Eucalyptus Aroma.jpg' %}",
 how:["Add eucalyptus oil to hot water","Inhale steam slowly","Diffuse during cold or congestion"],
 benefits:["Clears breathing","Relieves stress","Refreshes senses"]
 },
 {
 name:"Tea Tree Aromatherapy",
-img:"https://images.unsplash.com/photo-1606755962773-0c2dfb5c1c77",
+img:"{% static 'pictures/Tea Tree Aroma.jpg' %}",
 how:["Diffuse tea tree oil in room","Use in steam inhalation","Mix with carrier oil for massage"],
 benefits:["Purifies air","Improves respiratory health","Boosts immunity"]
 },
 {
 name:"Sandalwood Aromatherapy",
-img:"https://images.unsplash.com/photo-1604908176997-125f25cc6d7a",
+img:"{% static 'pictures/Sandalwood Aroma.jpg' %}",
 how:["Diffuse sandalwood oil","Use during meditation","Inhale slowly in calm environment"],
 benefits:["Promotes meditation","Reduces anxiety","Enhances mental clarity"]
 },
 {
 name:"Orange Aromatherapy",
-img:"https://images.unsplash.com/photo-1502741338009-cac2772e18bc",
+img:"{% static 'pictures/Orange Aroma.jpg' %}",
 how:["Diffuse orange oil","Add drops to aroma lamp","Inhale citrus fragrance"],
 benefits:["Improves mood","Reduces stress","Boosts positivity"]
 },
 {
 name:"Rose Aromatherapy",
-img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+img:"{% static 'pictures/Aroma.jpg' %}",
 how:["Diffuse rose oil","Add few drops in bath","Inhale calming floral scent"],
 benefits:["Enhances emotional balance","Reduces anxiety","Promotes relaxation"]
 }
@@ -191,6 +212,45 @@ grid.appendChild(card);
 });
 
 </script>
+ <!-- -----------------footer div--------------------- -->
+<footer id="contact" tabindex="-1">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
+
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
+  
 
 </body>
 </html>
