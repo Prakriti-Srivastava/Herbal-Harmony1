@@ -230,3 +230,6 @@ def WeakEyesight(request):
 
 def MHAromatherapy(request):
     return render(request, 'MHAromatherapy.html')
+
+def MHMeditation(request):
+    return render(request, 'MHMeditation.html')
