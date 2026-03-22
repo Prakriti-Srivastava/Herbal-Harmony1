@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meditation Therapy | Herbal Harmony</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="{% static 'css/aromatherapy.css' %}" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
 body{background:linear-gradient(120deg,#eef7f0,#f7fbf8);color:#2f3e34}
 
 header{
-background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('https://images.unsplash.com/photo-1506126613408-eca07ce68773');
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('{% static "pictures/backgroundimg.jpg" %}');
 background-size:cover;background-position:center;color:white;text-align:center;padding:100px 20px
 }
 
@@ -29,6 +30,12 @@ background:white;border-radius:14px;padding:25px;box-shadow:0 10px 25px rgba(0,0
 
 .card:hover{transform:translateY(-8px)}
 
+.card img{
+width:100%;
+height:180px;
+object-fit:cover
+}
+
 .card h3{color:#2f6f4f;margin-bottom:10px}
 
 .details{
@@ -43,6 +50,24 @@ footer{text-align:center;padding:20px;background:#2f6f4f;color:white;margin-top:
 </style>
 </head>
 <body>
+     <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    <!-- <li><a href="#disclaimer">Disclaimer</a></li> -->
+                    <li><a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+
+                </ul>
+        
+             </nav>
 
 <header>
 <h1>Meditation Therapy</h1>
@@ -62,61 +87,73 @@ footer{text-align:center;padding:20px;background:#2f6f4f;color:white;margin-top:
 const meditations=[
 {
 name:"Mindfulness Meditation",
+img:"{% static 'pictures/mindfulness meditation.jpg' %}",
 how:["Sit comfortably in a quiet place","Focus on your breathing","Observe thoughts without judging","Bring attention back to breath"],
 benefits:["Reduces stress","Improves awareness","Enhances emotional balance"]
 },
 {
 name:"Breathing Meditation",
+img:"{% static 'pictures/breathing.jpg' %}",
 how:["Sit upright","Take slow deep breaths","Inhale through nose exhale through mouth","Focus only on breathing rhythm"],
 benefits:["Calms nervous system","Reduces anxiety","Improves oxygen flow"]
 },
 {
 name:"Guided Meditation",
+img:"{% static 'pictures/guided meditation.jpg' %}",
 how:["Listen to a guided meditation audio","Follow instructions of guide","Visualize relaxing scenes","Stay relaxed and focused"],
 benefits:["Easy for beginners","Promotes relaxation","Improves mental clarity"]
 },
 {
 name:"Mantra Meditation",
+img:"{% static 'pictures/mantra meditation.jpg' %}",
 how:["Sit comfortably","Repeat a calming word or mantra","Focus on the sound vibration","Continue for 10–15 minutes"],
 benefits:["Improves concentration","Calms mind","Reduces stress"]
 },
 {
 name:"Body Scan Meditation",
+img:"{% static 'pictures/body scan meditation.jpg' %}",
 how:["Lie down comfortably","Focus attention on each body part","Start from toes to head","Release tension while scanning"],
 benefits:["Improves relaxation","Reduces physical tension","Enhances body awareness"]
 },
 {
 name:"Loving Kindness Meditation",
+img:"{% static 'pictures/loving kindness meditation.jpg' %}",
 how:["Sit quietly","Think positive wishes for yourself","Extend wishes to others","Repeat kind phrases"],
 benefits:["Improves compassion","Enhances emotional wellbeing","Reduces anger"]
 },
 {
 name:"Visualization Meditation",
+img:"{% static 'pictures/visualisation meditation.jpg' %}",
 how:["Close eyes","Imagine peaceful scenery","Focus on sensory details","Stay relaxed"],
 benefits:["Boosts creativity","Reduces stress","Improves mood"]
 },
 {
 name:"Walking Meditation",
+img:"{% static 'pictures/walking meditation.jpg' %}",
 how:["Walk slowly in a quiet place","Focus on each step","Notice body movement","Breathe calmly"],
 benefits:["Improves focus","Combines movement and meditation","Boosts mood"]
 },
 {
 name:"Zen Meditation",
-how:["Sit cross‑legged","Keep spine straight","Focus on breathing","Observe thoughts quietly"],
+img:"{% static 'pictures/zen meditation.jpg' %}",
+how:["Sit cross-legged","Keep spine straight","Focus on breathing","Observe thoughts quietly"],
 benefits:["Improves discipline","Enhances mindfulness","Calms mind"]
 },
 {
 name:"Transcendental Meditation",
+img:"{% static 'pictures/transcendental meditation.jpg' %}",
 how:["Sit comfortably","Repeat a personal mantra","Close eyes","Practice for 15–20 minutes"],
 benefits:["Deep relaxation","Reduces stress","Improves mental clarity"]
 },
 {
 name:"Sound Meditation",
+img:"{% static 'pictures/sound meditation.jpg' %}",
 how:["Sit quietly","Listen to calming sounds or bells","Focus on vibrations","Relax body and mind"],
 benefits:["Enhances relaxation","Improves focus","Reduces anxiety"]
 },
 {
 name:"Chakra Meditation",
+img:"{% static 'pictures/chakra meditation.jpg' %}",
 how:["Sit comfortably","Focus on body energy centers","Visualize colors in each chakra","Breathe deeply"],
 benefits:["Balances energy","Improves emotional health","Promotes inner peace"]
 }
@@ -157,6 +194,43 @@ grid.appendChild(card);
 });
 
 </script>
+ <!-- -----------------footer div--------------------- -->
+<footer id="contact" tabindex="-1">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Motive</h3>
+        <p>We are committed to provide the best life experience through natureopathy,Promoting natural wellness for all ages with the power of herbs and home remedies.</p>
+      </div>
 
+      <!-- -------------------Quick Links-------------------- -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'healthform' %}">AI Chat</a>
+        <a href="{% url 'herb' %}">Herbs</a>
+        <a href="{% url 'Treatment' %}">Treatment</a>
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'About' %}">About</a>
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a>
+      </div>
+
+      <!-- -------------------Contact Info-------------------- -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: info@herbalharmony.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Prayagraj, India</p>
+      </div>
+
+    
+      
+    </div>
+
+    <!-- -----------------Footer Last Line---------------------- -->
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

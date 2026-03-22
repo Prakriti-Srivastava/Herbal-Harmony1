@@ -33,7 +33,7 @@
 }
 /* ===== Footer ===== */
 footer {
-  background: #456a2d;
+  background: #515d29;
   color: #fff;
   padding: 50px 20px 20px;
   position: relative;
@@ -50,7 +50,7 @@ footer {
 .footer-column h3 {
   margin-bottom: 15px;
   font-size: 1.2rem;
-  border-bottom: 2px solid #365b47;
+  border-bottom: 2px solid  #5a6a2d;
   display: inline-block;
   padding-bottom: 5px;
 }
