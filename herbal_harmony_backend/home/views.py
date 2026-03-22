@@ -227,3 +227,6 @@ def Diabetes(request):
 
 def WeakEyesight(request):
     return render(request, 'WeakEyesight.html')
+
+def MHAromatherapy(request):
+    return render(request, 'MHAromatherapy.html')
