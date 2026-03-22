@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Therapy</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
+    opacity:0.3;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:60px;
+    letter-spacing:2px;
+    background: linear-gradient(90deg,#a8ff78,#78ffd6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+    opacity:0.8;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    color:white;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+    background:#00c853;
+}
+
+/* GLASS CARD SECTION */
+.section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* GLASS CARDS */
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:250px;
+    height:200px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:20px;
+    transition:0.5s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
+    top:-100%;
+    left:0;
+    transition:0.5s;
+}
+
+.card:hover::before{
+    top:0;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* MOOD SELECTOR */
+.mood-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.mood{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.mood:hover{
+    transform:scale(1.2);
+    background:#00e676;
+}
+
+#suggestion{
+    text-align:center;
+    margin-top:20px;
+    font-size:18px;
+    color:#a5ffcb;
+}
+
+/* PARALLAX SECTION */
+.parallax{
+    height:300px;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parallax h2{
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* BENEFITS */
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.benefit{
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+    transition:0.4s;
+}
+
+.benefit:hover{
+    background:#00c853;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Nature Immersion</h1>
+        <p>Disconnect from stress. Reconnect with nature.</p>
+        <button>Start Experience</button>
+        <button onclick="scrollPage()">Explore More</button>
+    </div>
+</section>
+
+<!-- CARDS -->
+<section class="section">
+    <h2 class="title">Nature Therapy Modes</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌳 Forest Bathing</h3>
+            <p>Deep connection with trees and natural environment.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌊 Water Therapy</h3>
+            <p>Relaxation through flowing water and sound.</p>
+        </div>
+
+        <div class="card">
+            <h3>☀️ Sun Healing</h3>
+            <p>Boost mood using sunlight exposure.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌼 Eco Therapy</h3>
+            <p>Gardening and nature interaction.</p>
+        </div>
+    </div>
+</section>
+
+<!-- MOOD -->
+<section class="section">
+    <h2 class="title">How Do You Feel?</h2>
+
+    <div class="mood-container">
+        <div class="mood" onclick="suggest('sad')">😔</div>
+        <div class="mood" onclick="suggest('stress')">😟</div>
+        <div class="mood" onclick="suggest('tired')">😴</div>
+        <div class="mood" onclick="suggest('happy')">😊</div>
+    </div>
+
+    <p id="suggestion"></p>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+    <h2>“Nature is the best therapy for the mind.”</h2>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+    <h2 class="title">Why Nature Therapy?</h2>
+
+    <div class="benefits">
+        <div class="benefit">🌿 Reduces Stress</div>
+        <div class="benefit">🧠 Improves Focus</div>
+        <div class="benefit">💚 Boosts Mood</div>
+        <div class="benefit">😌 Mental Relaxation</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Nature Therapy | AI Wellness Platform
+</div>
+
+<script>
+
+/* =======================
+   START EXPERIENCE (GUIDED)
+======================= */
+
+let steps = [
+"Go to a calm place or near window",
+"Observe nature around you",
+"Focus on your breathing",
+"Relax and feel the environment"
+];
+
+let stepIndex = 0;
+
+document.querySelector(".hero button").onclick = function(){
+    startExperience();
+};
+
+function startExperience(){
+    document.getElementById("experienceBox").style.display="block";
+    stepIndex = 0;
+    nextStep();
+}
+
+function nextStep(){
+    if(stepIndex < steps.length){
+        document.getElementById("stepTitle").innerText = "Step " + (stepIndex+1);
+        document.getElementById("stepDesc").innerText = steps[stepIndex];
+
+        let t = 5;
+        let interval = setInterval(()=>{
+            document.getElementById("timer").innerText = "Next in " + t + " sec";
+            t--;
+
+            if(t < 0){
+                clearInterval(interval);
+                stepIndex++;
+                nextStep();
+            }
+        },1000);
+
+    }else{
+        document.getElementById("stepTitle").innerText = "Session Complete 🌿";
+        document.getElementById("stepDesc").innerText = "You feel relaxed!";
+        document.getElementById("timer").innerText = "";
+    }
+}
+
+function closeExperience(){
+    document.getElementById("experienceBox").style.display="none";
+}
+
+/* =======================
+   CARD CLICK → MODAL
+======================= */
+
+let therapyType = "";
+
+document.querySelectorAll(".card").forEach((card, index)=>{
+    card.onclick = function(){
+
+        let titles = ["Forest Therapy","Water Therapy","Sun Therapy","Eco Therapy"];
+        let descs = [
+        "Relax deeply with trees and greenery.",
+        "Calm your mind using water sound.",
+        "Boost energy through sunlight.",
+        "Improve mood with plants and gardening."
+        ];
+
+        therapyType = titles[index];
+
+        document.getElementById("modalTitle").innerText = titles[index];
+        document.getElementById("modalDesc").innerText = descs[index];
+        document.getElementById("modal").style.display="flex";
+    }
+});
+
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+}
+
+function startTherapy(){
+    closeModal();
+    startExperience();
+}
+
+/* =======================
+   MOOD (IMPROVED)
+======================= */
+
+function suggest(mood){
+    let msg="";
+
+    if(mood==="sad"){
+        msg="Go for a walk in greenery 🌳";
+        document.body.style.background="linear-gradient(#1e3c72,#2a5298)";
+    }
+    else if(mood==="stress"){
+        msg="Sit near water and breathe 🌊";
+        document.body.style.background="linear-gradient(#134e5e,#71b280)";
+    }
+    else if(mood==="tired"){
+        msg="Get sunlight ☀️";
+        document.body.style.background="linear-gradient(#ff9966,#ff5e62)";
+    }
+    else{
+        msg="Enjoy nature 🌿";
+        document.body.style.background="linear-gradient(#56ab2f,#a8e063)";
+    }
+
+    document.getElementById("suggestion").innerText = msg;
+}
+
+/* =======================
+   SOUND (DEMO)
+======================= */
+
+function playSound(){
+    alert("Playing nature sound 🌿 (you can add real audio later)");
+}
+
+</script>
+
+<!-- EXPERIENCE BOX -->
+<div id="experienceBox" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+background:#1b1b1b; padding:30px; border-radius:10px; z-index:1000; width:300px; text-align:center;">
+    
+    <h2 id="stepTitle">Step</h2>
+    <p id="stepDesc"></p>
+    <p id="timer"></p>
+
+    <button onclick="playSound()" style="margin-top:10px;">🔊 Nature Sound</button><br><br>
+    <button onclick="closeExperience()">Close</button>
+</div>
+
+<!-- MODAL FOR CARDS -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:999;">
+    
+    <div style="background:#222; padding:20px; border-radius:10px; width:300px; text-align:center;">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <button onclick="startTherapy()">Start Therapy</button><br><br>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+</body>
+</html>
