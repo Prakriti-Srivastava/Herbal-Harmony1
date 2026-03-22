@@ -30,6 +30,12 @@ background:white;border-radius:14px;padding:25px;box-shadow:0 10px 25px rgba(0,0
 
 .card:hover{transform:translateY(-8px)}
 
+.card img{
+width:100%;
+height:180px;
+object-fit:cover
+}
+
 .card h3{color:#2f6f4f;margin-bottom:10px}
 
 .details{
@@ -81,11 +87,13 @@ footer{text-align:center;padding:20px;background:#2f6f4f;color:white;margin-top:
 const meditations=[
 {
 name:"Mindfulness Meditation",
+img:"{% static 'pictures/mindfulness meditation.jpg' %}",
 how:["Sit comfortably in a quiet place","Focus on your breathing","Observe thoughts without judging","Bring attention back to breath"],
 benefits:["Reduces stress","Improves awareness","Enhances emotional balance"]
 },
 {
 name:"Breathing Meditation",
+img:"{% static 'pictures/breathing.jpg' %}",
 how:["Sit upright","Take slow deep breaths","Inhale through nose exhale through mouth","Focus only on breathing rhythm"],
 benefits:["Calms nervous system","Reduces anxiety","Improves oxygen flow"]
 },
