@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat</title>    
+     
+  <style>
+    /* -------------------------navbar-------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #2d6a4f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #95d5b2;
+}
+
+.logo img {
+  max-height: 80px;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #79c0ef, #065a43);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }.chat-container {
+  width: 400px;
+  height: 600px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.chat-header {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.3);
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 75%;
+}
+
+.user {
+  background: #7dcbe0;
+  color: black;
+  align-self: flex-end;
+}
+
+.bot {
+  background: rgba(255,255,255,0.2);
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00c6ff;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00a3cc;
+}
+
+  </style>
+        
+       
+</head>
+ <body><!--_____________________ navigation bar___________________
+        <nav class="navbar background">
+           
+                <ul class="nav-list">
+                    <div class="logo"><img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%"></div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="{% url 'Aura' %}">Aura</a></li>
+                    <li><a href="{% url 'Aiveda' %}">Veda</a></li>
+                   <li><a href="{% url 'Treatment' %}">Treatment</a></li>
+                    <li><a href="{% url 'herb' %}">Herbs</a></li>
+                    <li><a href="{% url 'yoga' %}">Physical Fitness</a></li>
+                    <li><a href="{% url 'mentalhealth' %}">Mental Health</a></li>
+                     <li><a href="{% url 'About' %}">About</a></li>
+                    
+                    <li><a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+
+                </ul>
+             </nav> -->
+ <div class="chat-container">
+  <div class="chat-header"> AI Assistant</div>
+  <div class="chat-box" id="chatBox"></div>  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div><script>
+  function sendMessage() {
+    const input = document.getElementById("userInput");
+    const message = input.value.trim();
+    if (message === "") return;
+
+    addMessage(message, "user");
+    input.value = "";
+
+    // Fake AI response (replace with API later)
+    setTimeout(() => {
+      const reply = getBotReply(message);
+      addMessage(reply, "bot");
+    }, 500);
+  }
+
+  function addMessage(text, sender) {
+    const chatBox = document.getElementById("chatBox");
+    const msg = document.createElement("div");
+    msg.classList.add("message", sender);
+    msg.innerText = text;
+    chatBox.appendChild(msg);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
+  function getBotReply(message) {
+    message = message.toLowerCase();
+
+    if (message.includes("hello")) return "Hey there! How can I help you?";
+    if (message.includes("project")) return "Sounds interesting! Tell me more about your project.";
+    if (message.includes("ai")) return "AI is awesome 😎 What do you want to build?";
+
+    return "I am your AI assistant. I will be smarter once connected to backend!";
+  }
+
+  // Enter key support
+  document.getElementById("userInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") sendMessage();
+  });
+</script></body>
+</html>
