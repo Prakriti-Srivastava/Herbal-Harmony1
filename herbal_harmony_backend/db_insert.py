@@ -16,6 +16,8 @@ collection = db["remedies"]
 with open("data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
+collection.delete_many({})  # Clear existing data in the collection
+
 # Insert data
 
 
