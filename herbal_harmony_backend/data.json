@@ -30,7 +30,7 @@
     "availability": 10,
     "severity": 3,
     "description": "When you have a mild cold, very strong yoga is usually not needed. Gentle breathing with relaxed sitting may support calmness and light respiratory comfort. Keep the session short and do not force the breath if congestion feels strong.",
-    "link": "/yoga.html"
+    "link": "tulsi"
   },
   {
     "symptoms": ["fever"],
@@ -41,7 +41,7 @@
     "availability": 10,
     "severity": 6,
     "description": "For fever, hydration and rest are very important supportive steps. Warm fluids, simple food, and proper rest may help the body recover better. If fever is high or continues, proper medical advice is important instead of relying only on home support.",
-    "link": "/natureTherapy.html"
+    "link": "Fever"
   },
   {
     "symptoms": ["fever"],
@@ -52,7 +52,7 @@
     "availability": 9,
     "severity": 5,
     "description": "Mild herbal fluid support may be useful when fever causes weakness and dehydration. The main goal is to keep the body hydrated and comfortable. Heavy exercise should be avoided, and rest should be the priority.",
-    "link": "/natureTherapy.html"
+    "link": "Fever"
   },
   {
     "symptoms": ["cough"],
@@ -96,7 +96,7 @@
     "availability": 8,
     "severity": 4,
     "description": "For a mild headache, rest, hydration, and a calming environment may help. Peppermint-based support is often used for temporary relief and freshness. Reducing bright light and taking proper sleep may also support comfort.",
-    "link": "/natureTherapy.html"
+    "link": "Headache"
   },
   {
     "symptoms": ["headache"],
@@ -107,7 +107,7 @@
     "availability": 10,
     "severity": 4,
     "description": "When headache is related to tension or posture, slow neck relaxation and light stretching may help reduce heaviness. Avoid jerky movement and keep the body relaxed. Calm breathing can make the practice more useful.",
-    "link": "/yoga.html"
+    "link": "Headache"
   },
   {
     "symptoms": ["headache"],
@@ -118,7 +118,7 @@
     "availability": 10,
     "severity": 3,
     "description": "A quiet environment, reduced screen exposure, and short rest may help when headache is worsened by stress or overload. Mental relaxation is useful especially when the head feels heavy after too much work or tension.",
-    "link": "/MentalHealth.html"
+    "link": "Headache"
   },
   {
     "symptoms": ["stress"],
@@ -129,7 +129,7 @@
     "availability": 7,
     "severity": 4,
     "description": "Ashwagandha is often discussed in herbal wellness for supporting stress balance. It may be useful as part of a wider routine including rest, food, and daily calm habits. This should be taken carefully and not treated as a quick fix.",
-    "link": "/natureTherapy.html"
+    "link": "stress"
   },
   {
     "symptoms": ["stress"],
@@ -140,7 +140,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Anulom Vilom is a calm breathing practice that may help reduce tension and mental overload. It can support emotional balance and improve the sense of calm when done slowly and regularly. Keep the breath soft and comfortable.",
-    "link": "/yoga.html"
+    "link": "stress"
   },
   {
     "symptoms": ["stress"],
@@ -151,7 +151,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Grounding and slow breathing can be helpful when stress builds up. Sit comfortably, relax the shoulders, and make the exhale longer than the inhale. Short calming breaks, less screen overload, and better sleep may also help.",
-    "link": "/MentalHealth.html"
+    "link": "stress"
   },
   {
     "symptoms": ["anxiety"],
@@ -228,7 +228,7 @@
     "availability": 8,
     "severity": 6,
     "description": "Ginger kadha may be useful as warm supportive care when cold and fever happen together. It can provide warmth and may help the body feel more comfortable. This should be taken along with hydration and good rest, especially when weakness is present.",
-    "link": "/natureTherapy.html"
+    "link": "Fever"
   },
   {
     "symptoms": ["cold", "fever"],
