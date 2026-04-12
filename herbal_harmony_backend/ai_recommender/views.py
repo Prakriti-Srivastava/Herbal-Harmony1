@@ -237,7 +237,7 @@ def recommend(request):
 # import json
 # from django.http import JsonResponse
 # from django.views.decorators.csrf import csrf_exempt
-# # from openai import OpenAI
+
 
 # # MongoDB connect
 # client = MongoClient("mongodb://localhost:27017/")
@@ -245,7 +245,7 @@ def recommend(request):
 # collection = db["remedies"]
 
 # # OpenAI setup
-# # client_ai = OpenAI(api_key="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")
+
 
 # # AI: extract symptoms
 # # def extract_symptoms(text):
