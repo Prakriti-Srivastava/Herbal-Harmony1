@@ -225,6 +225,8 @@ def recommend(request):
 
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
+    
+    return JsonResponse({"error": "Only POST method allowed"}, status=405)
 
 
 
