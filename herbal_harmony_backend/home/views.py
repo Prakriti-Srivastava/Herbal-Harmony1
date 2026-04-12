@@ -242,6 +242,7 @@ def natureTherapy(request):
 
 def veda(request):
     return render(request, 'veda.html')
+
 def Aiveda(request):
     return render(request, 'Aiveda.html')
 
