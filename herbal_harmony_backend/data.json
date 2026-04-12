@@ -8,7 +8,7 @@
     "availability": 9,
     "severity": 4,
     "description": "Tulsi tea may help provide warmth and comfort during a mild cold. It can be taken as a simple supportive drink when the throat feels irritated or the body feels heavy. Drink it warm and stay hydrated throughout the day. This works best with rest and light food.",
-    "link": "/natureTherapy.html"
+    "link": "tulsi"
   },
   {
     "symptoms": ["cold"],
@@ -19,7 +19,7 @@
     "availability": 10,
     "severity": 4,
     "description": "Warm steam inhalation may help reduce nasal blockage and support easier breathing during a cold. It is a simple home-support method that can be used carefully for short sessions. Avoid very hot steam and take rest after using it.",
-    "link": "/natureTherapy.html"
+    "link": "tulsi"
   },
   {
     "symptoms": ["cold"],

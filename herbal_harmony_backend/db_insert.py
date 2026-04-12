@@ -10,11 +10,13 @@ db = client["herbal_ai"]
 # Collection
 collection = db["remedies"]
 
-collection.delete_many({})  # Clear existing data in the collection
+# collection.delete_many({})  # Clear existing data in the collection
 
 # JSON file load
 with open("data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
+
+collection.delete_many({})  # Clear existing data in the collection
 
 # Insert data
 collection.insert_many(data)
