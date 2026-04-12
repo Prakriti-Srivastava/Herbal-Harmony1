@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Therapy</title>
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI';}
+
+/* BODY */
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+transition:1s;
+}
+
+/* NAVBAR */
+.nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:15px 50px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+.logo{font-size:22px;font-weight:bold;color:#38bdf8;}
+
+.nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:radial-gradient(circle at center,#1e293b,#020617);
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(#38bdf8,#a78bfa);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{margin-top:15px;opacity:0.7;}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#38bdf8;
+cursor:pointer;
+}
+
+/* PLAYER */
+.player{
+margin:60px auto;
+width:350px;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+text-align:center;
+box-shadow:0 0 30px rgba(56,189,248,0.3);
+}
+
+.controls button{
+margin:5px;
+padding:10px;
+border:none;
+border-radius:50%;
+background:#38bdf8;
+cursor:pointer;
+}
+
+/* PROGRESS */
+input[type=range]{width:100%;}
+
+/* MODES */
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:220px;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+cursor:pointer;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.1);
+background:#38bdf8;
+}
+
+/* MOOD */
+.mood span{
+font-size:30px;
+margin:10px;
+cursor:pointer;
+}
+
+/* SESSION */
+.session{
+display:none;
+position:fixed;
+top:50%;left:50%;
+transform:translate(-50%,-50%);
+background:#020617;
+padding:30px;
+border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+text-align:center;
+padding:20px;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+<div class="logo">🎧 Music Therapy</div>
+<div>
+<a href="#">Home</a>
+<a href="#">Modes</a>
+<a href="#">Mood</a>
+</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Heal With Music</h1>
+<p>Relax your mind using AI-powered music therapy</p>
+<button onclick="startSession()">Start Session</button>
+</section>
+
+<!-- PLAYER -->
+<div class="player">
+<h2 id="title">No Music</h2>
+
+<audio id="audio"></audio>
+
+<div class="controls">
+<button onclick="play()">▶</button>
+<button onclick="pause()">⏸</button>
+<button onclick="next()">⏭</button>
+</div>
+
+<input type="range" id="progress">
+<input type="range" id="volume" min="0" max="1" step="0.01">
+</div>
+
+<!-- MODES -->
+<section class="section">
+<h2>Therapy Modes</h2>
+
+<div class="cards">
+<div class="card" onclick="setMode('relax')">🌿 Relax</div>
+<div class="card" onclick="setMode('focus')">🧠 Focus</div>
+<div class="card" onclick="setMode('sleep')">😴 Sleep</div>
+<div class="card" onclick="setMode('energy')">⚡ Energy</div>
+</div>
+</section>
+
+<!-- MOOD -->
+<section class="section">
+<h2>Your Mood</h2>
+<div class="mood">
+<span onclick="autoMood('sad')">😔</span>
+<span onclick="autoMood('stress')">😟</span>
+<span onclick="autoMood('happy')">😊</span>
+</div>
+<p id="suggest"></p>
+</section>
+
+<!-- SESSION -->
+<div class="session" id="sessionBox">
+<h2 id="stepTitle"></h2>
+<p id="stepText"></p>
+<p id="timer"></p>
+<button onclick="closeSession()">Close</button>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">© 2026 AI Music Therapy</div>
+
+<script>
+
+let audio=document.getElementById("audio");
+let playlist=[];
+let index=0;
+
+/* MODES */
+function setMode(mode){
+
+if(mode==="relax"){
+playlist=[
+"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+];
+document.body.style.background="#134e5e";
+}
+
+if(mode==="focus"){
+playlist=[
+"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+];
+document.body.style.background="#1e3c72";
+}
+
+if(mode==="sleep"){
+playlist=[
+"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+];
+document.body.style.background="#000428";
+}
+
+if(mode==="energy"){
+playlist=[
+"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+];
+document.body.style.background="#ff512f";
+}
+
+index=0;
+load();
+}
+
+function load(){
+audio.src=playlist[index];
+document.getElementById("title").innerText="Track "+(index+1);
+audio.play();
+}
+
+function play(){audio.play();}
+function pause(){audio.pause();}
+function next(){
+index=(index+1)%playlist.length;
+load();
+}
+
+/* PROGRESS */
+audio.ontimeupdate=()=>{
+document.getElementById("progress").value=(audio.currentTime/audio.duration)*100;
+}
+
+/* VOLUME */
+document.getElementById("volume").oninput=(e)=>{
+audio.volume=e.target.value;
+}
+
+/* MOOD AI */
+function autoMood(mood){
+if(mood==="sad"){setMode("relax");}
+if(mood==="stress"){setMode("focus");}
+if(mood==="happy"){setMode("energy");}
+document.getElementById("suggest").innerText="AI selected music 🎧";
+}
+
+/* SESSION */
+let steps=[
+"Sit comfortably",
+"Close eyes",
+"Focus on music",
+"Relax deeply"
+];
+
+let i=0;
+
+function startSession(){
+document.getElementById("sessionBox").style.display="block";
+i=0;
+run();
+}
+
+function run(){
+if(i<steps.length){
+document.getElementById("stepTitle").innerText="Step "+(i+1);
+document.getElementById("stepText").innerText=steps[i];
+
+let t=5;
+let inter=setInterval(()=>{
+document.getElementById("timer").innerText="Next in "+t;
+t--;
+
+if(t<0){
+clearInterval(inter);
+i++;
+run();
+}
+},1000);
+
+}else{
+document.getElementById("stepTitle").innerText="Done 🎧";
+document.getElementById("stepText").innerText="Relaxed";
+document.getElementById("timer").innerText="";
+}
+}
+
+function closeSession(){
+document.getElementById("sessionBox").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

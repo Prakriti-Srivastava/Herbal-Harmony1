@@ -1,3 +1,5 @@
+from http import client
+
 from django.shortcuts import render, HttpResponse
 import re
 from django.utils.html import escape
@@ -7,6 +9,7 @@ import json
 
 from .form import HealthForm 
 from .ai import getRemedyAndYoga
+
 
 
 
@@ -233,3 +236,9 @@ def MHAromatherapy(request):
 
 def MHMeditation(request):
     return render(request, 'MHMeditation.html')
+
+def natureTherapy(request):
+    return render(request, 'natureTherapy.html')
+
+def veda(request):
+    return render(request, 'veda.html')

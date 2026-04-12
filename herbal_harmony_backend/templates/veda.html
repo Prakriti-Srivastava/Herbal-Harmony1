@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Herbal Harmony AI</title>
+
+  <style>
+    .ai-health-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5fff8, #eef9ff);
+  min-height: 100vh;
+}
+
+.ai-health-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+}
+
+.ai-left,
+.ai-right {
+  background: rgba(255,255,255,0.95);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.ai-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #dff7e8;
+  color: #1f7a4d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ai-left h2 {
+  margin-top: 18px;
+  font-size: 34px;
+  color: #183b2b;
+}
+
+.ai-subtext {
+  margin-top: 12px;
+  color: #4d5f56;
+  line-height: 1.7;
+}
+
+.ai-input-box {
+  margin-top: 24px;
+}
+
+.ai-input-box textarea {
+  width: 100%;
+  min-height: 160px;
+  border: 1px solid #d8e7dc;
+  border-radius: 18px;
+  padding: 16px;
+  font-size: 16px;
+  resize: vertical;
+  background: #fbfffc;
+}
+
+.ai-input-box button {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #1f7a4d, #3ea76d);
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-output {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.user-card,
+.bot-card,
+.result-card {
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.user-card {
+  background: #e8f5ee;
+}
+
+.bot-card,
+.result-card {
+  background: #f7fbff;
+  border: 1px solid #e4eef8;
+}
+
+.section-title {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #184230;
+}
+
+.result-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #1666c1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-link:hover {
+  text-decoration: underline;
+}
+
+.no-result-card {
+  background: #fff8ed;
+  border: 1px solid #f3d6a4;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+@media (max-width: 900px) {
+  .ai-health-container {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+
+</head>
+<body>
+<section class="ai-health-section">
+  <div class="ai-health-container">
+    <div class="ai-left">
+      <p class="ai-badge">AI Symptom Support</p>
+      <h2>Talk to Herbal Harmony AI</h2>
+      <p class="ai-subtext">
+        Enter symptoms like cold, fever, headache, stress, anxiety, or combinations of them.
+      </p>
+
+      <div class="ai-input-box">
+        <textarea id="symptomInput" placeholder="Enter your symptoms here..."></textarea>
+        <button id="askAiBtn">Get Recommendation</button>
+      </div>
+    </div>
+
+    <div class="ai-right">
+      <div id="chatOutput" class="chat-output">
+        <div class="bot-card intro-card">
+          <h3>Welcome</h3>
+          <p>Tell me your symptoms. I will show only the most relevant support for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const askAiBtn = document.getElementById("askAiBtn");
+const symptomInput = document.getElementById("symptomInput");
+const chatOutput = document.getElementById("chatOutput");
+
+function appendUserMessage(text) {
+  const card = document.createElement("div");
+  card.className = "user-card";
+  card.innerHTML = `<strong>You:</strong><br>${text}`;
+  chatOutput.appendChild(card);
+}
+
+function appendBotMessage(text) {
+  const card = document.createElement("div");
+  card.className = "bot-card";
+  card.innerHTML = text;
+  chatOutput.appendChild(card);
+}
+
+function appendSection(title, items) {
+  if (!items || items.length === 0) return;
+
+  const heading = document.createElement("div");
+  heading.className = "section-title";
+  heading.textContent = title;
+  chatOutput.appendChild(heading);
+
+  items.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "result-card";
+    card.innerHTML = `
+      <h3>${item.name || "Unnamed Item"}</h3>
+      <p>${item.description || "No description available."}</p>
+      <a class="result-link" href="${item.link || "#"}" target="_blank">Read more on website</a>
+    `;
+    chatOutput.appendChild(card);
+  });
+}
+
+function appendNoResult(message) {
+  const card = document.createElement("div");
+  card.className = "no-result-card";
+  card.innerHTML = `<strong>Notice:</strong><br>${message}`;
+  chatOutput.appendChild(card);
+}
+
+askAiBtn.addEventListener("click", async () => {
+  const text = symptomInput.value.trim();
+
+  if (!text) {
+    appendNoResult("Please enter your symptoms first.");
+    return;
+  }
+
+  appendUserMessage(text);
+  appendBotMessage("Analyzing your symptoms and selecting the most relevant support...");
+
+  try {
+    const response = await fetch("http://127.0.0.1:8000/api/recommend/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ symptoms: text })
+    });
+
+    const data = await response.json();
+
+    const cards = chatOutput.querySelectorAll(".bot-card");
+    const lastBot = cards[cards.length - 1];
+    if (lastBot) lastBot.remove();
+
+    if (data.message && !data.show_herbal && !data.show_yoga && !data.show_mental) {
+      appendNoResult(data.message);
+      symptomInput.value = "";
+      return;
+    }
+
+    appendBotMessage(
+      `Detected symptoms: <strong>${(data.detected_symptoms || []).join(", ") || "none"}</strong>`
+    );
+
+    if (data.show_herbal) {
+      appendSection("🌿 Herbal Remedies", data.herbal);
+    }
+
+    if (data.show_yoga) {
+      appendSection("🧘 Yoga Guidance", data.yoga);
+    }
+
+    if (data.show_mental) {
+      appendSection("🧠 Mental Wellness Support", data.mental);
+    }
+
+    if (!data.show_herbal && !data.show_yoga && !data.show_mental) {
+      appendNoResult("No relevant support section was needed for this input.");
+    }
+
+    symptomInput.value = "";
+    chatOutput.scrollTop = chatOutput.scrollHeight;
+
+  } catch (error) {
+    appendNoResult("Something went wrong while getting recommendations.");
+  }
+});
+</script>
+
+</body>
+
+</html>
