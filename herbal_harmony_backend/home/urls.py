@@ -68,4 +68,6 @@ urlpatterns = [
    path('WeakEyesight', views.WeakEyesight, name='WeakEyesight'),
    path('MHAromatherapy', views.MHAromatherapy, name='MHAromatherapy'),
    path('MHMeditation', views.MHMeditation, name='MHMeditation'),
+   path('veda', views.veda, name='veda'),
+   path('Aura', views.Aura, name='Aura'),
 ]
