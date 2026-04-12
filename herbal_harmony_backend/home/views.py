@@ -237,8 +237,16 @@ def MHAromatherapy(request):
 def MHMeditation(request):
     return render(request, 'MHMeditation.html')
 
+<<<<<<< HEAD
 def natureTherapy(request):
     return render(request, 'natureTherapy.html')
 
 def veda(request):
     return render(request, 'veda.html')
+=======
+def Aiveda(request):
+    return render(request, 'Aiveda.html')
+
+def Aura(request):
+    return render(request, 'Aura.html')
+>>>>>>> 928e43efd12292951cda4a49f29a91f32d08b5db
