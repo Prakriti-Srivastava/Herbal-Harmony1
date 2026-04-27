@@ -70,4 +70,5 @@ urlpatterns = [
    path('MHMeditation', views.MHMeditation, name='MHMeditation'),
    path('veda', views.veda, name='veda'),
    path('Aura', views.Aura, name='Aura'),
+   path("natureTherapy", views.natureTherapy, name='natureTherapy'),
 ]

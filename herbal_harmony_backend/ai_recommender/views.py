@@ -30,7 +30,7 @@ def extract_symptoms(text):
 
     synonyms = {
         "cold": [
-            "cold", "runny nose", "blocked nose", "nose blocked"
+            "cold", "runny nose", "blocked nose", "nose blocked",
             "sardi", "thand lag rahi", "naak band", "jukam", "zukam"
         ],
 
