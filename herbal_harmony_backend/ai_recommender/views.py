@@ -30,12 +30,8 @@ def extract_symptoms(text):
 
     synonyms = {
         "cold": [
-            "cold","common cold","runny nose","blocked nose","nose blocked",
-            "stuffy nose","sneezing","nose congestion","nose blocking",
-
-            "sardi","jukam","zukam","naak band","naak band hai",
-            "naak behna","chheenk","baar baar chheenk",
-            "thand lag rahi","sardi ho gayi", "sardi ho gaya","sardi ho gayi"
+            "cold", "runny nose", "blocked nose", "nose blocked"
+            "sardi", "thand lag rahi", "naak band", "jukam", "zukam"
         ],
 
         "fever": [
@@ -307,6 +303,8 @@ def recommend(request):
 
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
+    
+    return JsonResponse({"error": "Only POST method allowed"}, status=405)
 
 
 
