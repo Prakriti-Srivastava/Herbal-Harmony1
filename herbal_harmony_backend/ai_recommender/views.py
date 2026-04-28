@@ -30,39 +30,121 @@ def extract_symptoms(text):
 
     synonyms = {
         "cold": [
-            "cold", "runny nose", "blocked nose", "nose blocked"
-            "sardi", "thand lag rahi", "naak band", "jukam", "zukam"
+            "cold","common cold","runny nose","blocked nose","nose blocked",
+            "stuffy nose","sneezing","nose congestion","nose blocking",
+
+            "sardi","jukam","zukam","naak band","naak band hai",
+            "naak behna","chheenk","baar baar chheenk",
+            "thand lag rahi","sardi ho gayi", "sardi ho gaya","sardi ho gayi"
         ],
 
         "fever": [
-            "fever", "high temperature", "feverish"
-            "bukhar", "tez bukhar", "temperature"
+            "fever","high temperature","temperature","feverish",
+            "mild fever","viral fever","body temperature high",
+            "burning body","hot body",
+
+            "bukhar","tez bukhar","halka bukhar",
+            "sharir garam","body garam lag rahi", "bukhar ho gaya", "bukhar ho gayi", "bukhar ho raha hai", "bukhar ho raha", "bukhar lag raha hai", "bukhar lag raha",
+            "bukhar ho raha hai", "bukhar ho raha"
         ],
 
         "cough": [
-            "cough", "dry cough"
-            "khansi", "khasi"
+            "cough","dry cough","wet cough","persistent cough",
+        "throat cough","chest cough", 
+
+        "khansi","khasi","sukhi khansi","balgam wali khansi",
+        "gale ki khansi","seene ki khansi", "khansi ruk nahi rahi","khansi ruk nahi rahi hai", "khansi ho gayi", "khansi ho gaya"
+
         ],
 
         "headache": [
-            "headache", "head pain", "heavy head"
-            "sar dard", "sir dard", "head me pain" , "head me dard", "sar me dard"
+            "headache","head pain","heavy head","migraine",
+            "forehead pain","head pressure", "head me pain","head me dard",
+
+            "sar dard","sir dard","head me dard",
+            "sar me pain","aadha sir dard", "puri sir dard", "sir dard ho gaya", "sir dard ho gayi", "sir dard ho raha hai", "sir dard ho raha"
         ],
 
         "stress": [
-            "stress", "tension"
-            "tanav", "pressure", "bahut stress"
+            "stress","tension","mental pressure","overthinking",
+            "work stress","emotional stress", "mind stress", "stress ho raha hai", "stress ho raha",
+
+            "tanav","pressure","bahut stress",
+            "jyada sochna","dimag pe pressure", "kaam ka stress", "emotional stress", "tanav ho raha hai", "tanav ho raha"
         ],
 
         "anxiety": [
-            "anxiety", "nervous", "panic"
-            "ghabrahat", "bechaini", "dar lag raha", "anxious"
+            "anxiety","nervous","panic","panic attack",
+            "restlessness","fear","worried", 
+
+            "ghabrahat","bechaini","dar lag raha", 
+            "dil ghabra raha","anxious", "anxiety ho raha hai", "anxiety ho raha", "gabrahat ho rahi hai", "gabrahat ho rahi", "panic attack ho raha hai", "panic attack ho raha"
         ],
 
         "sleep": [
-            "insomnia", "poor sleep", "can not sleep", "sleep issue"
-            "neend nahi aa rahi", "neend nahi aati", "sleep nahi aa rahi"
-        ]
+            "insomnia","poor sleep","cannot sleep",
+            "sleep issue","sleep problem","sleeplessness",
+
+            "neend nahi aa rahi",
+            "neend nahi aati",
+            "raat ko neend nahi aati", "raat ko neend nahi aati hai",
+            "neend nahi aati", "neend nahi aati hai", 
+        ],
+
+        "stomach pain":[
+            "stomach pain","abdomen pain","gas pain",
+            "acidity","indigestion","bloating", 
+
+            "pet dard","gas","pet me jalan",
+            "badhazmi","pet phoolna", "pet me dard","pet me dard ho raha hai", "pet me dard ho raha" ,"pet dard ho gaya", "pet dard ho gayi"
+        ],
+
+        "fatigue":[
+            "fatigue","tired","weakness","low energy",
+            "body weakness",
+
+            "thakan","kamzori","energy nahi",
+            "bahut tired", "thakan ho rahi hai", "thakan ho rahi", "kamzori ho rahi hai", "kamzori ho rahi", "energy nahi hai", "energy nahi",
+            "thakan ho gayi", "thakan ho gaya", "kamzori ho gayi", "kamzori ho gaya", "energy nahi hai", "energy nahi"
+        ],
+
+        "digestion":[
+            "digestive issue","constipation","loose motion",
+            "diarrhea","indigestion",
+
+            "kabz","pet kharab","dast",
+            "pachan problem", "pachan me problem", "pachan me dikkat", "pachan me dikkat ho rahi hai", "pachan me dikkat ho rahi", "dast ho gaya", "dast ho gayi"
+         
+        ],
+
+        "back pain":[
+            "back pain","lower back pain","spine pain",
+
+            "kamar dard","peeth dard", "lower back dard","spine dard", "kamar me dard", "peeth me dard", "kamar me dard ho raha hai", "peeth me dard ho raha hai" , "kamar me dard ho raha", "peeth me dard ho raha", "lower back dard ho raha hai", "lower back dard ho raha"
+        ],
+
+
+        "joint pain":[
+            "joint pain","knee pain","arthritis pain",
+
+            "ghutne dard","jodo me dard", "joint me dard", "joint me dard ho raha hai", "joint me dard ho raha", "ghutne me dard", "ghutne me dard ho raha hai", "ghutne me dard ho raha", "arthritis me dard", "arthritis me dard ho raha hai", "arthritis me dard ho raha" , "arthritis dard", "arthritis dard ho gaya", "arthritis dard ho gayi"
+        ],
+
+        "bee_sting": [
+            "bee sting","honey bee sting","bee bite",
+            "bee attack","insect sting",
+
+            "madhumakhi kaat li","madhumakhi ne kaata","bee ne kaata",
+            "keede ne kaata","dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga hai", "dank mara hai"
+        ],
+
+        # "sting_reaction":[
+        #     "swelling","pain","burning","redness","itching",
+
+        #     "sujan","jalan","dard","lal ho gaya","khujli" 
+        # ],
+
+
     }
 
     found = []

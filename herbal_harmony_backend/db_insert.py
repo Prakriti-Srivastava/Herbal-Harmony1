@@ -18,7 +18,7 @@ with open("data.json", "r", encoding="utf-8") as file:
 
 collection.delete_many({})  # Clear existing data in the collection
 
-# Insert data
+# Insert new data
 collection.insert_many(data)
 
 print("✅ Fresh dataset inserted successfully!")

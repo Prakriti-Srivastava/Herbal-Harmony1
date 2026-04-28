@@ -228,7 +228,7 @@
     "availability": 8,
     "severity": 6,
     "description": "Ginger kadha may be useful as warm supportive care when cold and fever happen together. It can provide warmth and may help the body feel more comfortable. This should be taken along with hydration and good rest, especially when weakness is present.",
-    "link": "/natureTherapy.html"
+    "link": "tulsi"
   },
   {
     "symptoms": ["cold", "fever"],
@@ -592,5 +592,343 @@
     "severity": 7,
     "description": "When stress, anxiety, and poor sleep happen together, the mind often needs a full wind-down routine. Slow breathing, reduced phone use, lower mental stimulation, and calm self-soothing can support better rest and emotional balance.",
     "link": "/MentalHealth.html"
-  }
+  },
+
+  {
+    "symptoms": ["cold", "fever", "cough", "headache"],
+    "name": "Warm Recovery Fluid Support",
+    "type": "herbal",
+    "effectiveness": 9,
+    "safety": 8,
+    "availability": 9,
+    "severity": 8,
+    "description": "When cold, fever, cough and headache occur together, the body needs rest, warm fluids and supportive care. This may help throat comfort, congestion and body weakness. If fever is high or symptoms continue, medical advice is important.",
+    "link": "/natureTherapy.html"
+  },
+  {
+    "symptoms": ["cold", "fever", "cough", "headache"],
+    "name": "Quiet Rest and Hydration Plan",
+    "type": "nature",
+    "effectiveness": 9,
+    "safety": 10,
+    "availability": 10,
+    "severity": 8,
+    "description": "This combination can make the body weak and tired. A quiet room, enough water, light food and proper rest may support recovery. Heavy exercise and strong yoga should be avoided during fever.",
+    "link": "/natureTherapy.html"
+  },
+
+  {
+    "symptoms": ["stress", "anxiety", "sleep", "headache"],
+    "name": "Full Mental Calm Routine",
+    "type": "mental",
+    "effectiveness": 10,
+    "safety": 10,
+    "availability": 10,
+    "severity": 7,
+    "description": "Stress, anxiety, poor sleep and headache often connect with mental overload. Slow breathing, less screen time, grounding, quiet rest and a fixed sleep routine may help the mind settle and reduce tension.",
+    "link": "/MentalHealth.html"
+  },
+  {
+    "symptoms": ["stress", "anxiety", "sleep", "headache"],
+    "name": "Gentle Neck Relaxation and Breathing",
+    "type": "yoga",
+    "effectiveness": 8,
+    "safety": 9,
+    "availability": 10,
+    "severity": 6,
+    "description": "Gentle neck movement with slow breathing may help when anxiety and stress create headache and sleep disturbance. Avoid forceful pranayama and keep the practice soft.",
+    "link": "/yoga.html"
+  },
+
+  {
+    "symptoms": ["stomach pain", "digestion", "fatigue", "stress"],
+    "name": "Digestive Recovery and Calm Plan",
+    "type": "herbal",
+    "effectiveness": 9,
+    "safety": 9,
+    "availability": 10,
+    "severity": 6,
+    "description": "Stomach pain, digestion issues, fatigue and stress can be connected with irregular food habits and mental pressure. Warm digestive support like ajwain or jeera water, light meals and rest may help.",
+    "link": "/digestive.html"
+  },
+  {
+    "symptoms": ["stomach pain", "digestion", "fatigue", "stress"],
+    "name": "Mindful Eating and Rest Routine",
+    "type": "mental",
+    "effectiveness": 8,
+    "safety": 10,
+    "availability": 10,
+    "severity": 5,
+    "description": "Slow eating, regular meal timing, reduced stress while eating and proper sleep may support digestion and reduce fatigue. This routine works best with light food and hydration.",
+    "link": "/MentalHealth.html"
+  },
+
+  {
+    "symptoms": ["back pain", "joint pain", "fatigue", "stress"],
+    "name": "Gentle Mobility Support",
+    "type": "yoga",
+    "effectiveness": 9,
+    "safety": 8,
+    "availability": 10,
+    "severity": 6,
+    "description": "Back pain, joint pain, fatigue and stress may increase when the body stays stiff for long hours. Gentle stretching, joint mobility and posture correction may support comfort. Avoid overstraining painful areas.",
+    "link": "/yoga.html"
+  },
+  {
+    "symptoms": ["back pain", "joint pain", "fatigue", "stress"],
+    "name": "Warm Compress and Recovery Support",
+    "type": "nature",
+    "effectiveness": 8,
+    "safety": 9,
+    "availability": 10,
+    "severity": 6,
+    "description": "Warm compress, rest breaks and light movement may help when body pain and fatigue occur together. This should be used as supportive care for mild discomfort.",
+    "link": "/natureTherapy.html"
+  },
+
+  {
+    "symptoms": ["cold", "fever", "fatigue", "headache"],
+    "name": "Fever Weakness Recovery Support",
+    "type": "nature",
+    "effectiveness": 9,
+    "safety": 10,
+    "availability": 10,
+    "severity": 8,
+    "description": "Cold, fever, fatigue and headache usually mean the body needs recovery time. Hydration, light food, rest and avoiding physical strain may support comfort. Persistent fever needs medical advice.",
+    "link": "/natureTherapy.html"
+  },
+
+  {
+    "symptoms": ["cough", "cold", "sleep", "fatigue"],
+    "name": "Night Cough Comfort Support",
+    "type": "herbal",
+    "effectiveness": 8,
+    "safety": 8,
+    "availability": 9,
+    "severity": 6,
+    "description": "Cold and cough can disturb sleep and cause fatigue. Warm fluids, throat comfort support and a calm bedtime routine may help the body rest better.",
+    "link": "/natureTherapy.html"
+  },
+
+  {
+    "symptoms": ["bee_sting", "swelling", "pain", "itching"],
+    "name": "Bee Sting First Aid Support",
+    "type": "nature",
+    "effectiveness": 9,
+    "safety": 10,
+    "availability": 10,
+    "severity": 6,
+    "description": "For a mild bee sting with swelling, pain and itching, cold compress and rest may help reduce discomfort. Avoid scratching the area. If swelling spreads fast or breathing difficulty occurs, seek urgent medical help.",
+    "link": "/bee-sting.html"
+  },
+  {
+    "symptoms": ["bee_sting", "swelling", "pain", "itching"],
+    "name": "Aloe Vera Soothing Support",
+    "type": "herbal",
+    "effectiveness": 7,
+    "safety": 8,
+    "availability": 8,
+    "severity": 5,
+    "description": "Aloe vera may help soothe mild skin irritation after a bee sting. It should only be used for minor local reactions and not for severe allergy symptoms.",
+    "link": "/bee-sting.html"
+  },
+
+  {
+    "symptoms": ["cold", "fever", "cough", "bee_sting"],
+    "name": "Recovery and Sting Care Plan",
+    "type": "nature",
+    "effectiveness": 8,
+    "safety": 9,
+    "availability": 10,
+    "severity": 8,
+    "description": "When cold, fever and cough occur along with a bee sting, the system should suggest both recovery care and sting care. Rest, fluids and cold compress may help, but allergy signs or high fever need medical attention.",
+    "link": "/bee-sting.html"
+  },
+
+  {
+    "symptoms": ["stress", "anxiety", "fatigue", "sleep"],
+    "name": "Energy and Calm Sleep Routine",
+    "type": "mental",
+    "effectiveness": 10,
+    "safety": 10,
+    "availability": 10,
+    "severity": 7,
+    "description": "Stress and anxiety can disturb sleep and cause fatigue. A fixed bedtime, slow breathing, grounding and reduced screen use may help the mind and body recover.",
+    "link": "/MentalHealth.html"
+  },
+
+  {
+    "symptoms": ["digestion", "stomach pain", "sleep", "stress"],
+    "name": "Gut Calm Night Routine",
+    "type": "mental",
+    "effectiveness": 8,
+    "safety": 10,
+    "availability": 10,
+    "severity": 5,
+    "description": "Digestive discomfort can become worse with stress and poor sleep. Light dinner, calm breathing and avoiding late-night heavy food may support better digestion and rest.",
+    "link": "/MentalHealth.html"
+  },
+
+  {
+    "symptoms": ["back pain", "joint pain", "sleep", "fatigue"],
+    "name": "Body Pain Sleep Support",
+    "type": "yoga",
+    "effectiveness": 8,
+    "safety": 8,
+    "availability": 10,
+    "severity": 6,
+    "description": "Body pain may disturb sleep and cause fatigue. Gentle stretching before bed and comfortable posture may help reduce stiffness. Avoid strong exercise at night.",
+    "link": "/yoga.html"
+  },
+
+{
+"symptoms":["stomach pain"],
+"name":"Ajwain Warm Water Support",
+"type":"herbal",
+"effectiveness":9,
+"safety":9,
+"availability":10,
+"severity":5,
+"description":"Ajwain warm water may help provide support when mild stomach pain is linked with gas or indigestion. It may reduce heaviness and improve digestive comfort when taken with light food and rest.",
+"link":"/digestive.html"
+},
+
+{
+"symptoms":["stomach pain"],
+"name":"Pawanmuktasana",
+"type":"yoga",
+"effectiveness":8,
+"safety":8,
+"availability":9,
+"severity":5,
+"description":"Pawanmuktasana may support relief from mild stomach discomfort and bloating. Practice gently and avoid forceful movement when pain feels severe.",
+"link":"/yoga.html"
+},
+
+
+{
+"symptoms":["digestion"],
+"name":"Jeera Water",
+"type":"herbal",
+"effectiveness":8,
+"safety":9,
+"availability":10,
+"severity":4,
+"description":"Jeera water is commonly used as digestive support and may help reduce heaviness after meals. It may support smoother digestion when used with balanced eating habits.",
+"link":"/digestive.html"
+},
+
+{
+"symptoms":["digestion"],
+"name":"Vajrasana",
+"type":"yoga",
+"effectiveness":9,
+"safety":9,
+"availability":10,
+"severity":4,
+"description":"Vajrasana may support digestion and reduce bloating when practiced gently after meals. It is often used as a simple post-meal yoga support.",
+"link":"/yoga.html"
+},
+
+
+{
+"symptoms":["fatigue"],
+"name":"Amla Energy Support",
+"type":"herbal",
+"effectiveness":7,
+"safety":9,
+"availability":8,
+"severity":4,
+"description":"Amla based support may help when mild fatigue is linked with low energy or weakness. It works best along with hydration, balanced food and proper rest.",
+"link":"/natureTherapy.html"
+},
+
+{
+"symptoms":["fatigue"],
+"name":"Energy Recovery Guidance",
+"type":"mental",
+"effectiveness":8,
+"safety":10,
+"availability":10,
+"severity":4,
+"description":"Fatigue often improves with rest correction, reduced overload and sleep balance. Small recovery habits may support better energy levels.",
+"link":"/MentalHealth.html"
+},
+
+
+{
+"symptoms":["back pain"],
+"name":"Bhujangasana",
+"type":"yoga",
+"effectiveness":9,
+"safety":8,
+"availability":10,
+"severity":5,
+"description":"Bhujangasana may support posture and mild lower back stiffness. Practice slowly and avoid overstraining the back if discomfort increases.",
+"link":"/yoga.html"
+},
+
+{
+"symptoms":["back pain"],
+"name":"Heat Compress Support",
+"type":"nature",
+"effectiveness":8,
+"safety":9,
+"availability":10,
+"severity":5,
+"description":"Warm compress may help support comfort in mild back pain and stiffness. It may work well with posture correction and light movement.",
+"link":"/natureTherapy.html"
+},
+
+
+{
+"symptoms":["joint pain"],
+"name":"Turmeric Ginger Support",
+"type":"herbal",
+"effectiveness":8,
+"safety":8,
+"availability":9,
+"severity":6,
+"description":"Turmeric and ginger supportive wellness is commonly discussed for mild joint discomfort and stiffness. It may help as supportive care alongside movement.",
+"link":"/natureTherapy.html"
+},
+
+{
+"symptoms":["joint pain"],
+"name":"Gentle Joint Mobility",
+"type":"yoga",
+"effectiveness":8,
+"safety":8,
+"availability":10,
+"severity":5,
+"description":"Gentle mobility movements may support joint flexibility and reduce stiffness. Avoid forceful movement in painful joints.",
+"link":"/yoga.html"
+},
+
+
+{
+"symptoms":["bee_sting"],
+"name":"Cold Compress",
+"type":"yoga",
+"effectiveness":9,
+"safety":10,
+"availability":10,
+"severity":5,
+"description":"Cold compress may help reduce mild swelling, pain and irritation after a bee sting. This is supportive care for minor local reactions only.",
+"link":"/bee-sting.html"
+},
+
+{
+"symptoms":["bee_sting"],
+"name":"Aloe Vera Support",
+"type":"herbal",
+"effectiveness":7,
+"safety":8,
+"availability":8,
+"severity":4,
+"description":"Aloe vera may help soothe mild skin irritation after a bee sting. It should only be used for minor local reactions, not severe allergy symptoms.",
+"link":"/bee-sting.html"
+}
+
+
 ]

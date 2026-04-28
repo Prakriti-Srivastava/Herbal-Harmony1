@@ -161,6 +161,18 @@
   </div>
 </section>
 <script>
+
+
+const symptomBox = document.getElementById("symptomInput");
+const recommendBtn = document.getElementById("askAiBtn");
+
+symptomBox.addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        recommendBtn.click();
+    }
+});
+
 const askAiBtn = document.getElementById("askAiBtn");
 const symptomInput = document.getElementById("symptomInput");
 const chatOutput = document.getElementById("chatOutput");
