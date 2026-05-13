@@ -11,10 +11,16 @@ CATEGORY_RULES = {
     "cold": ["herbal", "yoga"],
     "cough": ["herbal", "yoga"],
     "fever": ["herbal"],
-    "headache": ["herbal", "yoga"],
+    "headache": ["herbal", "yoga", "mental"],
     "stress": ["mental", "yoga"],
     "anxiety": ["mental", "yoga"],
-    "sleep": ["mental"]
+    "sleep": ["mental"],
+    "stomach pain": ["herbal", "yoga"],
+    "fatigue": ["herbal", "yoga"],
+    "digestion": ["herbal"],
+    "back pain": ["yoga"],
+    "joint pain": ["herbal","yoga"],
+    "bee_sting": ["herbal", "yoga"]
 }
 
 AHP_WEIGHTS = {
@@ -130,7 +136,7 @@ def extract_symptoms(text):
             "bee sting","honey bee sting","bee bite",
             "bee attack","insect sting",
 
-            "madhumakhi kaat li","madhumakhi ne kaata","bee ne kaata",
+            "madhumakhi kaat li","madhumakhi ne kaata","bee ne kaata", "bee ne kaat liya", "bee ne kaata hai", "keede ne kaata", "keede ne kaat liya", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai",
             "keede ne kaata","dank laga","dank mara" , "madhumakhi kaat liya", "madhumakhi ne kaata hai", "bee ne kaata hai", "keede ne kaata hai", "dank laga hai", "dank mara hai"
         ],
 
