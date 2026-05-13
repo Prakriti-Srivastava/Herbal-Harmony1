@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import json
+from pathlib import Path 
 
 # MongoDB connect
 client = MongoClient("mongodb://localhost:27017/")
@@ -10,10 +11,11 @@ db = client["herbal_ai"]
 # Collection
 collection = db["remedies"]
 
-# collection.delete_many({})  # Clear existing data in the collection
+BASE_DIR = Path(__file__).resolve().parent
+json_path = BASE_DIR / "data.json"
 
 # JSON file load
-with open("data.json", "r", encoding="utf-8") as file:
+with open(json_path, "r", encoding="utf-8") as file:
     data = json.load(file)
 
 collection.delete_many({})  # Clear existing data in the collection
