@@ -11,7 +11,7 @@ CATEGORY_RULES = {
     "cold": ["herbal", "yoga"],
     "cough": ["herbal", "yoga"],
     "fever": ["herbal"],
-    "headache": ["herbal", "yoga"],
+    "headache": ["herbal", "yoga", "mental"],
     "stress": ["mental", "yoga"],
     "anxiety": ["mental", "yoga"],
     "sleep": ["mental"],
