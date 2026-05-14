@@ -162,7 +162,7 @@
     "availability": 7,
     "severity": 4,
     "description": "Mild calming herbal support may help when anxiety is linked with restlessness. The goal is not instant treatment but gentle support for calmness. It works best with quiet routines, grounding, and reduced stimulation.",
-    "link": "MHAromatherapy"
+    "link": "chamomile"
   },
   {
     "symptoms": ["anxiety"],
@@ -371,7 +371,7 @@
     "availability": 7,
     "severity": 4,
     "description": "Gentle calming herbal support may sometimes be used in a stress and anxiety routine. It should be combined with better sleep, balanced routine, and relaxation practices. It works best as supportive care, not as a full solution alone.",
-    "link": "/natureTherapy.html"
+    "link": "chamomile"
   },
   {
     "symptoms": ["stress", "anxiety"],

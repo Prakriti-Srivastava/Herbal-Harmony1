@@ -250,4 +250,4 @@ def Aura(request):
     return render(request, 'Aura.html')
 
 def chamomile(request):
-    return render(request, 'chamomile')
+    return render(request, 'chamomile.html')
