@@ -71,4 +71,5 @@ urlpatterns = [
    path('veda', views.veda, name='veda'),
    path('Aura', views.Aura, name='Aura'),
    path("natureTherapy", views.natureTherapy, name='natureTherapy'),
+   path('chamomile', views.chamomile, name='chamomile'),
 ]
