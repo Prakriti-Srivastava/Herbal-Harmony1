@@ -71,10 +71,4 @@ urlpatterns = [
    path('veda', views.veda, name='veda'),
    path('Aura', views.Aura, name='Aura'),
    path("natureTherapy", views.natureTherapy, name='natureTherapy'),
-   path("warmsteam", views.warmsteam, name='warmsteam'),
-   path("gentleneck", views.gentleneck, name='gentleneck'),
-   path("honeyg", views.honeyg, name='honeyg'),
-   path("relaxbreathing", views.relaxbreathing, name='relaxbreathing'),
-   path("neckre", views.neckre, name='neckre'),
-   path("shoulder", views.shoulder, name='shoulder'),
 ]

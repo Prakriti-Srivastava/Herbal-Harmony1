@@ -266,3 +266,6 @@ def neckre(request):
 
 def shoulder(request):
     return render(request, 'shoulder.html')
+
+def chamomile(request):
+    return render(request, 'chamomile.html')
