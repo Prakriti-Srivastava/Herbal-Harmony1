@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Relaxed Breathing Support</title>
+</head>
+
+<body>
+
+  <div class="heading name">
+    <h1>Relaxed Breathing Support</h1>
+  </div>
+
+  <nav class="navbar background">
+
+    <ul class="nav-list">
+
+      <div class="logo">
+        <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+      </div>
+
+      <li><a href="{% url 'Home' %}">Home</a></li>
+      <li><a href="{% url 'About' %}">About</a></li>
+      <li><a href="{% url 'yoga' %}">Yoga</a></li>
+      <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+      <li><a href="#Treatment">Treatment</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+
+      <li>
+        <a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">
+          Contact Us
+        </a>
+      </li>
+
+    </ul>
+
+    <div id="google_element"></div>
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <script>
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element");
+      }
+    </script>
+
+  </nav>
+
+
+
+  <!-- _____________________ Relaxed Breathing Support _____________________ -->
+
+  <section class="balasana-info">
+
+    <div class="balasana-box">
+
+      <img src="{% static 'pictures/relaxed-breathing.png' %}" alt="Relaxed Breathing Support" width="80%" height="60%">
+
+      <h2>RELAXED BREATHING SUPPORT</h2>
+
+      <p>
+        Relaxed Breathing Support is a gentle breathing and relaxation practice
+        that may help the body feel calmer during cold, cough, mild congestion,
+        and breathing discomfort. Soft breathing and supported posture help
+        improve comfort without putting stress on the body.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <div class="section3">
+
+    <h2>Breathing Practice</h2>
+
+    <p>Gentle Relaxation and Calm Breathing</p>
+
+    <p>Related practices: Deep Breathing, Relaxed Sitting, Gentle Chest Relaxation</p>
+
+  </div>
+
+
+
+  <div class="section1">
+
+    <h2>Steps to Perform Relaxed Breathing Support:</h2>
+
+    <ol>
+
+      <li>Sit comfortably on a chair or yoga mat with your back straight.</li>
+
+      <li>Relax your shoulders and place your hands gently on your knees.</li>
+
+      <li>Close your eyes and breathe slowly through your nose.</li>
+
+      <li>Take a gentle deep breath in and slowly breathe out.</li>
+
+      <li>Keep your breathing natural and avoid forceful inhaling or exhaling.</li>
+
+      <li>Focus on relaxing the chest, neck, and shoulders.</li>
+
+      <li>Continue calm breathing for 5–10 minutes.</li>
+
+      <li>Slowly open your eyes and relax after the practice.</li>
+
+    </ol>
+
+  </div>
+
+
+
+  <div class="section2">
+
+    <h2>Benefits of Relaxed Breathing Support:</h2>
+
+    <ul>
+
+      <li>Helps calm the body and mind.</li>
+
+      <li>May support comfortable breathing during cold and cough.</li>
+
+      <li>Helps reduce chest tightness and stress.</li>
+
+      <li>Promotes relaxation and mental calmness.</li>
+
+      <li>Supports gentle respiratory comfort naturally.</li>
+
+    </ul>
+
+  </div>
+
+
+
+  <div class="section3">
+
+    <h2>Beginner Tips</h2>
+
+    <p>
+      Keep your breathing soft and natural. Do not force deep breathing.
+    </p>
+
+    <p>
+      Avoid strong pranayama during heavy congestion or severe cough.
+    </p>
+
+    <p>
+      Practice in a quiet and comfortable environment for better relaxation.
+    </p>
+
+    <p>
+      If you feel discomfort, dizziness, or breathing difficulty, stop immediately.
+    </p>
+
+    <p>
+      This practice is best for mild cold, cough, stress, and breathing discomfort.
+    </p>
+
+  </div>
+
+
+
+  <!-- -----------------footer div--------------------- -->
+
+  <footer id="contact" tabindex="-1">
+
+    <div class="footer-container">
+
+      <div class="footer-column">
+
+        <h3>Motive</h3>
+
+        <p>
+          We are committed to provide the best life experience through naturopathy,
+          promoting natural wellness for all ages with the power of herbs and home remedies.
+        </p>
+
+      </div>
+
+
+
+      <!-- -------------------Quick Links-------------------- -->
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <a href="{% url 'Home' %}">Home</a>
+
+        <a href="{% url 'healthform' %}">AI Chat</a>
+
+        <a href="{% url 'herb' %}">Herbs</a>
+
+        <a href="{% url 'Treatment' %}">Treatment</a>
+
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+
+        <a href="{% url 'About' %}">About</a>
+
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">
+          Contact Us
+        </a>
+
+      </div>
+
+
+
+      <!-- -------------------Contact Info-------------------- -->
+
+      <div class="footer-column">
+
+        <h3>Contact Us</h3>
+
+        <p>Email: info@herbalharmony.com</p>
+
+        <p>Phone: +91 98765 43210</p>
+
+        <p>Location: Prayagraj, India</p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- -----------------Footer Last Line---------------------- -->
+
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+</body>
+</html>

@@ -19,7 +19,7 @@
     "availability": 10,
     "severity": 4,
     "description": "Warm steam inhalation may help reduce nasal blockage and support easier breathing during a cold. It is a simple home-support method that can be used carefully for short sessions. Avoid very hot steam and take rest after using it.",
-    "link": "tulsi"
+    "link": "warmsteam"
   },
   {
     "symptoms": ["cold"],
@@ -30,7 +30,7 @@
     "availability": 10,
     "severity": 3,
     "description": "When you have a mild cold, very strong yoga is usually not needed. Gentle breathing with relaxed sitting may support calmness and light respiratory comfort. Keep the session short and do not force the breath if congestion feels strong.",
-    "link": "tulsi"
+    "link": "anulomvilom"
   },
   {
     "symptoms": ["fever"],
@@ -63,7 +63,7 @@
     "availability": 9,
     "severity": 5,
     "description": "Honey and ginger are commonly used as gentle support when cough causes throat discomfort. This may help soothe irritation and provide warmth. Take it in small amounts and avoid anything that causes more throat irritation.",
-    "link": "/natureTherapy.html"
+    "link": "honeyg"
   },
   {
     "symptoms": ["cough"],
@@ -74,7 +74,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Warm water and steam support may help when cough is linked with throat dryness or congestion. These methods can be used as simple supportive care at home. Resting the body and avoiding cold exposure may also help.",
-    "link": "/natureTherapy.html"
+    "link": "warmsteam"
   },
   {
     "symptoms": ["cough"],
@@ -85,7 +85,7 @@
     "availability": 9,
     "severity": 4,
     "description": "A mild chest opening stretch and relaxed breathing may support comfort when cough feels tight in the chest. Strong practice is not needed. Keep the movement slow and avoid anything that increases discomfort.",
-    "link": "/yoga.html"
+    "link": "bhujangasana"
   },
   {
     "symptoms": ["headache"],
@@ -107,7 +107,7 @@
     "availability": 10,
     "severity": 4,
     "description": "When headache is related to tension or posture, slow neck relaxation and light stretching may help reduce heaviness. Avoid jerky movement and keep the body relaxed. Calm breathing can make the practice more useful.",
-    "link": "Headache"
+    "link": "neckre"
   },
   {
     "symptoms": ["headache"],
@@ -272,7 +272,7 @@
     "availability": 10,
     "severity": 4,
     "description": "When cold is linked with headache, strong movement is usually not needed. Gentle neck relaxation and calm breathing may help reduce heaviness. Keep the practice slow and avoid forceful breathing if congestion is strong.",
-    "link": "/yoga.html"
+    "link": "gentleneck"
   },
   {
     "symptoms": ["cold", "cough"],
@@ -305,7 +305,7 @@
     "availability": 10,
     "severity": 4,
     "description": "Relaxed breathing and mild supported posture may help the body feel calmer when cold and cough are present. Avoid forceful pranayama and strong movement. Soft breathing and chest relaxation are better choices.",
-    "link": "/yoga.html"
+    "link": "relaxbreathing"
   },
   {
     "symptoms": ["fever", "headache"],
@@ -349,7 +349,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Stress-related headache often feels heavier around the neck and shoulders. Slow stretches, neck release, and calm breathing may support relief. Keep the practice gentle and avoid holding tension while moving.",
-    "link": "/yoga.html"
+    "link": "shoulder"
   },
   {
     "symptoms": ["stress", "headache"],

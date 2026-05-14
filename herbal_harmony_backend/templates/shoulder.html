@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Shoulder and Neck Release Yoga</title>
+</head>
+
+<body>
+
+<div class="heading name">
+    <h1>Shoulder and Neck Release Yoga</h1>
+</div>
+
+<nav class="navbar background">
+
+    <ul class="nav-list">
+
+        <div class="logo">
+            <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+        </div>
+
+        <li><a href="{% url 'Home' %}">Home</a></li>
+        <li><a href="{% url 'About' %}">About</a></li>
+        <li><a href="{% url 'yoga' %}">Yoga</a></li>
+        <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+        <li><a href="#Treatment">Treatment</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">Contact Us</a></li>
+
+    </ul>
+
+    <div id="google_element"></div>
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement("google_element");
+        }
+    </script>
+
+</nav>
+
+
+
+<section class="balasana-info">
+
+    <div class="balasana-box">
+
+        <img src="{% static 'pictures/shoulder-neck-yoga.png' %}" alt="Shoulder and Neck Release Yoga" width="80%" height="60%">
+
+        <h2>SHOULDER AND NECK RELEASE YOGA</h2>
+
+        <p>
+            Shoulder and Neck Release Yoga is a gentle relaxation practice that helps
+            reduce stress, shoulder tightness, neck stiffness, and tension-related discomfort.
+            Slow movement with calm breathing supports body relaxation.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<div class="section3">
+
+    <h2>Yoga Category</h2>
+
+    <p>Shoulder and Neck Relaxation Yoga</p>
+
+    <p>Related practices: Shoulder Rolls, Neck Stretch, Calm Breathing</p>
+
+</div>
+
+
+
+<div class="section1">
+
+    <h2>Steps to Perform Shoulder and Neck Release Yoga:</h2>
+
+    <ol>
+
+        <li>Sit comfortably with your back straight and shoulders relaxed.</li>
+
+        <li>Slowly roll your shoulders forward in a circular motion.</li>
+
+        <li>Repeat the movement backward gently.</li>
+
+        <li>Now slowly tilt your neck toward the right shoulder.</li>
+
+        <li>Return to the center and repeat on the left side.</li>
+
+        <li>Take slow deep breaths during the practice.</li>
+
+        <li>Relax your body and continue for 5–10 minutes.</li>
+
+    </ol>
+
+</div>
+
+
+
+<div class="section2">
+
+    <h2>Benefits of Shoulder and Neck Release Yoga:</h2>
+
+    <ul>
+
+        <li>Helps reduce shoulder and neck tension.</li>
+
+        <li>Supports relaxation during stress-related headache.</li>
+
+        <li>Improves gentle flexibility and posture comfort.</li>
+
+        <li>Promotes calm breathing and relaxation.</li>
+
+        <li>May help reduce body heaviness and stiffness.</li>
+
+    </ul>
+
+</div>
+
+
+
+<div class="section3">
+
+    <h2>Beginner Tips</h2>
+
+    <p>
+        Keep all movements slow and comfortable.
+    </p>
+
+    <p>
+        Avoid fast neck rotations or forceful stretching.
+    </p>
+
+    <p>
+        Breathe calmly throughout the practice.
+    </p>
+
+    <p>
+        Stop the practice if you feel pain or discomfort.
+    </p>
+
+</div>
+
+
+
+<footer id="contact" tabindex="-1">
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h3>Motive</h3>
+
+            <p>
+                We are committed to provide the best life experience through naturopathy,
+                promoting natural wellness for all ages with the power of herbs and home remedies.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="{% url 'Home' %}">Home</a>
+            <a href="{% url 'healthform' %}">AI Chat</a>
+            <a href="{% url 'herb' %}">Herbs</a>
+            <a href="{% url 'Treatment' %}">Treatment</a>
+            <a href="{% url 'yoga' %}">Physical Fitness</a>
+            <a href="{% url 'mentalhealth' %}">Mental Health</a>
+            <a href="{% url 'About' %}">About</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p>Email: info@herbalharmony.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Prayagraj, India</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-lastline">
+        <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

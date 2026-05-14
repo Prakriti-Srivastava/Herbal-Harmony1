@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+    <title>Warm Steam Inhalation</title>
+</head>
+
+<body>
+
+  <div class="heading name">
+    <h1>Warm Steam Inhalation</h1>
+  </div>
+
+    <nav class="navbar background">
+
+                <ul class="nav-list">
+                    <div class="logo">
+                      <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+                    </div>
+
+                    <li><a href="{% url 'Home' %}">Home</a></li>
+
+                    <li><a href="{% url 'About' %}">About</a></li>
+                    <li><a href="{% url 'yoga' %}">Yoga</a></li>
+                    <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+                    <li><a href="#Treatment">Treatment</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li>
+                      <a href="#contact" style="color:#fff; text-decoration:none; margin-right:12px;">
+                        Contact Us
+                      </a>
+                    </li>
+                </ul>
+
+                    <div id="google_element"></div>
+
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
+
+    </nav>
+
+
+    <!-- _____________________ Steam Inhalation _____________________ -->
+
+    <section class="balasana-info">
+      <div class="balasana-box">
+
+        <img src="{% static 'pictures/steam.png' %}" alt="Warm Steam Inhalation" width="80%" height="60%">
+
+      <h2>WARM STEAM INHALATION</h2>
+
+      <p>
+        Warm Steam Inhalation is a natural home remedy that helps relieve cold,
+        cough, blocked nose, and sinus congestion. The warm steam helps loosen mucus
+        and makes breathing easier.
+      </p>
+
+      </div>
+    </section>
+
+
+    <div class="section3">
+      <h2>Natural Therapy</h2>
+
+      <p>Warm Steam Therapy</p>
+
+      <p>steam = warm vapor from hot water</p>
+
+    </div>
+
+
+    <div class="section1">
+
+            <h2>Steps to Perform Warm Steam Inhalation:</h2>
+
+            <ol>
+              <li>Boil clean water and pour it carefully into a large bowl.</li>
+
+              <li>Sit comfortably near the bowl and keep your face at a safe distance.</li>
+
+              <li>Cover your head with a towel to trap the steam.</li>
+
+              <li>Close your eyes and inhale the steam slowly through your nose and mouth.</li>
+
+              <li>Continue for 5–10 minutes while breathing gently.</li>
+
+              <li>After completion, relax and drink warm water if needed.</li>
+            </ol>
+
+    </div>
+
+
+
+    <div class="section2">
+
+            <h2>Benefits of Warm Steam Inhalation:</h2>
+
+            <ul>
+              <li>Relieves blocked nose and congestion.</li>
+
+              <li>Helps reduce cold and cough symptoms.</li>
+
+              <li>Loosens mucus and improves breathing.</li>
+
+              <li>Provides relaxation and comfort.</li>
+
+              <li>Helps soothe throat irritation and dryness.</li>
+            </ul>
+
+    </div>
+
+
+
+    <div class="section3">
+
+        <h2>Beginner Tips</h2>
+
+        <p>
+          Do not keep your face too close to hot water because it may cause burns.
+        </p>
+
+        <p>
+          You can add tulsi leaves, ajwain, or eucalyptus oil for extra relief.
+        </p>
+
+        <p>
+          Always use steam carefully, especially for children.
+        </p>
+
+        <p>
+          If you feel uncomfortable or dizzy, stop immediately and rest.
+        </p>
+
+        <p>
+          Steam inhalation can be used 1–2 times daily during cold or congestion.
+        </p>
+
+    </div>
+
+
+
+ <!-- -----------------footer div--------------------- -->
+
+<footer id="contact" tabindex="-1">
+
+    <div class="footer-container">
+
+      <div class="footer-column">
+
+        <h3>Motive</h3>
+
+        <p>
+          We are committed to provide the best life experience through natureopathy,
+          Promoting natural wellness for all ages with the power of herbs and home remedies.
+        </p>
+
+      </div>
+
+
+
+      <!-- -------------------Quick Links-------------------- -->
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <a href="{% url 'Home' %}">Home</a>
+
+        <a href="{% url 'healthform' %}">AI Chat</a>
+
+        <a href="{% url 'herb' %}">Herbs</a>
+
+        <a href="{% url 'Treatment' %}">Treatment</a>
+
+        <a href="{% url 'yoga' %}">Physical Fitness</a>
+
+        <a href="{% url 'mentalhealth' %}">Mental Health</a>
+
+        <a href="{% url 'About' %}">About</a>
+
+        <a href="#contact" style="color:#f8f3f3; text-decoration:none; margin-right:12px;">
+          Contact Us
+        </a>
+
+      </div>
+
+
+
+      <!-- -------------------Contact Info-------------------- -->
+
+      <div class="footer-column">
+
+        <h3>Contact Us</h3>
+
+        <p>Email: info@herbalharmony.com</p>
+
+        <p>Phone: +91 98765 43210</p>
+
+        <p>Location: Prayagraj, India</p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- -----------------Footer Last Line---------------------- -->
+
+    <div class="footer-lastline">
+      <p>2025 Herbal Harmony. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -248,3 +248,21 @@ def Aiveda(request):
 
 def Aura(request):
     return render(request, 'Aura.html')
+
+def warmsteam(request):
+    return render(request, 'warmsteam.html')
+
+def gentleneck(request):
+    return render(request, 'gentleneck.html')
+
+def honeyg(request):
+    return render(request, 'honeyg.html')
+
+def relaxbreathing(request):
+    return render(request, 'relaxbreathing.html')
+
+def neckre(request):
+    return render(request, 'neckre.html')
+
+def shoulder(request):
+    return render(request, 'shoulder.html')
