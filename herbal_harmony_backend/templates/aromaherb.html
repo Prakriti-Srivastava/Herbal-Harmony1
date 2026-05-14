@@ -32,8 +32,15 @@
                 </ul>
            
              
-                <input type="text" name="search" id="search">
-                <button class="btn-search">search</button>
+                <!-- <input type="text" name="search" id="search">
+                <button class="btn-search">search</button> -->
+                 <div id="google_element"></div>
+              <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+              <script>
+                function loadGoogleTranslate() {
+                  new google.translate.TranslateElement("google_element");
+                }
+              </script>
              </nav>
              <div class="sticker">
                 <img src="{% static 'pictures/medhub.jpg' %}" alt="medicinal herbs" width="100%">
