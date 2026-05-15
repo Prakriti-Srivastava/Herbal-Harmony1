@@ -23,7 +23,7 @@ collection.delete_many({})  # Clear existing data in the collection
 # Insert data
 collection.insert_many(data)
 
-print("✅ Fresh dataset inserted successfully!")
+print("Fresh dataset inserted successfully!")
 
 # print(db.list_collection_names())
 # print(db["remedies"].count_documents({}))
