@@ -287,3 +287,9 @@ def groundreassure(request):
 
 def nightcalm(request):
     return render(request, 'nightcalm.html')
+
+def warmrest(request):
+    return render(request, 'warmrest.html')
+
+def ginger(request):
+    return render(request, 'ginger.html')

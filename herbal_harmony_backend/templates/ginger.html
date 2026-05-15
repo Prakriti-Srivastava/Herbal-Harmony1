@@ -1,0 +1,293 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <link rel="stylesheet" href="{% static 'css/yogaposes.css' %}">
+
+    <title>Ginger Kadha</title>
+
+</head>
+
+<body>
+
+
+
+    <!-- Heading -->
+
+    <div class="heading name">
+
+        <h1>Ginger Kadha</h1>
+
+    </div>
+
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar background">
+
+        <ul class="nav-list">
+
+            <div class="logo">
+
+                <img src="{% static 'pictures/logo.png' %}" alt="logo" width="30%">
+
+            </div>
+
+            <li><a href="{% url 'Home' %}">Home</a></li>
+
+            <li><a href="{% url 'About' %}">About</a></li>
+
+            <li><a href="{% url 'yoga' %}">Yoga</a></li>
+
+            <li><a href="{% url 'healthform' %}">AI Chat</a></li>
+
+            <li><a href="#Treatment">Treatment</a></li>
+
+            <li><a href="#disclaimer">Disclaimer</a></li>
+
+            <li>
+                <a href="#contact"
+                    style="color:#fff; text-decoration:none; margin-right:12px;">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Main Section -->
+
+    <section class="balasana-info">
+
+        <div class="balasana-box">
+
+            <img src="{% static 'pictures/ginger-kadha.png' %}"
+                alt="Ginger Kadha"
+                width="80%"
+                height="60%">
+
+
+            <h2>GINGER KADHA</h2>
+
+
+            <p>
+
+                Ginger kadha may provide warm supportive care during cold,
+                fever, weakness, and throat discomfort. It may help the body
+                feel more comfortable when combined with hydration and rest.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Category Section -->
+
+    <div class="section3">
+
+        <h2>Herbal Warm Support</h2>
+
+        <p>
+            Warm Herbal Recovery Support
+        </p>
+
+        <p>
+            Related support:
+            Ginger,
+            Warm Fluids,
+            Herbal Care,
+            Recovery Support
+        </p>
+
+    </div>
+
+
+
+    <!-- Steps Section -->
+
+    <div class="section1">
+
+        <h2>
+            Steps to Prepare Ginger Kadha:
+        </h2>
+
+        <ol>
+
+            <li>
+                Boil one glass of water in a pan.
+            </li>
+
+            <li>
+                Add freshly crushed ginger into the water.
+            </li>
+
+            <li>
+                Allow the mixture to boil for several minutes.
+            </li>
+
+            <li>
+                Strain the kadha carefully into a cup.
+            </li>
+
+            <li>
+                Drink warm in a relaxed environment.
+            </li>
+
+            <li>
+                Rest properly and stay hydrated.
+            </li>
+
+        </ol>
+
+    </div>
+
+
+
+    <!-- Benefits Section -->
+
+    <div class="section2">
+
+        <h2>
+            Benefits of Ginger Kadha:
+        </h2>
+
+        <ul>
+
+            <li>
+                May provide warmth and comfort.
+            </li>
+
+            <li>
+                Supports hydration and recovery.
+            </li>
+
+            <li>
+                May help improve throat comfort.
+            </li>
+
+            <li>
+                Supports rest and relaxation during illness.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- Beginner Tips -->
+
+    <div class="section3">
+
+        <h2>Beginner Tips</h2>
+
+        <p>
+            Drink the kadha warm, not extremely hot.
+        </p>
+
+        <p>
+            Rest properly and drink enough fluids.
+        </p>
+
+        <p>
+            Avoid heavy oily food during fever and weakness.
+        </p>
+
+        <p>
+            If symptoms become severe or continue,
+            seek medical advice.
+        </p>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer id="contact" tabindex="-1">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>Motive</h3>
+
+                <p>
+                    We are committed to provide the best life experience
+                    through naturopathy, promoting natural wellness
+                    for all ages with the power of herbs
+                    and home remedies.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="{% url 'Home' %}">Home</a>
+
+                <a href="{% url 'healthform' %}">AI Chat</a>
+
+                <a href="{% url 'herb' %}">Herbs</a>
+
+                <a href="{% url 'Treatment' %}">Treatment</a>
+
+                <a href="{% url 'yoga' %}">
+                    Physical Fitness
+                </a>
+
+                <a href="{% url 'mentalhealth' %}">
+                    Mental Health
+                </a>
+
+                <a href="{% url 'About' %}">About</a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: info@herbalharmony.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+
+                <p>Location: Prayagraj, India</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-lastline">
+
+            <p>
+                2025 Herbal Harmony. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

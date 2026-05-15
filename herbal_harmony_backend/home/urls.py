@@ -84,4 +84,6 @@ urlpatterns = [
    path("deepbre", views.deepbre, name='deepbre'),
    path("groundreassure", views.groundreassure, name='groundreassure'),
    path("nightcalm", views.nightcalm, name='nightcalm'),
+   path("warmrest", views.warmrest, name='warmrest'),
+   path("ginger", views.ginger, name='ginger'),
 ]

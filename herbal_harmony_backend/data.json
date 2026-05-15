@@ -195,7 +195,7 @@
     "availability": 9,
     "severity": 4,
     "description": "A warm relaxing drink in the evening may support the body when sleep feels disturbed. This works best when combined with a simple bedtime routine and less screen use. The goal is to prepare the mind and body for rest.",
-    "link": "/natureTherapy.html"
+    "link": "warmrest"
   },
   {
     "symptoms": ["sleep"],
@@ -228,7 +228,7 @@
     "availability": 8,
     "severity": 6,
     "description": "Ginger kadha may be useful as warm supportive care when cold and fever happen together. It can provide warmth and may help the body feel more comfortable. This should be taken along with hydration and good rest, especially when weakness is present.",
-    "link": "/natureTherapy.html"
+    "link": "ginger"
   },
   {
     "symptoms": ["cold", "fever"],
@@ -239,7 +239,7 @@
     "availability": 10,
     "severity": 6,
     "description": "When cold and fever come together, the body usually needs warmth, fluids, and rest. Simple support methods may help comfort, but the focus should remain on recovery. If symptoms rise or continue, proper medical advice becomes important.",
-    "link": "/natureTherapy.html"
+    "link": "warmrest"
   },
   {
     "symptoms": ["cold", "headache"],
@@ -250,7 +250,7 @@
     "availability": 8,
     "severity": 5,
     "description": "Tulsi and ginger tea may help when cold comes with heaviness in the head. It can give warmth and may support easier breathing and better comfort. Drink it warm, stay hydrated, and avoid cold exposure while recovering.",
-    "link": "/natureTherapy.html"
+    "link": "ginger"
   },
   {
     "symptoms": ["cold", "headache"],
