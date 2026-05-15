@@ -269,3 +269,21 @@ def shoulder(request):
 
 def chamomile(request):
     return render(request, 'chamomile.html')
+
+def warmrecovery(request):
+    return render(request, 'warmrecovery.html')
+
+def groundslow(request):
+    return render(request, 'groundslow.html')
+
+def winddown(request):
+    return render(request, 'winddown.html')
+
+def deepbre(request):
+    return render(request, 'deepbre.html')
+
+def groundreassure(request):
+    return render(request, 'groundreassure.html')
+
+def nightcalm(request):
+    return render(request, 'nightcalm.html')

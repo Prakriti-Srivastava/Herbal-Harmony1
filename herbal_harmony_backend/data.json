@@ -140,7 +140,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Anulom Vilom is a calm breathing practice that may help reduce tension and mental overload. It can support emotional balance and improve the sense of calm when done slowly and regularly. Keep the breath soft and comfortable.",
-    "link": "stress"
+    "link": "anulomvilom"
   },
   {
     "symptoms": ["stress"],
@@ -151,7 +151,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Grounding and slow breathing can be helpful when stress builds up. Sit comfortably, relax the shoulders, and make the exhale longer than the inhale. Short calming breaks, less screen overload, and better sleep may also help.",
-    "link": "stress"
+    "link": "groundslow"
   },
   {
     "symptoms": ["anxiety"],
@@ -173,7 +173,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Deep breathing may help reduce anxious tension by slowing the body down. Sit in a comfortable position and focus on slow, even breathing. This can support steadiness and reduce the feeling of panic or restlessness.",
-    "link": "/yoga.html"
+    "link": "deepbre"
   },
   {
     "symptoms": ["anxiety"],
@@ -184,7 +184,7 @@
     "availability": 10,
     "severity": 6,
     "description": "Grounding may help when anxiety causes overthinking or panic-like discomfort. Focus on the present moment, slow the breath, and notice simple things around you. A calm routine, supportive rest, and reducing overload can help.",
-    "link": "/MentalHealth.html"
+    "link": "groundreassure"
   },
   {
     "symptoms": ["sleep"],
@@ -382,7 +382,7 @@
     "availability": 10,
     "severity": 5,
     "description": "Anulom Vilom done slowly may help when stress and anxiety happen together. It can support a calmer nervous system and a more settled feeling in the body. Practice gently without forcing the breath.",
-    "link": "/yoga.html"
+    "link": "anulomvilom"
   },
   {
     "symptoms": ["stress", "anxiety"],
@@ -569,7 +569,7 @@
     "availability": 8,
     "severity": 5,
     "description": "When stress, anxiety, and poor sleep happen together, gentle nighttime herbal support may be used as part of a calm routine. It should be paired with regular sleep timing and reduced stimulation in the evening.",
-    "link": "/natureTherapy.html"
+    "link": "nightcalm"
   },
   {
     "symptoms": ["stress", "anxiety", "sleep"],
@@ -591,7 +591,7 @@
     "availability": 10,
     "severity": 7,
     "description": "When stress, anxiety, and poor sleep happen together, the mind often needs a full wind-down routine. Slow breathing, reduced phone use, lower mental stimulation, and calm self-soothing can support better rest and emotional balance.",
-    "link": "/MentalHealth.html"
+    "link": "winddown"
   },
 
   {
@@ -603,7 +603,7 @@
     "availability": 9,
     "severity": 8,
     "description": "When cold, fever, cough and headache occur together, the body needs rest, warm fluids and supportive care. This may help throat comfort, congestion and body weakness. If fever is high or symptoms continue, medical advice is important.",
-    "link": "/natureTherapy.html"
+    "link": "warmrecovery"
   },
   {
     "symptoms": ["cold", "fever", "cough", "headache"],
